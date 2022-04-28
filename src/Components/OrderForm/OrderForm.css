@@ -1,0 +1,11 @@
+
+.orderInfoContainer {
+    width: 50%;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+.pointer{
+    cursor: pointer;
+}

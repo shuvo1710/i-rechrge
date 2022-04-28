@@ -1,0 +1,158 @@
+/* Project Name: iRecharge */
+/* Tag: Online Moibile Recharge and Bill Pay UI Template | Reac JS */
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Nunito&display=swap");
+:root {
+  --primary: rgb(236, 236, 236);
+  --secondary: #22184d;
+}
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+ul li a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100 !important;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .navContainer {
+    width: 100%;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    width: 273px;
+    background: #3c8fc2;
+    z-index: 555555555555555555555555555555555555;
+    height: 100vh;
+    left: -100%;
+  }
+  .linksContainer ul {
+    display: block !important;
+  }
+  .linksContainer {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .profileContainer {
+    width: 100% !important;
+    justify-content: start !important;
+  }
+  .closeBtnContainer {
+    display: block !important;
+  }
+  .linksContainer ul li {
+    margin: 2px 0;
+    padding: 10px 7px;
+    background: white;
+    padding-left: 2rem;
+  }
+  .allOffers {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .offersContainer {
+    padding: 0rem !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .offerSection {
+    background-image: none !important;
+  }
+  .gradiant {
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+  .gradiant h2 {
+    font-size: 1.2rem !important;
+  }
+  .tabsHeader {
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 100% !important;
+    gap: 5px;
+  }
+  .subscriptionText h2 {
+    font-size: 2rem !important;
+  }
+  .subsContainer {
+    padding: 0rem !important;
+  }
+  .subscriptionImage {
+    height: 342px !important;
+    width: 100% !important;
+  }
+  .tabsHeader button {
+    border: 1px solid darkgrey !important;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .orderInfoContainer {
+    width: 100% !important;
+    padding: 0.4rem !important;
+    border: 1px solid rgb(233, 233, 233);
+  }
+  .allprogress {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .paymentContainer {
+    padding: 0rem !important;
+  }
+  .successfullMessage {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    height: 35px !important;
+    width: 132px !important;
+  }
+  .logoContainer {
+    width: 20% !important;
+  }
+  .profileContainer {
+    width: 12% !important;
+  }
+  .subscriptionImage {
+    height: 600px !important;
+    width: 100% !important;
+  }
+  .subscriptionText h2 {
+    font-size: 3rem !important;
+  }
+  .allOffers {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .allprogress {
+    grid-template-columns: repeat(2,1fr) !important;
+}
+.orderInfoContainer {
+    width: 70% !important;
+}
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .allOffers {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .subscriptionImage {
+    height: 500px !important;
+    width: 500px !important;
+  }
+}

@@ -1,0 +1,59 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logoContainer {
+    width: 30%;
+}
+.navContainer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: .4s;
+}
+.linksContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linksContainer {
+    width: 76%;
+    padding-right: .7rem;
+}
+.linksContainer ul li a {
+    color: #3f3f3f;
+    font-weight: 400;
+    font-size: 17px;
+}
+.logo {
+    height: 40px;
+    width: 150px;
+}
+.profileContainer {
+    display: flex;
+    width: 7%;
+    align-items: center;
+    justify-content: end;
+}
+.profileImage {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #00a9a4;
+}
+.left0{
+    left: 0% !important;
+}
+.closeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.closeBtnContainer{
+      width: 70%;  
+      display: none;
+}

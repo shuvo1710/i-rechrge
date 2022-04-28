@@ -1,0 +1,42 @@
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+.allOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow-x: scroll;
+}
+.optionsContainer {
+    position: relative;
+    z-index: 555555555;
+    background: #40b7ff;
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+.container-bg{
+    background: #40b7ff;
+}
+.option {
+    width: 100px;
+    margin: 2px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    height: 70px;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+.activeMenu{
+    background: rgb(0, 96, 251) !important;
+    color: var(--primary) !important;
+}
+
+

@@ -1,0 +1,8 @@
+.carousel-item img {
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.rechargeMenu {
+    padding: 3rem 0 8rem 0;
+}
