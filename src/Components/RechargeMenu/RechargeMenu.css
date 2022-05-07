@@ -4,5 +4,22 @@
     border-radius: 10px;
 }
 .rechargeMenu {
-    padding: 3rem 0 8rem 0;
+    padding: 0rem 0 8rem 0;
+}
+.rechargeButton {
+    border: 1px solid transparent;
+    padding: 10px 5px;
+    background: #30196c;
+    color: white; 
+    transition: .1s;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0);
+}
+.rechargeButton:hover {
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.894);
+}
+.rechargeContainer {
+    box-shadow: 0 0 3px #80808066;
+    padding: 2rem 1rem;
+    border-radius: 5px;
 }

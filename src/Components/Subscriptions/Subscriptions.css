@@ -2,6 +2,7 @@
     height: 600px;
     width: 600px;
     margin: 0 auto;
+    animation: image 2s linear alternate-reverse infinite;
 }
 .subscriptionText h2 {
     font-size: 5rem;
@@ -10,12 +11,27 @@
     color: #0087db;
 }
 .subscriptionText button {
-    border: none;
+    border: 1px solid #0087db;
     padding: 10px 33px;
     font-size: 20px;
+    background: #ffffff;
+    color: #0087db;
+    border-radius: 7px;
+    transition: .4s;
+}
+.subscriptionText button:hover {
+    border: 1px solid transparent;
     background: #0087db;
     color: white;
 }
 .subsContainer{
     padding: 3rem;
 }
+@keyframes image {
+    0%{
+       transform: rotate(-1deg); 
+    }
+    100%{
+        transform: rotate(1deg); 
+    }
+  }

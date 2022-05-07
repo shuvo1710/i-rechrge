@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, FormControl, InputGroup } from 'react-bootstrap';
 import './Footer.css'
 import { Link } from "react-router-dom";
-import footerLogo from "../../utilities/footerLogo.png";
+import footerLogo2 from "../../utilities/textLogo.PNG";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.ernatur eum.</p>
                             </li>
                             <li>
-                                <h4>Contact Us</h4>
+                                <h6>Contact Us</h6>
                                 <Link to="/home">
                                     <BsFillTelephoneFill className="me-2"/>+9856-83245
                                 </Link>
@@ -38,6 +38,9 @@ const Footer = () => {
                             <li><Link to="/home">Offers and discount</Link></li>
                             <li><Link to="/home">Testimonial</Link></li>
                             <li><Link to="/home">Events</Link></li>
+                            <li><Link to="/home">Supports</Link></li>
+                            <li><Link to="/home">Hot Offers</Link></li>
+                            <li><Link to="/home">4G</Link></li>
                         </ul>
                     </div>
                     <div className="col-12 col-md-6 col-lg-3">
@@ -49,13 +52,15 @@ const Footer = () => {
                             <li><Link to="/home">Offers and discount</Link></li>
                             <li><Link to="/home">Testimonial</Link></li>
                             <li><Link to="/home">Privacy and policy</Link></li>
+                            <li><Link to="/home">Packages</Link></li>
+                            <li><Link to="/home">Profile</Link></li>
                         </ul>
                     </div>
                     <div className="col-12 col-md-6 col-lg-3">
                     <h4>Subscribe for more..</h4>
                         <Link to="/home">
                             <div className='logo'>
-                                <img className='w-100 h-100' src={footerLogo} alt="" />
+                                <img className='w-100 h-100' src={footerLogo2} alt="" />
                             </div>
                         </Link>
                         <InputGroup className="mt-3">
@@ -69,6 +74,21 @@ const Footer = () => {
                             aria-describedby="basic-addon1"
                             />
                         </InputGroup>
+                    </div>
+                </div>
+                <div className="subFooter">
+                    <h1 className='border-bottom pb-3'>i-Recharge</h1>
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-lg-8 col-xl-8">
+                            <p className="text-secondary">&copy; Allrights reserved by i-Recharge</p>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <ul className='p-0 m-0 d-flex align-items-center justify-content-between'>
+                                <li><Link className='text-secondary' to="#">Plans</Link></li>
+                                <li><Link className='text-secondary' to="#">Terms of Use</Link></li>
+                                <li><Link className='text-secondary' to="#">Privacy & Policy</Link></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </Container>

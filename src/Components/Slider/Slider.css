@@ -29,7 +29,8 @@
     object-fit: cover;
   }
   .gradiant {
-    background: linear-gradient(45deg, #3bb5ff, white);
+    /* background: linear-gradient(45deg, #3bb5ff, white); */
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 2rem;

@@ -6,11 +6,14 @@ import { FiRefreshCw } from "react-icons/fi";
 import { FaPaypal } from "react-icons/fa";
 import './PaymentForm.css'
 import { useHistory } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const PaymentForm = () => {
     const history  = useHistory()
+    const {handleShow} = useAuth()
     const proceed = () => {
         history.push('/success')
+        handleShow()
     }
   return (
     <div className="paymentSection">

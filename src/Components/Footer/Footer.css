@@ -1,8 +1,16 @@
+/* .footer {
+    padding: 3rem 0;
+    background: #30196c;
+    color: white;
+} */
+/* .footer a {
+    color: white;
+} */
+.footer a {
+    color: #767676;
+}
 .footer {
     padding: 3rem 0;
-    background: #353535;
-    color: white;
-}
-.footer a {
-    color: white;
+    background: #f9f9f9;
+    color: #3c3c3c;
 }

@@ -9,6 +9,7 @@ const Features = () => {
     return (
         <div className='feature'>
             <Container>
+                <h3 className="text-center mb-2">Why Choose Us</h3>
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-3 col-xl-3">
                         <div className='commonFeature mb-2'>

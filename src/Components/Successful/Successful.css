@@ -5,12 +5,28 @@
 }
 .successfullMessage {
     margin: 0 auto;
-    border: 1px solid grey;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
-    width: 50%;
+    margin-top: 0;
+    width: 100%;
     padding: 0 3rem 3rem;
+}
+.invoice {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    border: 2px dashed grey;
+}
+.successfullIcon {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+.actionsButtons {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
 }

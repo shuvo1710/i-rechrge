@@ -1,5 +1,5 @@
 import React from 'react';
-import Features from '../../Components/Features/Features';
+// import Features from '../../Components/Features/Features';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Progress3 from '../../Components/Progress3/Progress3';
@@ -12,7 +12,7 @@ const Success = () => {
             <Header/>
             <Progress3/>
             <Successful/>
-            <Features/>
+            {/* <Features/> */}
             <Footer/>
         </div>
     );

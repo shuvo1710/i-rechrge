@@ -4,14 +4,14 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./Carousel.css";
+import "./Slider.css";
 import { Container } from "react-bootstrap";
 import bannerImage from '../../utilities/3953918-removebg-preview.png'
 
 const Carousel = () => {
   return (
     <div>
-        <Container>
+        <Container className="p-0">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -33,7 +33,7 @@ const Carousel = () => {
                                 <div className="text-start py-5 px-2">
                                     <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipi quidem vero et? Rem atque consequatur rerum molestias. In!</p>
-                                    <button>Submit</button>
+                                    <button>Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">
@@ -51,7 +51,7 @@ const Carousel = () => {
                                 <div className="text-start py-5 px-2">
                                     <h2>Lorem ipsum dolor sit amet consectetur elit.</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adius adipisci quidem vero et? Rem atque consequatur rerum molestias. In!</p>
-                                    <button>Submit</button>
+                                    <button>Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">
@@ -67,9 +67,9 @@ const Carousel = () => {
                         <div className="row">
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                                 <div className="text-start py-5 px-2">
-                                    <h2 className="">Lorem ipsum dolor sit amet elit.</h2>
+                                <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
                                     <p>Lorem, ipsum dolor siserunt rerum ab non, ut necessitatibus adipisci quidem vee consequatur rerum molestias. In!</p>
-                                    <button>Submit</button>
+                                    <button>Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">

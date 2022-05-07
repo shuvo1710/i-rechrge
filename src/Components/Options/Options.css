@@ -10,13 +10,13 @@
 }
 .optionsContainer {
     position: relative;
-    z-index: 555555555;
-    background: #40b7ff;
+    background: #ffffff;
     padding: 1rem 0;
-    margin: 3rem 0;
+    margin: 0;
 }
 .container-bg{
-    background: #40b7ff;
+    background: #f9f9f9;
+    border-radius: 7px;
 }
 .option {
     width: 100px;
@@ -33,6 +33,18 @@
     position: relative;
     overflow: hidden;
     transition: .4s;
+}
+.option svg {
+    color: white;
+    padding: .4rem;
+    border-radius: 50%;
+    font-size: 2.5rem !important;
+}
+.option1{
+    background: #009dff;
+}
+.option2{
+    background: #9c77ff;
 }
 .activeMenu{
     background: rgb(0, 96, 251) !important;

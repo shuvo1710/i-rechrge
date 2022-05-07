@@ -1,28 +1,89 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import anim from '../../utilities/successful.gif'
-import './Successful.css'
-
+import React from "react";
+import { Container, Modal } from "react-bootstrap";
+import anim from "../../utilities/successful.gif";
+import "./Successful.css";
+// import successFullGif from '../../utilities/iconGif.gif'
+import useAuth from '../../Hooks/useAuth'
 const Successful = () => {
-    return (
-        <div>
-            <Container>
-                <div className="successfullMessage text-center">
-                    <div>
-                        <div className="succAnimation">
-                            <img src={anim} alt="" className="w-100 h-100" />
-                        </div>
-                        <h4>Payment Successful</h4>
-                        <p>Your Payment is successful. Your will recieve an order confirmation email/sms shortly with the expected package you have choosen.</p>
-                        <div className='successButtons'>
-                            <button className='mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2'>Back to Home</button>
-                            <button className='mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2'>Recharge Again</button>
-                        </div>
-                    </div>
-                </div>
-            </Container>
+    const {successful,handleClose} = useAuth()
+  return (
+    <div>
+      <Modal show={successful} onHide={handleClose} size="">
+        <Modal.Header closeButton>
+          <h5 className="m-0">Successfull</h5>
+        </Modal.Header>
+        <div className="successfullMessage text-center">
+          <div>
+            <div className="succAnimation">
+              <img src={anim} alt="" className="w-100 h-100" />
+            </div>
+            <h4>Payment Successful</h4>
+            <p>
+              Your Payment is successful. Your will recieve an order
+              confirmation email/sms shortly with the expected package you have
+              choosen.
+            </p>
+            <div className="successButtons">
+              <button className="mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2">
+                Back to Home
+              </button>
+              <button className="mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2">
+                Recharge Again
+              </button>
+            </div>
+          </div>
         </div>
-    );
+      </Modal>
+      <Container>
+        <div className="text-center my-5">
+            <div className="invoice">
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">User Name</span>
+                    <span className="fs-6 text-dark">Mark Otto</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Number</span>
+                    <span className="fs-6 text-dark">+8801XXXXXXXXX</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Transaction ID</span>
+                    <span className="fs-6 text-dark">XPRJJHDF28</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Date</span>
+                    <span className="fs-6 text-dark">07 May 2016</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Payment Method</span>
+                    <span className="fs-6 text-dark">Visa Card</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Approval Status</span>
+                    <span className="fs-6 text-dark">Approved</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between border-bottom mb-3 pb-2">
+                    <span className="fs-6 text-secondary">Amount to Pay</span>
+                    <span className="fs-6 text-dark">1500 ৳</span>
+                </div>
+            </div>
+            <div className="actionsButtons mt-3">
+                <div className="row">
+                    <div className="col-4 p-1">
+                        <button className="iconContainer1 border-0 text-light py-2 px-3">Save PDF</button>
+                    </div>
+                    <div className="col-4 p-1">
+                        <button className="iconContainer2 border-0 text-light py-2 px-3">Print Now</button>
+                    </div>
+                    <div className="col-4 p-1">
+                        <button className="iconContainer4 border-0 text-light py-2 px-3">Send Mail</button>
+                    </div>
+                </div>                
+            </div>
+
+        </div>
+      </Container>
+    </div>
+  );
 };
 
 export default Successful;

@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { RiComputerLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Options = () => {
   return (
     <div className="optionsContainer">
@@ -41,74 +42,74 @@ const Options = () => {
         >
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <AiOutlineMobile className="text-light fs-3" />
-              <span className="text-light d-block">Mobile</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <AiOutlineMobile className=" fs-3 iconContainer1" />
+              <span className=" d-block">Mobile</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <RiComputerLine className="text-light fs-3" />
-              <span className="text-light d-block">DTH</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <RiComputerLine className=" fs-3 iconContainer2" />
+              <span className=" d-block">DTH</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <AiOutlineWifi className="text-light fs-3" />
-              <span className="text-light d-block">Broadband</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <AiOutlineWifi className=" fs-3 iconContainer3" />
+              <span className=" d-block">Broadband</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <BsTelephone className="text-light fs-3" />
-              <span className="text-light d-block">Landphone</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <BsTelephone className=" fs-3 iconContainer4" />
+              <span className=" d-block">Landphone</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <AiFillThunderbolt className="text-light fs-3" />
-              <span className="text-light d-block">Electricity</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <AiFillThunderbolt className=" fs-3 iconContainer1" />
+              <span className=" d-block">Electricity</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <MdLocalGasStation className="text-light fs-3" />
-              <span className="text-light d-block">Gas</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <MdLocalGasStation className=" fs-3 iconContainer2" />
+              <span className=" d-block">Gas</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <BsDropletHalf className="text-light fs-3" />
-              <span className="text-light d-block">Water</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <BsDropletHalf className=" fs-3 iconContainer3" />
+              <span className=" d-block">Water</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <AiOutlineMobile className="text-light fs-3" />
-              <span className="text-light d-block">Mobile</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <AiOutlineMobile className=" fs-3 iconContainer4" />
+              <span className=" d-block">Mobile</span>
+            </Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <div>
-              <AiOutlineMobile className="text-light fs-3" />
-              <span className="text-light d-block">Mobile</span>
-            </div>
+            <Link to="/home" className="text-decoration-none">
+              <AiOutlineMobile className=" fs-3 iconContainer1" />
+              <span className=" d-block">Mobile</span>
+            </Link>
           </div>
           </SwiperSlide>
         </Swiper>

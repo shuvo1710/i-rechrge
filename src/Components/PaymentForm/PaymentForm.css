@@ -37,8 +37,13 @@ input:focus{
     color: #0087db;
     text-align: center;
 }
-.paymentSection {
+/* .paymentSection {
     background: linear-gradient(45deg, #cd83ff24, #98ccff57);
+    padding: 3rem 0;
+    margin: 3rem 0;
+} */
+.paymentSection {
+    background: #f9f9f9;
     padding: 3rem 0;
     margin: 3rem 0;
 }
