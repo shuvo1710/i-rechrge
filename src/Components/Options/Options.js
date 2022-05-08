@@ -42,7 +42,7 @@ const Options = () => {
         >
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <AiOutlineMobile className=" fs-3 iconContainer1" />
               <span className=" d-block">Mobile</span>
             </Link>
@@ -50,7 +50,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <RiComputerLine className=" fs-3 iconContainer2" />
               <span className=" d-block">DTH</span>
             </Link>
@@ -58,7 +58,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <AiOutlineWifi className=" fs-3 iconContainer3" />
               <span className=" d-block">Broadband</span>
             </Link>
@@ -66,7 +66,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <BsTelephone className=" fs-3 iconContainer4" />
               <span className=" d-block">Landphone</span>
             </Link>
@@ -74,7 +74,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <AiFillThunderbolt className=" fs-3 iconContainer1" />
               <span className=" d-block">Electricity</span>
             </Link>
@@ -82,7 +82,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <MdLocalGasStation className=" fs-3 iconContainer2" />
               <span className=" d-block">Gas</span>
             </Link>
@@ -90,7 +90,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <BsDropletHalf className=" fs-3 iconContainer3" />
               <span className=" d-block">Water</span>
             </Link>
@@ -98,7 +98,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <AiOutlineMobile className=" fs-3 iconContainer4" />
               <span className=" d-block">Mobile</span>
             </Link>
@@ -106,7 +106,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className="text-decoration-none">
+            <Link to="/home" className=" linkOption">
               <AiOutlineMobile className=" fs-3 iconContainer1" />
               <span className=" d-block">Mobile</span>
             </Link>

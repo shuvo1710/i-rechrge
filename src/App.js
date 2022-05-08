@@ -1,18 +1,40 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./AuthProvider/AuthProvider";
-import Error from "./Pages/Error/Error";
 import Home from "./Pages/Home/Home";
 import Order from "./Pages/Order/Order";
 import Payment from "./Pages/Payment/Payment";
-import PrivetRoute from "./Pages/PrivetRoute/PrivetRoute";
+// import PrivetRoute from "./Pages/PrivetRoute/PrivetRoute";
 import Success from "./Pages/Success/Success";
+import ScaleLoader
+from "react-spinners/ScaleLoader";
+import { useEffect, useState } from "react";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
+  const [loader, setLoader] = useState(false);
+  const [loaderAnimation, setLoaderAnimation] = useState(false);
+  useEffect(() => {
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 2500);
+  }, []);
 
-
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoaderAnimation(true)
+    },2000)
+  },[])
   return (
-    <div>
+    <>
+      {loader ? (
+        <div className={`preloader`}>
+          <ScaleLoader 
+        color={'#0087db'} size={150}/>
+        </div>
+      ) : (
+        <div className={`${loaderAnimation && 'animation'}`}>
         <AuthProvider>
           <BrowserRouter>
             <Switch>
@@ -29,17 +51,21 @@ function App() {
                 <Payment />
               </Route>
               <Route path="/success">
-                <Success/>
+                <Success />
               </Route>
-              <PrivetRoute path="">
-              </PrivetRoute>
+              {/* <PrivetRoute path="/admin">
+
+              </PrivetRoute> */}
               <Route path="*">
-                <Error />
+                <NotFound/>
               </Route>
             </Switch>
           </BrowserRouter>
-        </AuthProvider>
-    </div>
+        </AuthProvider>          
+        </div>
+
+      )}
+    </>
   );
 }
 

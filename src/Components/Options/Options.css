@@ -15,7 +15,7 @@
     margin: 0;
 }
 .container-bg{
-    background: #f9f9f9;
+    background: #ffffff;
     border-radius: 7px;
 }
 .option {
@@ -50,5 +50,7 @@
     background: rgb(0, 96, 251) !important;
     color: var(--primary) !important;
 }
-
+.linkOption:focus{
+    border-bottom: 2px solid red;
+}
 

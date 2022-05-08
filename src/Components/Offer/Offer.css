@@ -59,3 +59,19 @@
     background: url('../../utilities/offerbg.jpg');
     background-size: 100% 100%;
 }
+.viewMore {
+    padding: 7px 9px;
+    border: 1px solid #0087db;
+    background: white;
+    color: #0087db;
+    transition: .4s;
+}
+.bgPrimary{
+    background: #008dee;
+}
+.viewMore:hover {
+    padding: 7px 9px;
+    border: 1px solid #0087db00;
+    background: #0087db;
+    color: #ffffff;
+}

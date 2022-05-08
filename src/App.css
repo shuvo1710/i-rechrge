@@ -31,8 +31,31 @@ h6 {
   padding: 0;
   font-weight: 100 !important;
 }
+.preloader{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation{
+  animation: fade .5s;
+}
 
 @media (min-width: 320px) and (max-width: 600px) {
+  .subInfo {
+    right: 0% !important;
+}
+.subInfo:after {
+  left: 78% !important;
+}
+  .errorContainer {
+    width: 100% !important;
+}
+  .footer h4 {
+    font-weight: 400 !important;
+    font-size: 1.3rem !important;
+}
   .actionsButtons {
     width: 100% !important;
 }
@@ -131,7 +154,14 @@ h6 {
     padding: 1rem !important;
   }
 }
-
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .actionsButtons {
     width: 60% !important;
@@ -146,9 +176,7 @@ h6 {
   .logoContainer {
     width: 20% !important;
   }
-  .profileContainer {
-    width: 12% !important;
-  }
+
   .subscriptionImage {
     height: 600px !important;
     width: 100% !important;

@@ -5,9 +5,7 @@
     cursor: pointer;
     border: 1px solid rgb(230, 230, 230);
     transition: .4s;
-}
-.paymentOption:hover{
-    background: #decaff; 
+    color: #302d7a;
 }
 input:focus{
     border-color: #86b7fe;
@@ -18,6 +16,14 @@ input:focus{
     padding: 1rem;
     /* border: 1px solid #cccccc; */
     border-radius: 7px;
+}
+.paymentOption:hover {
+    background: #5e73bb;
+    color: white;
+}
+.paymentActive {
+    background: #5e73bb;
+    color: white !important;
 }
 .notice {
     padding: 1rem;
@@ -51,4 +57,47 @@ input:focus{
     padding: 3rem;
     box-shadow: 0 0 5px rgb(0 0 0 / 10%);
     background: white;
+}
+.info {
+    position: relative;
+}
+.subInfo {
+    position: absolute;
+    top: -145%;
+    right: -250%;
+    background: #313131e1;
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    visibility: hidden;
+}
+.subInfo:after {
+    position: absolute;
+    content: "";
+    top: 95%;
+    left: 37%;
+    border-bottom: 10px solid rgba(255, 0, 0, 0);
+    border-top: 10px solid #000000;
+    border-left: 10px solid rgba(255, 0, 0, 0);
+    border-right: 10px solid rgba(255, 0, 0, 0);
+}
+.info:hover .subInfo {
+    opacity: 1;
+    visibility: visible;
+}
+.proceed:hover {
+    padding: 7px 9px;
+    background: transparent;
+    border: 1px solid #2d479f;
+    color: #2849bb;
+
+}
+.proceed {
+    padding: 7px 9px;
+    background: transparent;
+    border: 1px solid #2d489f00;
+    background: #2849bb;
+    color: white;
+    transition: .4s;
 }

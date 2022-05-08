@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='footer'>
             <Container>
                 <div className="row">
-                    <div className="col-12 col-md-6 col-lg-3">
+                    <div className="col-6 col-md-6 col-lg-3">
                         <ul>
                             <li>
                                 <h4>About Us</h4>
@@ -29,7 +29,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-3">
+                    <div className="col-6 col-md-6 col-lg-3">
                         <h4>Information</h4>
                         <ul>
                             <li><Link to="/home">About Us</Link></li>
@@ -43,7 +43,7 @@ const Footer = () => {
                             <li><Link to="/home">4G</Link></li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-3">
+                    <div className="col-6 col-md-6 col-lg-3">
                     <h4>Helpfull links</h4>
                         <ul>
                             <li><Link to="/home">Services</Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
                             <li><Link to="/home">Profile</Link></li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-3">
+                    <div className="col-6 col-md-6 col-lg-3">
                     <h4>Subscribe for more..</h4>
                         <Link to="/home">
                             <div className='logo'>

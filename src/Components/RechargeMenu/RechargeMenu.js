@@ -8,7 +8,7 @@ import {
 } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import "./RechargeMenu.css";
-
+import offerImage1 from '../../utilities/stylish-yellow-sale-banner-design_1017-14559.jpg'
 const RechargeMenu = () => {
   const history = useHistory();
   const OrderNow = () => {
@@ -19,19 +19,19 @@ const RechargeMenu = () => {
       <Container className="p-0">
         <div className="rechargeContainer">
           <div className="row align-items-center">
-            <div className="col-12 col-md-6 col-lg-8 col-xl-8 p-1">
+            <div className="col-12 col-md-6 col-lg-8 col-xl-8">
               <Carousel fade>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://img.freepik.com/free-vector/promotion-sale-labels-best-offers_206725-127.jpg?t=st=1650964335~exp=1650964935~hmac=85a259046a9e41a9e113716b0c516c3b1297823e214ffc8f854eccca51546633&w=1380"
+                    src="https://previews.123rf.com/images/igorvkv/igorvkv1605/igorvkv160500506/56553115-verkauf-banner-template-design.jpg"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://img.freepik.com/free-psd/abstract-mega-sale-background_1393-397.jpg?t=st=1650964335~exp=1650964935~hmac=100b306b9b9eddc61d02e4ab8098d9a743f8ae34c7471c23c121184201e68f61&w=1380"
+                    src={offerImage1}
                     alt="Second slide"
                   />
                 </Carousel.Item>
@@ -44,7 +44,7 @@ const RechargeMenu = () => {
                 </Carousel.Item>
               </Carousel>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-4 p-1">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-4">
               <div>
                 <h3>Mobile Recharge or Bill Payment</h3>
                 <Form>
