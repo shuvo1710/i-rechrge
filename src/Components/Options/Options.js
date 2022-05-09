@@ -12,7 +12,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 const Options = () => {
   return (
-    <div className="optionsContainer">
+    <div id="recharge" className="optionsContainer">
       <Container className="container-bg">
         <Swiper
           slidesPerView={1}
@@ -50,7 +50,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className=" linkOption">
+            <Link to="/dth" className=" linkOption">
               <RiComputerLine className=" fs-3 iconContainer2" />
               <span className=" d-block">DTH</span>
             </Link>
@@ -58,7 +58,7 @@ const Options = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="option text-center">
-            <Link to="/home" className=" linkOption">
+            <Link to="/broadBand" className=" linkOption">
               <AiOutlineWifi className=" fs-3 iconContainer3" />
               <span className=" d-block">Broadband</span>
             </Link>

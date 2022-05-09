@@ -23,7 +23,7 @@ import { GoLocation } from "react-icons/go";
 // import ProfileTab from "./ProfileTab/ProfileTab";
 // import { useRouteMatch } from "react-router-dom";
 // import OfferTab from "./OfferTab/OfferTab";
-
+import { NavHashLink } from 'react-router-hash-link';
 const Header = () => {
   // let { path, url } = useRouteMatch();
   const [nav, setNav] = useState(false);
@@ -35,9 +35,18 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [stickyNav,setStickyNav] = useState(false)
+
+  window.addEventListener('scroll',()=>{
+    if (window.scrollY > 200) {
+      setStickyNav(true)
+    } else {
+      setStickyNav(false)
+    }
+  })
   return (
-    <div className="py-3">
-      <Modal show={show} onHide={handleClose} size="xl">
+    <div className={`headerSection ${stickyNav ? 'sticky' : ''}`}>
+      <Modal centered show={show} onHide={handleClose} size="xl">
         <Modal.Header closeButton>
           <Modal.Title>Profile</Modal.Title>
         </Modal.Header>
@@ -150,7 +159,7 @@ const Header = () => {
             </div>
           </div>
           <div className={`navContainer ${nav && "left0"}`}>
-            <div className="profileContainer onlySmallScreen">
+            {/* <div className="profileContainer onlySmallScreen">
               <div className="d-flex align-items-center border-bottom pb-4">
                 <div onClick={handleShow} className="profileImage">
                   <img
@@ -164,7 +173,7 @@ const Header = () => {
                   <span>$ 126.00</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="linksContainer">
               <ul>
@@ -175,29 +184,29 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recharge" className="d-flex align-items-center">
+                  <NavHashLink to="/home/#recharge" className="d-flex align-items-center">
                     <FaHandHoldingUsd className="me-2" />
                     Recharge & pay Bill
-                  </Link>
+                  </NavHashLink>
                 </li>
                 <li>
-                  <Link to="/home" className="d-flex align-items-center">
+                  <Link to="/feature" className="d-flex align-items-center">
                     <BsCardList className="me-2" />
                     Feature
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="onlyBigScreen">
+            <div className="responsiveWidth">
             <div className="profileContainer">
-              <div className="d-flex align-items-center">
-                <div>
+              <div className="d-flex align-items-center rowReverse">
+                <div className="responsMargin">
                 <h6 className="m-0">Mark Otto</h6>
                 <span>$ 126.00</span>
                 </div>
               <div onClick={handleShow} className="profileImage">
                 <img
-                  src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?t=st=1650951677~exp=1650952277~hmac=35f29986d1bafd0127d17fad98f3219b6b445572e678f668ec193bcb02f2a114&w=900"
+                  src={modalImage}
                   alt=""
                   className="w-100 h-100"
                 />

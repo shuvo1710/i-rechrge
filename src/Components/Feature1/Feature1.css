@@ -1,0 +1,33 @@
+.featureOne{
+    /* background: url('../../utilities/5569-removebg-preview.png'); */
+    padding: 15rem 0;
+    background-size: 100% 100%;
+    background: rgba(240, 240, 240, 0.353);
+    /* background-attachment: fixed; */
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 92%);
+}
+ul.transaction li img {
+    width: 120px;
+}
+ul.transaction {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px 0;
+    margin-bottom: 1rem !important;
+}
+span.refer {
+    color: #ff745c;
+}
+.referbtn{
+    padding: 7px 9px;
+    border: 1px solid #ff745c;
+    background: white;
+    color: #ff745c;
+    transition: .4s;
+}
+.referbtn:hover{
+    padding: 7px 9px;
+    border: 1px solid #ff745c;
+    background: #ff745c;
+    color: #ffffff;
+}

@@ -33,7 +33,7 @@ const Carousel = () => {
                                 <div className="text-start py-5 px-2">
                                     <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipi quidem vero et? Rem atque consequatur rerum molestias. In!</p>
-                                    <button>Visit Now</button>
+                                    <button className="rounded">Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">
@@ -51,7 +51,7 @@ const Carousel = () => {
                                 <div className="text-start py-5 px-2">
                                     <h2>Lorem ipsum dolor sit amet consectetur elit.</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adius adipisci quidem vero et? Rem atque consequatur rerum molestias. In!</p>
-                                    <button>Visit Now</button>
+                                    <button className="rounded">Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">
@@ -69,7 +69,7 @@ const Carousel = () => {
                                 <div className="text-start py-5 px-2">
                                 <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
                                     <p>Lorem, ipsum dolor siserunt rerum ab non, ut necessitatibus adipisci quidem vee consequatur rerum molestias. In!</p>
-                                    <button>Visit Now</button>
+                                    <button className="rounded">Visit Now</button>
                                 </div>
                             </div>
                             <div className="col-12 col-md-12 col-lg-6 col-xl-6">

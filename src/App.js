@@ -10,6 +10,9 @@ import ScaleLoader
 from "react-spinners/ScaleLoader";
 import { useEffect, useState } from "react";
 import NotFound from "./Pages/NotFound/NotFound";
+import BroadBandPage from "./Pages/BroadBandPage/BroadBandPage";
+import DTHPage from "./Pages/DTHPage/DTHPage";
+import FeaturePage from "./Pages/FeaturePage/FeaturePage";
 
 function App() {
   const [loader, setLoader] = useState(false);
@@ -26,6 +29,8 @@ function App() {
       setLoaderAnimation(true)
     },2000)
   },[])
+
+
   return (
     <>
       {loader ? (
@@ -52,6 +57,15 @@ function App() {
               </Route>
               <Route path="/success">
                 <Success />
+              </Route>
+              <Route path="/broadBand">
+                <BroadBandPage />
+              </Route>
+              <Route path="/dth">
+                <DTHPage />
+              </Route>
+              <Route path="/feature">
+                <FeaturePage />
               </Route>
               {/* <PrivetRoute path="/admin">
 

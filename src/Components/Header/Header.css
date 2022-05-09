@@ -6,6 +6,10 @@
 .logoContainer {
     width: 30%;
 }
+.headerSection{
+    padding: 1rem 0;
+    background: white;
+}
 .navContainer {
     width: 85%;
     display: flex;
@@ -139,6 +143,27 @@ td{
 }
 .responsivePadding{
     padding-right: 3rem !important;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 10055555555555555555550;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    animation: stickyNav .4s;
+    background: white;
+}
+@keyframes stickyNav {
+    0%{
+       margin-top: -100px; 
+       transition: 1s;
+    }
+    100%{
+        margin-top: 0px; 
+        transition: 1s;
+    }
 }
 @media only screen and (max-width: 600px) {
     .responsivePadding{

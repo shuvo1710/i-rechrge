@@ -19,7 +19,10 @@
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.894);
 }
 .rechargeContainer {
-    box-shadow: 0 0 3px #80808066;
     padding: 2rem 1rem;
     border-radius: 5px;
+}
+.shadoW{
+box-shadow: 0 0 3px #80808066;
+
 }

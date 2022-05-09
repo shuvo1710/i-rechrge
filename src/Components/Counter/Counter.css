@@ -1,0 +1,21 @@
+.counterContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.counterImg img {
+    height: 22vh;
+    object-fit: cover;
+}
+.counterText{
+    color: #5c4eae;
+}
+.counterText2{
+    color: #ea5d32;
+}
+.counterText3{
+    color: #2dde60;
+}
+.counterText4{
+    color: #9c77ff;
+}
