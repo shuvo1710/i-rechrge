@@ -1,19 +1,19 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Options.css";
-import { AiOutlineMobile,AiOutlineWifi,AiFillThunderbolt } from "react-icons/ai";
-import { MdLocalGasStation } from "react-icons/md";
-import { BsTelephone,BsDropletHalf } from "react-icons/bs";
 import "./Options.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { RiComputerLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
+
 const Options = () => {
+  const {activeTab,navItems,active} = useAuth()
+
+  
   return (
     <div id="recharge" className="optionsContainer">
-      <Container className="container-bg">
+      <Container>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -40,78 +40,16 @@ const Options = () => {
           }}
           className="mySwiper"
         >
-          <SwiperSlide>
+          {
+            navItems.map((item,i)=><SwiperSlide key={i}>
           <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <AiOutlineMobile className=" fs-3 iconContainer1" />
-              <span className=" d-block">Mobile</span>
-            </Link>
+            <button onClick={()=>activeTab(item.linkName)} className={`linkOption ${active ? 'activetab' : ''}`}>
+              {item.iconName}
+              <span className=" d-block">{item.linkName}</span>
+            </button>
           </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/dth" className=" linkOption">
-              <RiComputerLine className=" fs-3 iconContainer2" />
-              <span className=" d-block">DTH</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/broadBand" className=" linkOption">
-              <AiOutlineWifi className=" fs-3 iconContainer3" />
-              <span className=" d-block">Broadband</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <BsTelephone className=" fs-3 iconContainer4" />
-              <span className=" d-block">Landphone</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <AiFillThunderbolt className=" fs-3 iconContainer1" />
-              <span className=" d-block">Electricity</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <MdLocalGasStation className=" fs-3 iconContainer2" />
-              <span className=" d-block">Gas</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <BsDropletHalf className=" fs-3 iconContainer3" />
-              <span className=" d-block">Water</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <AiOutlineMobile className=" fs-3 iconContainer4" />
-              <span className=" d-block">Mobile</span>
-            </Link>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="option text-center">
-            <Link to="/home" className=" linkOption">
-              <AiOutlineMobile className=" fs-3 iconContainer1" />
-              <span className=" d-block">Mobile</span>
-            </Link>
-          </div>
-          </SwiperSlide>
+          </SwiperSlide>)
+          }
         </Swiper>
       </Container>
     </div>

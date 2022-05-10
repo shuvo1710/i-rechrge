@@ -1,24 +1,24 @@
 import React from 'react';
-import BroadBandMenu from '../../Components/BroadBandMenu/BroadBandMenu';
 import Features from '../../Components/Features/Features';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
-import Offer from '../../Components/Offer/Offer';
-import Carousel from '../../Components/Slider/Slider';
+import Options from '../../Components/Options/Options';
+import RechargeMenu from '../../Components/RechargeMenu/RechargeMenu'
 import Subscriptions from '../../Components/Subscriptions/Subscriptions';
+import TopOffers from '../../Components/TopOffers/TopOffers';
 
-const BroadBandPage = () => {
+const RechargePage = () => {
     return (
         <div>
             <Header/>
-            <Carousel/>
-            <BroadBandMenu/>
-            <Offer/>
+            <Options/>
+            <RechargeMenu/>
             <Subscriptions/>
+            <TopOffers/>
             <Features/>
             <Footer/>
         </div>
     );
 };
 
-export default BroadBandPage;
+export default RechargePage;

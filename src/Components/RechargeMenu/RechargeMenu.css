@@ -9,14 +9,15 @@
 .rechargeButton {
     border: 1px solid transparent;
     padding: 10px 5px;
-    background: #30196c;
+    background: #fc7c51;
     color: white; 
-    transition: .1s;
+    transition: .4s;
     border-radius: 7px;
-    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0);
 }
 .rechargeButton:hover {
-    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.894);
+    border: 1px solid #fc7c51;
+    background: #ffffff;
+    color: #fc7c51;
 }
 .rechargeContainer {
     padding: 2rem 1rem;

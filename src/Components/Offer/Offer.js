@@ -112,31 +112,31 @@ const Offer = () => {
                 <div className="tabsHeader">
                   <button
                     onClick={showAll}
-                    className="border-0 bg-transparent mx-3"
+                    className={` bg-transparent mx-3 ${all ? 'activeBorder' : 'border-0'}`}
                   >
                     All
                   </button>
                   <button
                     onClick={showInternet}
-                    className="border-0 bg-transparent mx-3"
+                    className={`bg-transparent mx-3 ${internet ? 'activeBorder' : 'border-0 '}`}
                   >
                     Internet
                   </button>
                   <button
                     onClick={showtalkTime}
-                    className="border-0 bg-transparent mx-3"
+                    className={`bg-transparent mx-3 ${talkTime ? 'activeBorder' : 'border-0 '}`}
                   >
                     Talktime
                   </button>
                   <button
                     onClick={showCombo}
-                    className="border-0 bg-transparent mx-3"
+                    className={`bg-transparent mx-3 ${combo ? 'activeBorder' : 'border-0 '}`}
                   >
                     Combo
                   </button>
                   <button
                     onClick={showSms}
-                    className="border-0 bg-transparent mx-3"
+                    className={`bg-transparent mx-3 ${sms ? 'activeBorder' : 'border-0 '}`}
                   >
                     Sms
                   </button>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Modal, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../utilities/textLogo-removebg-preview.png";
-import { AiOutlineBars, AiOutlineHome } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineHome,AiOutlineLogin } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
 import { FaHandHoldingUsd, FaEnvelope, FaAngleRight } from "react-icons/fa";
@@ -23,7 +23,6 @@ import { GoLocation } from "react-icons/go";
 // import ProfileTab from "./ProfileTab/ProfileTab";
 // import { useRouteMatch } from "react-router-dom";
 // import OfferTab from "./OfferTab/OfferTab";
-import { NavHashLink } from "react-router-hash-link";
 import useAuth from "../../Hooks/useAuth";
 const Header = () => {
   // let { path, url } = useRouteMatch();
@@ -191,13 +190,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <NavHashLink
-                    to="/home/#recharge"
+                  <Link
+                    to="/recharge"
                     className="d-flex align-items-center"
                   >
                     <FaHandHoldingUsd className="me-2" />
                     Recharge & pay Bill
-                  </NavHashLink>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/feature" className="d-flex align-items-center">
@@ -221,7 +220,8 @@ const Header = () => {
                   </div>
                 </div>
               ) : (
-                <Link to="/login" className=" text-decoration-none text-dark">
+                <Link to="/login" className="lginAndSign">
+                  <AiOutlineLogin className="onlySmallScreen me-2"/>
                   Login / Sign Up
                 </Link>
               )}

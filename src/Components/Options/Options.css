@@ -14,10 +14,6 @@
     padding: 1rem 0;
     margin: 0;
 }
-.container-bg{
-    background: #ffffff;
-    border-radius: 7px;
-}
 .option {
     width: 100px;
     margin: 2px;
@@ -50,7 +46,7 @@
     background: rgb(0, 96, 251) !important;
     color: var(--primary) !important;
 }
-.linkOption:focus{
-    border-bottom: 2px solid red;
+.linkOption{
+    background: transparent;
+    border: none;
 }
-

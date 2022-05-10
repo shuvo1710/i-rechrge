@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Accordion, Container } from "react-bootstrap";
 import img from '../../utilities/SL-110119-24650-47-removebg-preview.png'
 import './Accordions.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Accordions = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="accordions">
         <Container>
       <div className="row align-items-center">
-        <div className="col-12 col-md-12 col-lg-6 col-xl-6">
+        <div  data-aos="zoom-out" className="col-12 col-md-12 col-lg-6 col-xl-6">
             <img className="w-100" src={img} alt="" />
         </div>
-        <div className="col-12 col-md-12 col-lg-6 col-xl-6">
+        <div  data-aos="zoom-out" className="col-12 col-md-12 col-lg-6 col-xl-6">
           <Accordion defaultActiveKey="0">
 
             <Accordion.Item eventKey="0">

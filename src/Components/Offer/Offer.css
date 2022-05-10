@@ -75,3 +75,10 @@
     background: #0087db;
     color: #ffffff;
 }
+.activeBorder {
+    border-bottom: 2px solid #f6921e !important;
+    border-top: 2px solid #f6911e00 !important;
+    border-left: 2px solid #f6911e00 !important;
+    border-right: 2px solid #f6911e00 !important;
+    padding-bottom: 5px;
+}

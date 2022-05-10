@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import './Feature1.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Feature1 = () => {
+    useEffect(() => {
+        Aos.init({ duration: 3000 });
+      }, []);
     return (
         <div className='featureOne'>
             <Container>
                 <div className="row align-items-center">
-                    <div className="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div data-aos="fade-right" className="col-12 col-md-6 col-lg-6 col-xl-6">
                         <h1>Easy Payment System  With<br /> Your Bank Card</h1>
                         <p>Transaction available with this card</p>
                         <ul className='transaction'>
@@ -30,7 +36,7 @@ const Feature1 = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div  data-aos="fade-left" className="col-12 col-md-6 col-lg-6 col-xl-6">
                         <img src="https://img.shoplineapp.com/media/image_clips/5f7d31e35fb5be0014ff6958/original.gif?1602040291" alt="" className="w-100" />
                     </div>
                 </div>
