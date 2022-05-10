@@ -23,7 +23,8 @@ import { GoLocation } from "react-icons/go";
 // import ProfileTab from "./ProfileTab/ProfileTab";
 // import { useRouteMatch } from "react-router-dom";
 // import OfferTab from "./OfferTab/OfferTab";
-import { NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from "react-router-hash-link";
+import useAuth from "../../Hooks/useAuth";
 const Header = () => {
   // let { path, url } = useRouteMatch();
   const [nav, setNav] = useState(false);
@@ -32,26 +33,27 @@ const Header = () => {
   };
   const history = useHistory();
   const [show, setShow] = useState(false);
-
+  const {user,setUser} = useAuth()
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [stickyNav,setStickyNav] = useState(false)
+  const [stickyNav, setStickyNav] = useState(false);
 
-  window.addEventListener('scroll',()=>{
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
-      setStickyNav(true)
+      setStickyNav(true);
     } else {
-      setStickyNav(false)
+      setStickyNav(false);
     }
-  })
+  });
   return (
-    <div className={`headerSection ${stickyNav ? 'sticky' : ''}`}>
+    <div className={`headerSection ${stickyNav ? "sticky" : ""}`}>
       <Modal centered show={show} onHide={handleClose} size="xl">
         <Modal.Header closeButton>
           <Modal.Title>Profile</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ul className="d-flex align-items-center text-secondary mb-2">
+          <div className="d-flex align-items-center justify-content-between mb-2">
+            <ul className="d-flex align-items-center text-secondary mb-2">
             <li>
               <Link className="text-secondary" to="/">
                 Home
@@ -66,6 +68,9 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <button onClick={()=>{setUser('');handleClose()}} className="bg-transparent border-1 rounded border-info text-info">Logout</button>
+          </div>
+          
 
           <div className="profileModalContainer">
             <div className="row">
@@ -100,7 +105,9 @@ const Header = () => {
                             <tr>
                               <th>
                                 <BsFillTelephoneFill className="me-3" />
-                                <span className="onlyBigScreen">Mobile Number</span>
+                                <span className="onlyBigScreen">
+                                  Mobile Number
+                                </span>
                               </th>
                               <td>017XXXXXXXX</td>
                             </tr>
@@ -184,7 +191,10 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <NavHashLink to="/home/#recharge" className="d-flex align-items-center">
+                  <NavHashLink
+                    to="/home/#recharge"
+                    className="d-flex align-items-center"
+                  >
                     <FaHandHoldingUsd className="me-2" />
                     Recharge & pay Bill
                   </NavHashLink>
@@ -198,21 +208,23 @@ const Header = () => {
               </ul>
             </div>
             <div className="responsiveWidth">
-            <div className="profileContainer">
-              <div className="d-flex align-items-center rowReverse">
-                <div className="responsMargin">
-                <h6 className="m-0">Mark Otto</h6>
-                <span>$ 126.00</span>
+              {user?.email ? (
+                <div className="profileContainer">
+                  <div className="d-flex align-items-center rowReverse">
+                    <div className="responsMargin">
+                      <h6 className="m-0">Mark Otto</h6>
+                      <span>$ 126.00</span>
+                    </div>
+                    <div onClick={handleShow} className="profileImage">
+                      <img src={modalImage} alt="" className="w-100 h-100" />
+                    </div>
+                  </div>
                 </div>
-              <div onClick={handleShow} className="profileImage">
-                <img
-                  src={modalImage}
-                  alt=""
-                  className="w-100 h-100"
-                />
-              </div>
-              </div>
-            </div>
+              ) : (
+                <Link to="/login" className=" text-decoration-none text-dark">
+                  Login / Sign Up
+                </Link>
+              )}
             </div>
           </div>
           <div className="closeBtnContainer">

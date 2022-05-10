@@ -13,6 +13,8 @@ import NotFound from "./Pages/NotFound/NotFound";
 import BroadBandPage from "./Pages/BroadBandPage/BroadBandPage";
 import DTHPage from "./Pages/DTHPage/DTHPage";
 import FeaturePage from "./Pages/FeaturePage/FeaturePage";
+import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 
 function App() {
   const [loader, setLoader] = useState(false);
@@ -66,6 +68,12 @@ function App() {
               </Route>
               <Route path="/feature">
                 <FeaturePage />
+              </Route>
+              <Route path="/login">
+                <Login />
+              </Route>
+              <Route path="/signup">
+                <SignUp/>
               </Route>
               {/* <PrivetRoute path="/admin">
 

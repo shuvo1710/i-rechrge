@@ -43,6 +43,29 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+  .homeBtn {
+    top: 27% !important;
+}
+  .loginForm input {
+    width: 100% !important;
+}
+/* .loginForm {
+  padding: 10px !important;
+} */
+.loginForm {
+  padding: 10px !important;
+  border-top-left-radius: 20px;
+  background: #e1e1e1;
+  border-top-right-radius: 20px;
+  height: 77vh;
+  padding-top: 5rem !important;
+}
+.loginForm h2 {
+  font-size: 2rem !important;
+}
+.column-reverse{
+  flex-direction: column-reverse;
+}
   .footer ul li {
     line-height: 22px !important;
 }
@@ -190,6 +213,21 @@ ul.transaction li img {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  .loginForm input {
+    width: 100% !important;
+}
+.singleInput {
+  margin-bottom: 0rem !important;
+}
+.loginForm h2 {
+  margin-bottom: 1rem !important;
+}
+.loginForm {
+  padding: 10px !important;
+}
+.loginForm h2 {
+  font-size: 2rem !important;
+}
   ul.transaction {
     grid-template-columns: repeat(3,1fr) !important;
 }
