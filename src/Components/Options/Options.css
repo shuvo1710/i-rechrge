@@ -10,22 +10,20 @@
 }
 .optionsContainer {
     position: relative;
-    background: #ffffff;
-    padding: 1rem 0;
+    background: #04075c;
+    padding: .5rem 0 0 0;
     margin: 0;
 }
 .option {
     width: 100px;
-    margin: 2px;
     /* border: 1px solid rgb(255, 255, 255); */
     height: 70px;
     color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px 5px;
     position: relative;
     overflow: hidden;
     transition: .4s;
@@ -35,6 +33,8 @@
     padding: .4rem;
     border-radius: 50%;
     font-size: 2.5rem !important;
+    position: relative;
+    z-index: -1;
 }
 .option1{
     background: #009dff;
@@ -49,4 +49,25 @@
 .linkOption{
     background: transparent;
     border: none;
+    position: relative;
+    z-index: 5;
+    width: 130px;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    overflow: hidden;
+}
+
+button.linkOption:focus {
+    background: white !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    padding: 5px 0 !important;
+    color: #04075c !important;
+}
+button.linkOption:focus span {
+    color: black !important;
+}
+button.linkOption span {
+    color: white;
+    font-size: .8rem;
 }

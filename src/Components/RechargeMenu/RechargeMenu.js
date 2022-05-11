@@ -13,15 +13,15 @@ import Water from '../Recharge/Water/Water'
 const RechargeMenu = () => {
   const {activeState} = useAuth()
   return (
-    <div className="rechargeMenu bg-transparent">
+    <div className="rechargeMenu">
       <Container className="p-0">
         <div className="">
           <div className="rechargeContainer">
           <div className="row align-items-center">
-            <div className="col-12 col-md-6 col-lg-8 col-xl-8">
+            <div className="col-12 col-md-6 col-lg-7 col-xl-7">
               <OfferSlider />
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-4">
+            <div className="col-12 col-md-6 col-lg-5 col-xl-5">
               {
                 activeState === 'Mobile' && <Mobile />
               }

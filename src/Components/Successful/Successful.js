@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Modal } from "react-bootstrap";
 import anim from "../../utilities/successful.gif";
 import "./Successful.css";
-// import successFullGif from '../../utilities/iconGif.gif'
 import useAuth from '../../Hooks/useAuth'
 const Successful = () => {
     const {successful,handleClose} = useAuth()
+
   return (
     <div>
       <Modal show={successful} onHide={handleClose} size="">
@@ -69,7 +69,7 @@ const Successful = () => {
             <div className="actionsButtons mt-3">
                 <div className="row">
                     <div className="col-4 p-1">
-                        <button className="iconContainer1 border-0 text-light py-2 px-3 rounded">Save</button>
+                        <button className='iconContainer1 border-0 text-light py-2 px-3 rounded'>Save</button>
                     </div>
                     <div className="col-4 p-1">
                         <button className="iconContainer2 border-0 text-light py-2 px-3 rounded">Print</button>

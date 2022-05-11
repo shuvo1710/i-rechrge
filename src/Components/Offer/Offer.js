@@ -106,7 +106,7 @@ const Offer = () => {
             </Modal.Body>
           </Modal>
           <Container>
-            <h3 className="mb-3 text-center">Our Offer</h3>
+            <h3 className="text-center">Our Offer</h3>
             <div className="offersContainer">
               <div>
                 <div className="tabsHeader">

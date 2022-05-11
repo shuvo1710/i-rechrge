@@ -1,14 +1,11 @@
 .offersContainer{
-    /* background: url('../../utilities/offerbg.jpg'); */
-    /* background: linear-gradient(45deg, white, white); */
-    background: white;
+    background: rgba(255, 255, 255, 0);
     min-height: 60vh;
     width: 100%;
     background-size: 100% 100%;
     padding: 3rem;
     border-radius: 10px;
     overflow-y: hidden;
-    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
 } 
 .operatorImage {
     height: 45px;
@@ -55,7 +52,7 @@
     left: 0%;
 }
 .offerSection {
-    padding: 0rem 0rem 7rem 0rem;
+    padding: 7rem 0rem;
     background: url('../../utilities/offerbg.jpg');
     background-size: 100% 100%;
 }
