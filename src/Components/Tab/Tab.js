@@ -51,7 +51,7 @@ const Tab = () => {
               <OfferSlider />
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-4">
-              <LandPhone/>
+              <LandPhone />
             </div>
           </div>
         </Tab>
@@ -61,7 +61,7 @@ const Tab = () => {
               <OfferSlider />
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-4">
-              <LandPhone/>
+              <LandPhone />
             </div>
           </div>
         </Tab>
@@ -71,7 +71,7 @@ const Tab = () => {
               <OfferSlider />
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-4">
-              <LandPhone/>
+              <LandPhone />
             </div>
           </div>
         </Tab>
@@ -81,7 +81,7 @@ const Tab = () => {
               <OfferSlider />
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-4">
-              <LandPhone/>
+              <LandPhone />
             </div>
           </div>
         </Tab>
@@ -91,12 +91,11 @@ const Tab = () => {
               <OfferSlider />
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-4">
-              <LandPhone/>
+              <LandPhone />
             </div>
           </div>
         </Tab>
       </Tabs>
-     
     </Container>
   );
 };

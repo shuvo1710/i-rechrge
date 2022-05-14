@@ -8,7 +8,7 @@ const Mobile = () => {
     history.push("/order");
   };
   return (
-    <div>
+    <div className="rechargeItemMenu">
       <h3>Mobile Recharge or Bill Payment</h3>
       <Form>
         <div key="inline-radio" className="mb-4">
@@ -38,7 +38,10 @@ const Mobile = () => {
             className="border-0 border-bottom rounded-0"
           />
         </div>
-        <Form.Select className="mb-4 border-0 border-bottom rounded-0" aria-label="Default select example">
+        <Form.Select
+          className="mb-4 border-0 border-bottom rounded-0"
+          aria-label="Default select example"
+        >
           <option>Select Your Operator</option>
           <option value="1">Grameen</option>
           <option value="2">Airtel</option>
@@ -51,7 +54,7 @@ const Mobile = () => {
             placeholder="$$ Enter Amount"
           />
         </InputGroup>
-        <button onClick={OrderNow} className="w-100 rechargeButton">
+        <button onClick={OrderNow} className="rechargeButton">
           Recharge Now
         </button>
       </form>

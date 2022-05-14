@@ -1,23 +1,23 @@
 .counterContainer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.7rem .7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.7rem 0.7rem;
 }
 .counterImg img {
-    height: 22vh;
-    object-fit: cover;
+  height: 22vh;
+  object-fit: cover;
 }
-.counterText{
-    color: rgb(253, 123, 123);
+.counterText {
+  color: rgb(253, 123, 123);
 }
 .singleCounter {
-    border: 2px solid rgb(253, 123, 123) !important;
-    padding: .6rem;
-    position: relative;
+  border: 2px solid rgb(253, 123, 123) !important;
+  padding: 0.6rem;
+  position: relative;
 }
 
 .singleCounter h5 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }

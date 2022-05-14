@@ -1,33 +1,49 @@
 .carousel-item img {
-    height: 35vh;
-    object-fit: cover;
-    border-radius: 10px;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rechargeBg {
+  padding: 7rem 0;
+  background: url("../../utilities/v613-taus-16-urbangradientbackground.jpg");
+  background-size: contain;
+  height: 40vh;
+  width: 100%;
 }
 .rechargeMenu {
-    padding: 0rem 0 8rem 0;
-    background: #f9f9f9;
+    margin-top: -20rem;
 }
 .rechargeButton {
-    border: 1px solid transparent;
-    padding: 10px 5px;
-    background: #fc7c51;
-    color: white; 
-    transition: .4s;
-    border-radius: 7px;
+  border: 1px solid transparent;
+  padding: 10px 5px;
+  background: var(--third);
+  color: var(--primary);
+  transition: 0.4s;
+  border-radius: 7px;
+  position: absolute;
+  bottom: -6%;
+  left: 5%;
+  width: 90%;
 }
 .rechargeButton:hover {
-    border: 1px solid #fc7c51;
-    background: #ffffff;
-    color: #fc7c51;
+  border: 1px solid var(--third);
+  background: var(--primary);
+  color: var(--third);
 }
 .rechargeContainer {
     padding: 2rem 1rem;
-    background: white;
-    box-shadow: 0 0 5px #e9e9e9;
+    background: rgb(255, 255, 255);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border: 1px solid #375a61;
 }
-.shadoW{
-box-shadow: 0 0 3px #80808066;
-
+.shadoW {
+  box-shadow: 0 0 3px #80808066;
+}
+.rechargeItemMenu {
+  height: 353px;
+  border: 1px solid var(--third);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
 }

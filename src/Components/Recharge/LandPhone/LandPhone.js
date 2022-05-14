@@ -8,7 +8,7 @@ const LandPhone = () => {
     history.push("/order");
   };
   return (
-    <div>
+    <div className="rechargeItemMenu">
       <h3>Land Phone</h3>
       <form>
         <Form.Select
@@ -27,7 +27,7 @@ const LandPhone = () => {
             placeholder="Account Number"
           />
         </InputGroup>
-        <button onClick={OrderNow} className="w-100 rechargeButton">
+        <button onClick={OrderNow} className="rechargeButton">
           Pay Now
         </button>
       </form>

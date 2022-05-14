@@ -1,19 +1,11 @@
-/* .footer {
-    padding: 3rem 0;
-    background: #30196c;
-    color: white;
-} */
-/* .footer a {
-    color: white;
-} */
 .footer a {
-    color: #767676;
+  color: #767676;
 }
 .footer {
-    padding: 3rem 0;
-    background: #f9f9f9;
-    color: #3c3c3c;
+  padding: 3rem 0;
+  background: #f9f9f9;
+  color: #3c3c3c;
 }
 .footer ul li {
-    line-height: 37px;
+  line-height: 37px;
 }

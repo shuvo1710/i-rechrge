@@ -6,20 +6,20 @@ import Header from "../../Components/Header/Header";
 import Offer from "../../Components/Offer/Offer";
 import Subscriptions from "../../Components/Subscriptions/Subscriptions";
 import TopOffers from "../../Components/TopOffers/TopOffers";
-import Options from "../../Components/Options/Options";
-import RechargeMenu from '../../Components/RechargeMenu/RechargeMenu'
+import RechargeMenu from "../../Components/RechargeMenu/RechargeMenu";
+import SubHeader from "../../Components/SubHeader/SubHeader";
 const Home = () => {
   return (
     <div className="bg-transparent">
-      <Header/>
-      <Slider/>
-      <Options/>
-      <RechargeMenu/>
-      <Offer/>
-      <Subscriptions/>
-      <TopOffers/>
-      <Features/>
-      <Footer/>
+      <SubHeader/>
+      <Header />
+      <Slider />
+      <RechargeMenu />
+      <Offer />
+      <Subscriptions />
+      <TopOffers />
+      <Features />
+      <Footer />
     </div>
   );
 };

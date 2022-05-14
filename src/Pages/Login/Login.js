@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -7,21 +7,15 @@ import loginImg from "../../utilities/5098293.jpg";
 import { AiOutlineHome } from "react-icons/ai";
 import "./Login.css";
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const { setUser } = useAuth();
   const history = useHistory();
-  const saveEmail = (e) => {
-    setEmail(e.target.value);
+
+  let data = {
+    email: "example@getDefaultNormalizer.com",
+    password: "123456",
   };
-  const savePassword = (e) => {
-    setPassword(e.target.value);
-  };
-  let data = {};
   const signIn = (e) => {
     e.preventDefault();
-    data.email = email;
-    data.password = password;
     setUser(data);
     if (data?.email) {
       history.push("/home");
@@ -51,11 +45,10 @@ const Login = () => {
                         Email Address
                       </label>
                       <input
-                        onChange={saveEmail}
                         className=""
                         type="email"
                         placeholder="Email Address"
-                        required
+                        defaultValue="example@gmail.com"
                       />
                     </div>
                     <div className="singleInput">
@@ -63,10 +56,10 @@ const Login = () => {
                         Password
                       </label>
                       <input
-                        onChange={savePassword}
                         className=""
                         type="password"
                         placeholder="Password"
+                        defaultValue="123456"
                       />
                     </div>
                     <input

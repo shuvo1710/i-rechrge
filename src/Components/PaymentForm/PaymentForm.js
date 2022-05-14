@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./PaymentForm.css";
 import { BsFillCreditCard2BackFill, BsInfoCircle } from "react-icons/bs";
 import { FiRefreshCw } from "react-icons/fi";
@@ -97,10 +97,7 @@ const PaymentForm = () => {
                     </div>
                   </div>
                   {/* <input className="py-1 px-3" type="submit" value="Proceed to Pay" /> */}
-                  <button
-                    onClick={proceed}
-                    className="proceed rounded"
-                  >
+                  <button onClick={proceed} className="proceed rounded">
                     Proceed to Pay
                   </button>
                 </form>

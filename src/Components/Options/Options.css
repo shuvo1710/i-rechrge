@@ -1,73 +1,83 @@
-::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-  }
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .allOptions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  overflow-x: scroll;
 }
 .optionsContainer {
-    position: relative;
-    background: #04075c;
-    padding: .5rem 0 0 0;
-    margin: 0;
+  position: relative;
+  background: var(--third);
+  padding: 0.5rem 0 0 0;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .option {
-    width: 100px;
-    /* border: 1px solid rgb(255, 255, 255); */
-    height: 70px;
-    color: var(--secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px 5px;
-    position: relative;
-    overflow: hidden;
-    transition: .4s;
+  width: 100px;
+  /* border: 1px solid rgb(255, 255, 255); */
+  height: 70px;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
 }
 .option svg {
-    color: white;
-    padding: .4rem;
-    border-radius: 50%;
-    font-size: 2.5rem !important;
-    position: relative;
-    z-index: -1;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+  font-size: 2.5rem !important;
+  position: relative;
+  z-index: -1;
 }
-.option1{
-    background: #009dff;
+.option1 {
+  background: #009dff;
 }
-.option2{
-    background: #9c77ff;
+.option2 {
+  background: #9c77ff;
 }
-.activeMenu{
-    background: rgb(0, 96, 251) !important;
-    color: var(--primary) !important;
+.activeMenu {
+  background: rgb(0, 96, 251) !important;
+  color: var(--primary) !important;
 }
-.linkOption{
-    background: transparent;
-    border: none;
-    position: relative;
-    z-index: 5;
-    width: 130px;
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
-    overflow: hidden;
+.linkOption {
+  background: transparent;
+  border: none;
+  position: relative;
+  z-index: 5;
+  width: 130px;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  overflow: hidden;
 }
 
 button.linkOption:focus {
-    background: white !important;
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
-    padding: 5px 0 !important;
-    color: #04075c !important;
+  background: white !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  padding: 6px 0 !important;
+  color: #04075c !important;
 }
+
 button.linkOption:focus span {
-    color: black !important;
+  color: black !important;
 }
 button.linkOption span {
-    color: white;
-    font-size: .8rem;
+  color: white;
+  font-size: 0.8rem;
+}
+.swiper-wrapper:first-child .swiper-slide .option button:focus {
+  background: rgb(255, 0, 0) !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  padding: 6px 0 !important;
+  color: #04075c !important;
 }

@@ -3,7 +3,11 @@ import { Container, Modal, Spinner } from "react-bootstrap";
 import "./Offer.css";
 import robi from "../../utilities/robi.PNG";
 import gp from "../../utilities/gp.png";
+import voda from "../../utilities/vodafone-plc-vector-logo-400x400.png";
+import starhub from "../../utilities/starhub.jpg";
+import du from "../../utilities/du.png";
 import airtel from "../../utilities/airtel-removebg-preview.png";
+import mOne from "../../utilities/mOne.png";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import offerImage from "../../utilities/3777.jpg";
 const Offer = () => {
@@ -112,31 +116,31 @@ const Offer = () => {
                 <div className="tabsHeader">
                   <button
                     onClick={showAll}
-                    className={` bg-transparent mx-3 ${all ? 'activeBorder' : 'border-0'}`}
+                    className={` mx-3 ${all ? "activeBorder" : ""}`}
                   >
                     All
                   </button>
                   <button
                     onClick={showInternet}
-                    className={`bg-transparent mx-3 ${internet ? 'activeBorder' : 'border-0 '}`}
+                    className={` mx-3 ${internet ? "activeBorder" : " "}`}
                   >
                     Internet
                   </button>
                   <button
                     onClick={showtalkTime}
-                    className={`bg-transparent mx-3 ${talkTime ? 'activeBorder' : 'border-0 '}`}
+                    className={` mx-3 ${talkTime ? "activeBorder" : " "}`}
                   >
                     Talktime
                   </button>
                   <button
                     onClick={showCombo}
-                    className={`bg-transparent mx-3 ${combo ? 'activeBorder' : 'border-0 '}`}
+                    className={` mx-3 ${combo ? "activeBorder" : ""}`}
                   >
                     Combo
                   </button>
                   <button
                     onClick={showSms}
-                    className={`bg-transparent mx-3 ${sms ? 'activeBorder' : 'border-0 '}`}
+                    className={` mx-3 ${sms ? "activeBorder" : " "}`}
                   >
                     Sms
                   </button>
@@ -144,7 +148,6 @@ const Offer = () => {
                 <div className="tabsContent mt-5">
                   {all && (
                     <div className="allContent text-center">
-                      <h1>All</h1>
                       <div className="allOffers">
                         <div onClick={handleShow} className="singleOffer">
                           <div className="offerHeader">
@@ -152,6 +155,302 @@ const Offer = () => {
                               60 GB + 1200 Minutes
                             </span>
                             <div className="operatorImage">
+                              <img src={voda} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img
+                                src={starhub}
+                                alt=""
+                                className="w-100 h-100"
+                              />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={mOne} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={du} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={robi} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={gp} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img
+                                src={airtel}
+                                alt=""
+                                className="w-100 h-100"
+                              />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={robi} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={voda} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img
+                                src={starhub}
+                                alt=""
+                                className="w-100 h-100"
+                              />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={mOne} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
+                              <img src={du} alt="" className="w-100 h-100" />
+                            </div>
+                          </div>
+                          <div className="offerContent">
+                            <div className="mt-1 d-flex align-items-center justify-content-between">
+                              <span>
+                                <AiOutlineClockCircle /> 15 Days
+                              </span>
+                              <span className="py-0 px-2 rounded border border-primary">
+                                Prepaid
+                              </span>
+                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                $ 6.00
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div onClick={handleShow} className="singleOffer">
+                          <div className="offerHeader">
+                            <span className="text-dark fs-6">
+                              60 GB + 1200 Minutes
+                            </span>
+                            <div className="operatorImage">
                               <img
                                 src={airtel}
                                 alt=""
@@ -254,56 +553,8 @@ const Offer = () => {
                               60 GB + 1200 Minutes
                             </span>
                             <div className="operatorImage">
-                              <img src={robi} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={gp} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
                               <img
-                                src={airtel}
+                                src={starhub}
                                 alt=""
                                 className="w-100 h-100"
                               />
@@ -330,255 +581,7 @@ const Offer = () => {
                               60 GB + 1200 Minutes
                             </span>
                             <div className="operatorImage">
-                              <img src={gp} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={robi} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img
-                                src={airtel}
-                                alt=""
-                                className="w-100 h-100"
-                              />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={robi} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={gp} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img
-                                src={airtel}
-                                alt=""
-                                className="w-100 h-100"
-                              />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={gp} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={robi} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img
-                                src={airtel}
-                                alt=""
-                                className="w-100 h-100"
-                              />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={robi} alt="" className="w-100 h-100" />
-                            </div>
-                          </div>
-                          <div className="offerContent">
-                            <div className="mt-1 d-flex align-items-center justify-content-between">
-                              <span>
-                                <AiOutlineClockCircle /> 15 Days
-                              </span>
-                              <span className="py-0 px-2 rounded border border-primary">
-                                Prepaid
-                              </span>
-                              <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                $ 6.00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div onClick={handleShow} className="singleOffer">
-                          <div className="offerHeader">
-                            <span className="text-dark fs-6">
-                              60 GB + 1200 Minutes
-                            </span>
-                            <div className="operatorImage">
-                              <img src={gp} alt="" className="w-100 h-100" />
+                              <img src={voda} alt="" className="w-100 h-100" />
                             </div>
                           </div>
                           <div className="offerContent">
@@ -604,7 +607,6 @@ const Offer = () => {
                   )}
                   {internet && (
                     <div className="internet text-center">
-                      <h1>internet</h1>
                       <div className="allContent text-center">
                         <div className="allOffers">
                           <div onClick={handleShow} className="singleOffer">
@@ -614,215 +616,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={robi}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={robi}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={robi}
+                                  src={voda}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -850,10 +644,61 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
+                                  src={starhub}
                                   alt=""
                                   className="w-100 h-100"
                                 />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={mOne}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={du} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -905,6 +750,168 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img src={gp} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={airtel}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={robi}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={voda}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={starhub}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={mOne}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={du} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -933,7 +940,6 @@ const Offer = () => {
                   )}
                   {talkTime && (
                     <div className="talktime text-center">
-                      <h1>talktime</h1>
                       <div className="allContent text-center">
                         <div className="allOffers">
                           <div onClick={handleShow} className="singleOffer">
@@ -943,7 +949,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
+                                  src={voda}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -970,7 +976,62 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
+                                <img
+                                  src={starhub}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={mOne}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={du} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -1014,6 +1075,31 @@ const Offer = () => {
                               </div>
                             </div>
                           </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={gp} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
                           <div onClick={handleShow} className="singleOffer">
                             <div className="offerHeader">
                               <span className="text-dark fs-6">
@@ -1041,6 +1127,7 @@ const Offer = () => {
                               </div>
                             </div>
                           </div>
+
                           <div onClick={handleShow} className="singleOffer">
                             <div className="offerHeader">
                               <span className="text-dark fs-6">
@@ -1068,31 +1155,6 @@ const Offer = () => {
                               </div>
                             </div>
                           </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
                           <div onClick={handleShow} className="singleOffer">
                             <div className="offerHeader">
                               <span className="text-dark fs-6">
@@ -1100,57 +1162,10 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
+                                  src={voda}
                                   alt=""
                                   className="w-100 h-100"
                                 />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -1179,7 +1194,6 @@ const Offer = () => {
                   )}
                   {combo && (
                     <div className="combo text-center">
-                      <h1>combo</h1>
                       <div className="allContent text-center">
                         <div className="allOffers">
                           <div onClick={handleShow} className="singleOffer">
@@ -1189,7 +1203,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
+                                  src={voda}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1216,31 +1230,8 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
                                 <img
-                                  src={robi}
+                                  src={starhub}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1267,34 +1258,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={robi}
+                                  src={mOne}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1321,59 +1285,7 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
+                                <img src={du} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -1424,11 +1336,221 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
+                                <img src={gp} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
                                 <img
                                   src={airtel}
                                   alt=""
                                   className="w-100 h-100"
                                 />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={robi}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={voda}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={starhub}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={mOne}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={du} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={airtel}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={gp} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -1508,7 +1630,6 @@ const Offer = () => {
                   )}
                   {sms && (
                     <div className="sms text-center">
-                      <h1>sms</h1>
                       <div className="allContent text-center">
                         <div className="allOffers">
                           <div onClick={handleShow} className="singleOffer">
@@ -1518,7 +1639,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
+                                  src={voda}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1545,31 +1666,8 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
                                 <img
-                                  src={robi}
+                                  src={starhub}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1596,34 +1694,7 @@ const Offer = () => {
                               </span>
                               <div className="operatorImage">
                                 <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={robi}
+                                  src={mOne}
                                   alt=""
                                   className="w-100 h-100"
                                 />
@@ -1650,59 +1721,7 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img
-                                  src={airtel}
-                                  alt=""
-                                  className="w-100 h-100"
-                                />
-                              </div>
-                            </div>
-                            <div className="offerContent">
-                              <div className="mt-1 d-flex align-items-center justify-content-between">
-                                <span>
-                                  <AiOutlineClockCircle /> 15 Days
-                                </span>
-                                <span className="py-0 px-2 rounded border border-primary">
-                                  Prepaid
-                                </span>
-                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
-                                  $ 6.00
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div onClick={handleShow} className="singleOffer">
-                            <div className="offerHeader">
-                              <span className="text-dark fs-6">
-                                60 GB + 1200 Minutes
-                              </span>
-                              <div className="operatorImage">
-                                <img src={gp} alt="" className="w-100 h-100" />
+                                <img src={du} alt="" className="w-100 h-100" />
                               </div>
                             </div>
                             <div className="offerContent">
@@ -1753,6 +1772,30 @@ const Offer = () => {
                                 60 GB + 1200 Minutes
                               </span>
                               <div className="operatorImage">
+                                <img src={gp} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
                                 <img
                                   src={airtel}
                                   alt=""
@@ -1774,7 +1817,193 @@ const Offer = () => {
                               </div>
                             </div>
                           </div>
-                          
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={robi}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={voda}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={starhub}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={mOne}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={du} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img
+                                  src={airtel}
+                                  alt=""
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div onClick={handleShow} className="singleOffer">
+                            <div className="offerHeader">
+                              <span className="text-dark fs-6">
+                                60 GB + 1200 Minutes
+                              </span>
+                              <div className="operatorImage">
+                                <img src={gp} alt="" className="w-100 h-100" />
+                              </div>
+                            </div>
+                            <div className="offerContent">
+                              <div className="mt-1 d-flex align-items-center justify-content-between">
+                                <span>
+                                  <AiOutlineClockCircle /> 15 Days
+                                </span>
+                                <span className="py-0 px-2 rounded border border-primary">
+                                  Prepaid
+                                </span>
+                                <span className="border-0 py-0 px-2 rounded bgPrimary text-light">
+                                  $ 6.00
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
                           <div onClick={handleShow} className="singleOffer">
                             <div className="offerHeader">
                               <span className="text-dark fs-6">

@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import useAuth from "../../Hooks/useAuth";
 
 const Options = () => {
-  const {activeTab,navItems} = useAuth()
+  const { activeTab, navItems } = useAuth();
   return (
     <div id="recharge" className="optionsContainer">
       <Container>
@@ -38,16 +38,19 @@ const Options = () => {
           }}
           className="mySwiper"
         >
-          {
-            navItems.map((item,i)=><SwiperSlide key={i}>
-          <div className="option text-center">
-            <button onClick={()=>activeTab(item.linkName)} className='linkOption'>
-              {item.iconName}
-              <span className=" d-block">{item.linkName}</span>
-            </button>
-          </div>
-          </SwiperSlide>)
-          }
+          {navItems.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div className="option text-center">
+                <button
+                  onClick={() => activeTab(item.linkName)}
+                  className="linkOption"
+                >
+                  {item.iconName}
+                  <span className=" d-block">{item.linkName}</span>
+                </button>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </Container>
     </div>

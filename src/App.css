@@ -1,10 +1,10 @@
 /* Project Name: iRecharge */
 /* Tag: Online Moibile Recharge and Bill Pay UI Template | Reac JS */
-
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Nunito&display=swap");
 :root {
-  --primary: rgb(236, 236, 236);
-  --secondary: #30196c;
+  --primary: rgb(255, 255, 255);
+  --secondary: #ff735c;
+  --third: #375a61;
 }
 body,
 html {
@@ -31,107 +31,121 @@ h6 {
   padding: 0;
   font-weight: 100 !important;
 }
-.preloader{
+.preloader {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.animation{
-  animation: fade .5s;
+.animation {
+  animation: fade 0.5s;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+  .featureOne {
+    background-size: cover !important;
+  }
+  .rechargeMenu {
+    margin-top: 0 !important;
+  }
+  .rechargeItemMenu {
+    margin-bottom: 2rem;
+  }
+  .rechargeBg {
+    background-image: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+  }
   .lginAndSign {
     display: flex;
     align-items: center;
     padding: 3rem 0 1rem 2rem;
-}
+  }
   .homeBtn {
     top: 27% !important;
-}
+  }
   .loginForm input {
     width: 100% !important;
-}
-/* .loginForm {
+  }
+  /* .loginForm {
   padding: 10px !important;
 } */
-.loginForm {
-  padding: 10px !important;
-  border-top-left-radius: 20px;
-  background: #e1e1e1;
-  border-top-right-radius: 20px;
-  height: 77vh;
-  padding-top: 5rem !important;
-}
-.loginForm h2 {
-  font-size: 2rem !important;
-}
-.column-reverse{
-  flex-direction: column-reverse;
-}
+  .loginForm {
+    padding: 10px !important;
+    border-top-left-radius: 20px;
+    background: #e1e1e1;
+    border-top-right-radius: 20px;
+    height: 77vh;
+    padding-top: 5rem !important;
+  }
+  .loginForm h2 {
+    font-size: 2rem !important;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
   .footer ul li {
     line-height: 22px !important;
-}
+  }
   .counterContainer {
-    grid-template-columns: repeat(1,1fr) !important;
-}
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
   .accordion-button {
     font-size: 1rem !important;
-}
+  }
   ul.transaction {
-    grid-template-columns: repeat(2,1fr) !important;
-}
-ul.transaction li img {
-  width: 100% !important;
-}
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  ul.transaction li img {
+    width: 100% !important;
+  }
   .subInfo {
     right: 0% !important;
-}
-.subInfo:after {
-  left: 78% !important;
-}
+  }
+  .subInfo:after {
+    left: 78% !important;
+  }
   .errorContainer {
     width: 100% !important;
-}
+  }
   .footer h4 {
     font-weight: 400 !important;
     font-size: 1.3rem !important;
-}
+  }
   .actionsButtons {
     width: 100% !important;
-}
+  }
   .discountSection {
     padding: 1rem 0 !important;
     background: #f9f9f9;
-}
+  }
   .invoice {
     width: 100% !important;
     padding: 1rem !important;
-}
-.navContainer {
-  width: 100%;
-  /* display: block !important; */
-  position: fixed;
-  top: 0;
-  width: 273px;
-  background: linear-gradient(-85deg, #f6f6f6, white);
-  z-index: 555;
-  height: 100vh;
-  left: -100%;
-  flex-direction: column-reverse;
-  justify-content: start !important;
-}
-.responsiveWidth{
-  width: 100%;
-}
-.rowReverse{
-  flex-direction: row-reverse;
-}
-.responsMargin{
-  margin-left: 1rem;
-}
+  }
+  .navContainer {
+    width: 100%;
+    /* display: block !important; */
+    position: fixed;
+    top: 0;
+    width: 273px;
+    background: linear-gradient(-85deg, #f6f6f6, white);
+    z-index: 555;
+    height: 100vh;
+    left: -100%;
+    flex-direction: column-reverse;
+    justify-content: start !important;
+  }
+  .responsiveWidth {
+    width: 100%;
+  }
+  .rowReverse {
+    flex-direction: row-reverse;
+  }
+  .responsMargin {
+    margin-left: 1rem;
+  }
   .linksContainer ul {
     display: block !important;
   }
@@ -144,7 +158,7 @@ ul.transaction li img {
     justify-content: start !important;
     padding: 2rem;
     background: #ffffff;
-}
+  }
   .closeBtnContainer {
     display: block !important;
   }
@@ -187,11 +201,12 @@ ul.transaction li img {
     width: 100% !important;
   }
   .tabsHeader button {
-    border: 1px solid darkgrey !important;
+    border: 1px solid var(--secondary);
     width: 100%;
     margin: 0 !important;
     border-radius: 7px;
-}
+    background: white;
+  }
   .orderInfoContainer {
     width: 100% !important;
     padding: 0.4rem !important;
@@ -210,41 +225,41 @@ ul.transaction li img {
   }
 }
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .loginForm input {
     width: 100% !important;
-}
-.singleInput {
-  margin-bottom: 0rem !important;
-}
-.loginForm h2 {
-  margin-bottom: 1rem !important;
-}
-.loginForm {
-  padding: 10px !important;
-}
-.loginForm h2 {
-  font-size: 2rem !important;
-}
+  }
+  .singleInput {
+    margin-bottom: 0rem !important;
+  }
+  .loginForm h2 {
+    margin-bottom: 1rem !important;
+  }
+  .loginForm {
+    padding: 10px !important;
+  }
+  .loginForm h2 {
+    font-size: 2rem !important;
+  }
   ul.transaction {
-    grid-template-columns: repeat(3,1fr) !important;
-}
-ul.transaction li img {
-  width: 100% !important;
-}
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  ul.transaction li img {
+    width: 100% !important;
+  }
   .actionsButtons {
     width: 60% !important;
-}
+  }
   .invoice {
     width: 65% !important;
-}
+  }
   .logo {
     height: 35px !important;
     width: 132px !important;
@@ -262,7 +277,7 @@ ul.transaction li img {
   }
   .tabsHeader {
     width: 70%;
-}
+  }
   .allOffers {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -270,17 +285,17 @@ ul.transaction li img {
     grid-template-columns: repeat(4, 1fr) !important;
     width: 100% !important;
   }
-.orderInfoContainer {
+  .orderInfoContainer {
     width: 70% !important;
-}
+  }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .actionsButtons {
     width: 60% !important;
-}
+  }
   .invoice {
     width: 55% !important;
-}
+  }
   .allOffers {
     grid-template-columns: repeat(3, 1fr) !important;
   }

@@ -1,18 +1,18 @@
 .subFeaturedOffer {
-    color: #2d24a3;
-    transition: .4s;
+  color: #2d24a3;
+  transition: 0.4s;
 }
 .featuredOffer {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 5px #e6e6e6;
-    cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #e6e6e6;
+  cursor: pointer;
 }
 .featuredOffer:hover .subFeaturedOffer {
-    background: rgba(0, 0, 0, 0.584);
-    color: #ffffff;
+  background: rgba(0, 0, 0, 0.584);
+  color: #ffffff;
 }
 .discountSection {
-    padding: 5rem 0;
-    background: #f9f9f9;
+  padding: 5rem 0;
+  background: #f9f9f9;
 }

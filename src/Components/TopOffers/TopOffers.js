@@ -20,35 +20,29 @@ const TopOffers = () => {
               <div className="subFeaturedOffer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start p-3">
                 <div>
                   <h3 className="fw-bold">5% Off on Refer</h3>
-                  <p>
-                    Refer your friend and get 5% off
-                  </p>
+                  <p>Refer your friend and get 5% off</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-4 col-xl-4 p-1">
-          <div className="featuredOffer position-relative">
+            <div className="featuredOffer position-relative">
               <img src={img2} alt="" className="w-100 h-100" />
               <div className="subFeaturedOffer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start p-3">
                 <div>
                   <h3 className="fw-bold">5% Off on Electricity</h3>
-                  <p>
-                    Get 5% off on electricity bill
-                  </p>
+                  <p>Get 5% off on electricity bill</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-4 col-xl-4 p-1">
-          <div className="featuredOffer position-relative">
+            <div className="featuredOffer position-relative">
               <img src={img} alt="" className="w-100 h-100" />
               <div className="subFeaturedOffer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start p-3">
                 <div>
                   <h3 className="fw-bold">5% Off on Electricity</h3>
-                  <p>
-                    Get 5% off on electricity bill
-                  </p>
+                  <p>Get 5% off on electricity bill</p>
                 </div>
               </div>
             </div>
@@ -56,27 +50,23 @@ const TopOffers = () => {
         </div>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-6 col-xl-6 p-1">
-          <div className="featuredOffer position-relative">
+            <div className="featuredOffer position-relative">
               <img src={img2} alt="" className="w-100 h-100" />
               <div className="subFeaturedOffer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start p-3">
                 <div>
                   <h3 className="fw-bold">5% Off on Electricity</h3>
-                  <p>
-                    Get 5% off on electricity bill
-                  </p>
+                  <p>Get 5% off on electricity bill</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-6 col-xl-6 p-1">
-          <div className="featuredOffer position-relative">
+            <div className="featuredOffer position-relative">
               <img src={img3} alt="" className="w-100 h-100" />
               <div className="subFeaturedOffer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start p-3">
                 <div>
                   <h3 className="fw-bold">5% Off on Electricity</h3>
-                  <p>
-                    Get 5% off on electricity bill
-                  </p>
+                  <p>Get 5% off on electricity bill</p>
                 </div>
               </div>
             </div>

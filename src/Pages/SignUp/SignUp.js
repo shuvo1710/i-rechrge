@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <div className="login">
       <Link className="homeBtn" to="/home">
-        <AiOutlineHome className="fs-4"/>
+        <AiOutlineHome className="fs-4" />
       </Link>
       <Container>
         <div className="loginContainer">

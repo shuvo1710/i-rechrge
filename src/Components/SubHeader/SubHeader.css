@@ -1,0 +1,23 @@
+.subHeader {
+  background: #ff735c;
+  color: white;
+  padding: 5px;
+}
+.emailContainer {
+  border-left: 1px solid white;
+  padding-left: 1rem;
+}
+.callContainer {
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailContainer {
+    padding-left: 0.5rem;
+    font-size: 90%;
+  }
+  .callContainer {
+    padding-right: 0.5rem;
+    font-size: 90%;
+  }
+}

@@ -2,37 +2,28 @@ import React, { useState } from "react";
 import { Container, Modal, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../utilities/textLogo-removebg-preview.png";
-import { AiOutlineBars, AiOutlineHome,AiOutlineLogin } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineHome, AiOutlineLogin } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
 import { FaHandHoldingUsd, FaEnvelope, FaAngleRight } from "react-icons/fa";
 import {
   BsCardList,
-  // BsPen,
   BsFillTelephoneFill,
   BsFillCalendarDateFill,
   BsFillPeopleFill,
 } from "react-icons/bs";
-// import { HiOutlineClipboardList } from "react-icons/hi";
-// import { RiPagesLine } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
 import modalImage from "../../utilities/modalProfile.PNG";
 import { GoLocation } from "react-icons/go";
-// import { Switch } from "react-router-dom";
-// import { Route } from "react-router-dom";
-// import ProfileTab from "./ProfileTab/ProfileTab";
-// import { useRouteMatch } from "react-router-dom";
-// import OfferTab from "./OfferTab/OfferTab";
 import useAuth from "../../Hooks/useAuth";
 const Header = () => {
-  // let { path, url } = useRouteMatch();
   const [nav, setNav] = useState(false);
   const toggleNav = () => {
     setNav(!nav);
   };
   const history = useHistory();
   const [show, setShow] = useState(false);
-  const {user,setUser} = useAuth()
+  const { user, setUser } = useAuth();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [stickyNav, setStickyNav] = useState(false);
@@ -53,23 +44,30 @@ const Header = () => {
         <Modal.Body>
           <div className="d-flex align-items-center justify-content-between mb-2">
             <ul className="d-flex align-items-center text-secondary mb-2">
-            <li>
-              <Link className="text-secondary" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <FaAngleRight />
-            </li>
-            <li>
-              <Link className="text-secondary" to="/home">
-                Profile
-              </Link>
-            </li>
-          </ul>
-          <button onClick={()=>{setUser('');handleClose()}} className="bg-transparent border-1 rounded border-info text-info">Logout</button>
+              <li>
+                <Link className="text-secondary" to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <FaAngleRight />
+              </li>
+              <li>
+                <Link className="text-secondary" to="/home">
+                  Profile
+                </Link>
+              </li>
+            </ul>
+            <button
+              onClick={() => {
+                setUser("");
+                handleClose();
+              }}
+              className="bg-transparent border-1 rounded border-info text-info"
+            >
+              Logout
+            </button>
           </div>
-          
 
           <div className="profileModalContainer">
             <div className="row">
@@ -140,20 +138,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-          {/* <div className="profileNav mt-3 border-bottom border-secondary pb-2">
-            <button className="border-0 bg-transparent me-3"><Link className="text-decoration-none" to={`${url}/profile`}>Profile</Link></button>
-            <button className="border-0 bg-transparent ms-3"><Link className="text-decoration-none" to={`${url}/offers`}>Offers</Link></button>
-          </div>
-          <div className="profileNavContainer mt-2">
-            <Switch>
-              <Route exact path={`${path}/profile`}>
-                <ProfileTab/>
-              </Route>
-              <Route exact path={`${path}/offers`}>
-                <OfferTab/>
-              </Route>
-            </Switch>
-          </div> */}
         </Modal.Body>
       </Modal>
 
@@ -165,22 +149,6 @@ const Header = () => {
             </div>
           </div>
           <div className={`navContainer ${nav && "left0"}`}>
-            {/* <div className="profileContainer onlySmallScreen">
-              <div className="d-flex align-items-center border-bottom pb-4">
-                <div onClick={handleShow} className="profileImage">
-                  <img
-                    src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?t=st=1650951677~exp=1650952277~hmac=35f29986d1bafd0127d17fad98f3219b6b445572e678f668ec193bcb02f2a114&w=900"
-                    alt=""
-                    className="w-100 h-100"
-                  />
-                </div>
-                <div className="ms-3">
-                  <h5 className="m-0">Mark Otto</h5>
-                  <span>$ 126.00</span>
-                </div>
-              </div>
-            </div> */}
-
             <div className="linksContainer">
               <ul>
                 <li>
@@ -190,10 +158,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/recharge"
-                    className="d-flex align-items-center"
-                  >
+                  <Link to="/recharge" className="d-flex align-items-center">
                     <FaHandHoldingUsd className="me-2" />
                     Recharge & pay Bill
                   </Link>
@@ -221,7 +186,7 @@ const Header = () => {
                 </div>
               ) : (
                 <Link to="/login" className="lginAndSign">
-                  <AiOutlineLogin className="onlySmallScreen me-2"/>
+                  <AiOutlineLogin className="onlySmallScreen me-2" />
                   Login / Sign Up
                 </Link>
               )}
