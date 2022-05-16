@@ -16,7 +16,7 @@
 .rechargeButton {
   border: 1px solid transparent;
   padding: 10px 5px;
-  background: var(--third);
+  background: #041C52;
   color: var(--primary);
   transition: 0.4s;
   border-radius: 7px;
@@ -26,9 +26,9 @@
   width: 90%;
 }
 .rechargeButton:hover {
-  border: 1px solid var(--third);
+  border: 1px solid #041C52;
   background: var(--primary);
-  color: var(--third);
+  color: #041C52;
 }
 .rechargeContainer {
     padding: 2rem 1rem;
