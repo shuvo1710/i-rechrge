@@ -51,7 +51,7 @@ const Mobile = () => {
           <FormControl
             className="border-0 border-bottom rounded-0"
             aria-label="Amount (to the nearest dollar)"
-            placeholder="$$ Enter Amount"
+            placeholder="$ Enter Amount"
           />
         </InputGroup>
         <button onClick={OrderNow} className="rechargeButton">

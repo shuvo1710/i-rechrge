@@ -22,16 +22,25 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
-.singleOffer {
+/* .singleOffer {
   padding: 0.7rem;
   text-align: center;
-  border: 2px solid rgba(72, 72, 72, 0.049);
   border-radius: 5px;
   transition: 0.2s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   background: white;
+} */
+.singleOffer {
+  padding: 0.7rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #bbbbbb, -5px -5px 15px white;
 }
 .tabsHeader {
   display: grid;
@@ -42,38 +51,46 @@
 .singleOffer:hover {
   transform: scale(1.05);
 }
-.tabsHeader button {
-  border: 1px solid var(--secondary);
-  background: white;
-  border-radius: 5px;
-}
+
 .singleOffer:hover .offerButtons {
   left: 0%;
 }
+/* .offerSection {
+  padding: 4rem 0rem;
+  margin: 3rem 0;
+  background: var(--third);
+  background-size: 100% 100%;
+} */
 .offerSection {
-  padding: 7rem 0rem;
-  background: url("../../utilities/offerbg.jpg");
+  padding: 4rem 0rem;
+  margin: 3rem 0;
+  background: linear-gradient(45deg, #ffeef9, #c6f5ff,#ffeef9, #c6f5ff);
   background-size: 100% 100%;
 }
 .viewMore {
-  padding: 7px 9px;
-  border: 1px solid var(--secondary);
-  background: var(--primary);
-  color: var(--secondary);
   transition: 0.4s;
+  padding: 7px 9px;
+  border: 1px solid #0087db00;
+  background: var(--secondary);
+  color: #ffffff;
 }
 .bgPrimary {
   background: #008dee;
 }
 .viewMore:hover {
   padding: 7px 9px;
-  border: 1px solid #0087db00;
-  background: var(--secondary);
-  color: #ffffff;
+  border: 1px solid var(--secondary);
+  background: transparent;
+  color: var(--secondary);
 }
-
+.tabsHeader button {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
 .activeBorder {
-  background: #ff735c !important;
-  border: 1px solid rgba(169, 169, 169, 0) !important;
-  color: white;
+  color: #000000;
+  padding: 6px;
+  border-radius: 15px !important;
+  box-shadow: 5px 5px 10px #dddddd, -5px -5px 15px rgb(253 253 253 / 79%);
 }

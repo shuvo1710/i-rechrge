@@ -10,6 +10,7 @@ const Features = () => {
     <div className="feature">
       <Container>
         <h3 className="text-center mb-2">Why Choose Us</h3>
+        <p className="w-75 text-center mx-auto pb-3">Lorem ipsum dolor sit amet consectetur, adipisiciecto.</p>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-3 col-xl-3">
             <div className="commonFeature mb-2">

@@ -8,7 +8,7 @@
 }
 .headerSection {
   padding: 1rem 0;
-  background: white;
+  background: #ffe2da;
   z-index: 55555;
 }
 .navContainer {
@@ -168,6 +168,22 @@ td {
 }
 .lginAndSign:hover {
   color: black;
+}
+.scrollTop{
+  position: fixed;
+  top: 80%;
+  right: 5%;
+}
+button.scrollTop {
+  background: white;
+  border: 1px solid var(--secondary);
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+button.scrollTop svg{
+  color: var(--third);
 }
 @keyframes stickyNav {
   0% {

@@ -4,10 +4,12 @@ import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import OrderForm from "../../Components/OrderForm/OrderForm";
 import Progress from "../../Components/Progress/Progress";
+import SubHeader from "../../Components/SubHeader/SubHeader";
 
 const Order = () => {
   return (
     <div>
+      <SubHeader/>
       <Header />
       <Progress />
       <OrderForm />

@@ -24,6 +24,13 @@ const BroadBand = () => {
           <FormControl
             className="border-0 border-bottom rounded-0"
             aria-label="Amount (to the nearest dollar)"
+            placeholder="Amount To Pay"
+          />
+        </InputGroup>
+        <InputGroup className="mb-4">
+          <FormControl
+            className="border-0 border-bottom rounded-0"
+            aria-label="Amount (to the nearest dollar)"
             placeholder="Account Number"
           />
         </InputGroup>

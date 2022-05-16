@@ -37,3 +37,8 @@
   color: var(--primary);
   transition: 0.4s;
 }
+.rechargeAgain:hover{
+  border: 1px solid var(--third);
+  background: var(--primary);
+  color: var(--third);
+}

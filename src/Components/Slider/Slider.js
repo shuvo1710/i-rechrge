@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "./Slider.css";
 import { Container } from "react-bootstrap";
 import bannerImage from "../../utilities/3953918-removebg-preview.png";
+import bannerImage3 from "../../utilities/5138237.jpg";
+import bannerImage2 from "../../utilities/banner1.PNG";
 
 const Carousel = () => {
   return (
@@ -31,7 +33,7 @@ const Carousel = () => {
               <div className="row align-items-center">
                 <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                   <div className="text-start py-5 px-2">
-                    <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
+                    <h2 className="text-orange">Easy and Friendly User Interface in i-Recharge</h2>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipi quidem vero
                       et? Rem atque consequatur rerum molestias. In!
@@ -52,7 +54,7 @@ const Carousel = () => {
               <div className="row align-items-center">
                 <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                   <div className="text-start py-5 px-2">
-                    <h2>Lorem ipsum dolor sit amet consectetur elit.</h2>
+                    <h2 className="text-orange">Highly Secured for User and Admin Side both</h2>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adius adipisci
                       quidem vero et? Rem atque consequatur rerum molestias. In!
@@ -62,7 +64,7 @@ const Carousel = () => {
                 </div>
                 <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                   <div>
-                    <img src={bannerImage} alt="" />
+                    <img src={bannerImage2} alt="" />
                   </div>
                 </div>
               </div>
@@ -73,7 +75,7 @@ const Carousel = () => {
               <div className="row align-items-center">
                 <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                   <div className="text-start py-5 px-2">
-                    <h2>Lorem ipsum dolor sit amet adipisicing elit.</h2>
+                    <h2 className="text-orange">24/7 Hour Support For User in any Problems</h2>
                     <p>
                       Lorem, ipsum dolor siserunt rerum ab non, ut
                       necessitatibus adipisci quidem vee consequatur rerum
@@ -84,7 +86,7 @@ const Carousel = () => {
                 </div>
                 <div className="col-12 col-md-12 col-lg-6 col-xl-6">
                   <div>
-                    <img src={bannerImage} alt="" />
+                    <img src={bannerImage3} alt="" />
                   </div>
                 </div>
               </div>

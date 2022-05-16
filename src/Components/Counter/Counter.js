@@ -1,18 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
 import CountUp from "react-countup";
 import "./Counter.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 const Counter = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
   return (
     <div className="py-5">
       <Container>
         <h1 className="text-center mb-3">Our Pleased Custommers</h1>
-        <div data-aos="zoom-in" className="row border rounded">
+        <p className="w-75 mx-auto pb-3 text-center">Lorem ipsum, dolor ctetur  Corrupti, deserunt!</p>
+        <div className="row border rounded">
           <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-center counterImg p-0">
             <img
               src="https://img.freepik.com/free-vector/group-people-different-nationalities-crowd-diverse-characters_316839-579.jpg?w=1380"

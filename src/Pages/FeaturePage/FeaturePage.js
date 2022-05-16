@@ -7,10 +7,12 @@ import Features from "../../Components/Features/Features";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import SecondBanner from "../../Components/SecondBanner/SecondBanner";
+import SubHeader from "../../Components/SubHeader/SubHeader";
 
 const FeaturePage = () => {
   return (
     <div>
+      <SubHeader/>
       <Header />
       <SecondBanner />
       <Feature1 />

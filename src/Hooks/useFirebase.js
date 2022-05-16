@@ -7,7 +7,9 @@ import {
 import { MdLocalGasStation } from "react-icons/md";
 import { BsTelephone, BsDropletHalf } from "react-icons/bs";
 import { RiComputerLine } from "react-icons/ri";
-
+import { FaSchool,FaTrain,FaTelegramPlane } from "react-icons/fa";
+import { IoMdSchool } from "react-icons/io";
+import { FiMonitor } from "react-icons/fi";
 const useFirebase = () => {
   const [successful, setSuccessful] = useState(false);
   const handleClose = () => setSuccessful(false);
@@ -47,33 +49,25 @@ const useFirebase = () => {
       iconName: <BsDropletHalf className=" fs-3 iconContainer3" />,
     },
     {
-      linkName: "Mobile",
-      iconName: <AiOutlineMobile className=" fs-3 iconContainer1" />,
+      linkName: "School Fee",
+      iconName: <FaSchool className=" fs-3 iconContainer1" />,
     },
     {
-      linkName: "DTH",
-      iconName: <RiComputerLine className=" fs-3 iconContainer2" />,
+      linkName: "Clge Fee",
+      iconName: <IoMdSchool className=" fs-3 iconContainer2" />,
     },
     {
-      linkName: "BroadBand",
-      iconName: <AiOutlineWifi className=" fs-3 iconContainer3" />,
+      linkName: "Television",
+      iconName: <FiMonitor className=" fs-3 iconContainer3" />,
     },
     {
-      linkName: "LandPhone",
-      iconName: <BsTelephone className=" fs-3 iconContainer4" />,
+      linkName: "Metro",
+      iconName: <FaTrain className=" fs-3 iconContainer4" />,
     },
     {
-      linkName: "Electricity",
-      iconName: <AiFillThunderbolt className=" fs-3 iconContainer1" />,
-    },
-    {
-      linkName: "Gas",
-      iconName: <MdLocalGasStation className=" fs-3 iconContainer2" />,
-    },
-    {
-      linkName: "Water",
-      iconName: <BsDropletHalf className=" fs-3 iconContainer3" />,
-    },
+      linkName: "Air",
+      iconName: <FaTelegramPlane className=" fs-3 iconContainer1" />,
+    }
   ];
   return {
     successful,

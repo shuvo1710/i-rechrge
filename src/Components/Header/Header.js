@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Modal, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
-import { AiOutlineBars, AiOutlineHome, AiOutlineLogin } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineHome, AiOutlineLogin,AiOutlineArrowUp } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
 import { FaHandHoldingUsd, FaEnvelope, FaAngleRight } from "react-icons/fa";
@@ -35,8 +35,15 @@ const Header = () => {
       setStickyNav(false);
     }
   });
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  }
   return (
     <div className={`headerSection ${stickyNav ? "sticky" : ""}`}>
+      {
+        stickyNav && <button onClick={scrollTop} className="scrollTop"><AiOutlineArrowUp/></button>
+      }
+      
       <Modal centered show={show} onHide={handleClose} size="xl">
         <Modal.Header closeButton>
           <Modal.Title>Profile</Modal.Title>
@@ -81,9 +88,9 @@ const Header = () => {
                   <div className="row p-2">
                     <div className="col-12 col-md-12 col-lg-5 col-xl-5  responsivePadding">
                       <div className="d-flex align-items-center justify-content-between">
-                        <h3 className="fs-4">Kelvien Clain </h3>
+                        <h3 className="fs-4">Mark Otto </h3>
                         <div>
-                          <span className="fs-3 fw-bold">$</span>
+                          <span className="fs-5 fw-bold">$</span>
                           <span>1500</span>
                         </div>
                       </div>
@@ -172,6 +179,11 @@ const Header = () => {
               </ul>
             </div>
             <div className="responsiveWidth">
+              <div className="p-5 border-bottom onlySmallScreen">
+                <div onClick={() => history.push("/home")} className="logo">
+                  <img className="w-100 h-100" src={logo2} alt="" />
+                </div>
+              </div>
               {user?.email ? (
                 <div className="profileContainer">
                   <div className="d-flex align-items-center rowReverse">

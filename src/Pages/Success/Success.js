@@ -2,11 +2,13 @@ import React from "react";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import Progress3 from "../../Components/Progress3/Progress3";
+import SubHeader from "../../Components/SubHeader/SubHeader";
 import Successful from "../../Components/Successful/Successful";
 
 const Success = () => {
   return (
     <div>
+      <SubHeader/>
       <Header />
       <Progress3 />
       <Successful />

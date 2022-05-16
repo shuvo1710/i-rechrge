@@ -2,14 +2,14 @@ import React from "react";
 import { Form, FormControl, InputGroup } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-const LandPhone = () => {
+const School = () => {
   const history = useHistory();
   const OrderNow = () => {
     history.push("/order");
   };
   return (
     <div className="rechargeItemMenu">
-      <h3>Land Phone</h3>
+      <h3>School Fee</h3>
       <form>
         <Form.Select
           className="mb-4 border-0 border-bottom rounded-0"
@@ -42,4 +42,4 @@ const LandPhone = () => {
   );
 };
 
-export default LandPhone;
+export default School;
