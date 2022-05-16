@@ -3,12 +3,13 @@ import { Container, Modal } from "react-bootstrap";
 import anim from "../../utilities/successful.gif";
 import "./Successful.css";
 import useAuth from "../../Hooks/useAuth";
+import { Link } from "react-router-dom";
 const Successful = () => {
   const { successful, handleClose } = useAuth();
 
   return (
     <div>
-      <Modal show={successful} onHide={handleClose} size="">
+      <Modal show={successful} onHide={handleClose} centered size="">
         <Modal.Header closeButton>
           <h5 className="m-0">Successfull</h5>
         </Modal.Header>
@@ -24,12 +25,12 @@ const Successful = () => {
               choosen.
             </p>
             <div className="successButtons">
-              <button className="mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2">
+              <Link to="/home" className="proceed rounded mb-2 text-decoration-none m-1">
                 Back to Home
-              </button>
-              <button className="mx-2 border-0 bg-primary text-light py-2 px-4 rounded mb-2">
+              </Link>
+              <Link to="/recharge" className="rechargeAgain text-decoration-none rounded mb-2 m-1">
                 Recharge Again
-              </button>
+              </Link>
             </div>
           </div>
         </div>

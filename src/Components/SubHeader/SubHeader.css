@@ -10,7 +10,11 @@
 .callContainer {
   padding-right: 1rem;
 }
-
+.contactAndEmail{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 @media only screen and (max-width: 600px) {
   .emailContainer {
     padding-left: 0.5rem;
@@ -19,5 +23,10 @@
   .callContainer {
     padding-right: 0.5rem;
     font-size: 90%;
+  }
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .contactAndEmail{
+    justify-content: start;
   }
 }

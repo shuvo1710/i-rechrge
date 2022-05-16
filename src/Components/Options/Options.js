@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import useAuth from "../../Hooks/useAuth";
 
 const Options = () => {
-  const { activeTab, navItems } = useAuth();
+  const { activeTab, navItems,activeState } = useAuth();
   return (
     <div id="recharge" className="optionsContainer">
       <Container>
@@ -43,7 +43,7 @@ const Options = () => {
               <div className="option text-center">
                 <button
                   onClick={() => activeTab(item.linkName)}
-                  className="linkOption"
+                  className={`linkOption ${activeState === item?.linkName ? 'activeOption' : ''}`}
                 >
                   {item.iconName}
                   <span className=" d-block">{item.linkName}</span>

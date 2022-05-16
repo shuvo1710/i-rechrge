@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Modal, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../../utilities/textLogo-removebg-preview.png";
+import logo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
 import { AiOutlineBars, AiOutlineHome, AiOutlineLogin } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
@@ -145,7 +145,7 @@ const Header = () => {
         <div className="headerContainer">
           <div className="logoContainer">
             <div onClick={() => history.push("/home")} className="logo">
-              <img className="w-100 h-100" src={logo} alt="" />
+              <img className="w-100 h-100" src={logo2} alt="" />
             </div>
           </div>
           <div className={`navContainer ${nav && "left0"}`}>

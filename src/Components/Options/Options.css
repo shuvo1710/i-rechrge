@@ -58,17 +58,15 @@
   border-top-right-radius: 5px !important;
   overflow: hidden;
 }
-
-button.linkOption:focus {
+.activeOption{
   background: white !important;
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   padding: 6px 0 !important;
   color: #04075c !important;
 }
-
-button.linkOption:focus span {
-  color: black !important;
+.activeOption span {
+  color: rgb(0, 0, 0) !important;
 }
 button.linkOption span {
   color: white;
@@ -80,4 +78,7 @@ button.linkOption span {
   border-top-right-radius: 5px !important;
   padding: 6px 0 !important;
   color: #04075c !important;
+}
+.swiper {
+  margin-bottom: -2px;
 }

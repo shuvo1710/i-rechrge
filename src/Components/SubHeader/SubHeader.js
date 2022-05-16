@@ -12,7 +12,7 @@ const SubHeader = () => {
             <p className="m-0">Need any help? Please Contact With Us.</p>
           </div>
           <div className="col-12 col-md-6 col-lg-6 col-xl-6">
-            <div className="d-flex align-items-center justify-content-end">
+            <div className="contactAndEmail">
               <div className="callContainer d-flex align-items-center">
                 <BsFillTelephonePlusFill className="me-1" />
                 +88-54521821

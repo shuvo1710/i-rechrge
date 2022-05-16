@@ -2,7 +2,7 @@ import React from "react";
 import { Container, FormControl, InputGroup } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import footerLogo2 from "../../utilities/textLogo.PNG";
+import footerLogo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
 const Footer = () => {
