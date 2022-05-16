@@ -7,8 +7,7 @@ import {
 import { MdLocalGasStation } from "react-icons/md";
 import { BsTelephone, BsDropletHalf } from "react-icons/bs";
 import { RiComputerLine } from "react-icons/ri";
-import { FaSchool,FaTrain,FaTelegramPlane } from "react-icons/fa";
-import { IoMdSchool } from "react-icons/io";
+import {FaTrain,FaTelegramPlane } from "react-icons/fa";
 import { FiMonitor } from "react-icons/fi";
 const useFirebase = () => {
   const [successful, setSuccessful] = useState(false);
