@@ -3,9 +3,13 @@ import { Container, FormControl, InputGroup } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import footerLogo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
-import { BsFillTelephoneFill,BsSkype,BsLinkedin } from "react-icons/bs";
+import { BsFillTelephoneFill, BsSkype, BsLinkedin } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
-import { AiFillInstagram,AiFillTwitterSquare,AiFillYoutube } from "react-icons/ai";
+import {
+  AiFillInstagram,
+  AiFillTwitterSquare,
+  AiFillYoutube,
+} from "react-icons/ai";
 import { FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
@@ -101,23 +105,23 @@ const Footer = () => {
               />
             </InputGroup>
             <div className="mt-4 d-flex align-items-center justify-content-between">
-              <Link>
-              <FaFacebookSquare className="fs-3"/>
+              <Link to="#">
+                <FaFacebookSquare className="fs-3" />
               </Link>
-              <Link>
-              <AiFillInstagram className="fs-2"/>
+              <Link to="#">
+                <AiFillInstagram className="fs-2" />
               </Link>
-              <Link>
-              <AiFillTwitterSquare className="fs-2"/>
+              <Link to="#">
+                <AiFillTwitterSquare className="fs-2" />
               </Link>
-              <Link>
-              <BsSkype className="fs-3"/>
+              <Link to="#">
+                <BsSkype className="fs-3" />
               </Link>
-              <Link>
-              <BsLinkedin className="fs-3"/>
+              <Link to="#">
+                <BsLinkedin className="fs-3" />
               </Link>
-              <Link>
-              <AiFillYoutube className="fs-1"/>
+              <Link to="#">
+                <AiFillYoutube className="fs-1" />
               </Link>
             </div>
           </div>

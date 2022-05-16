@@ -49,24 +49,16 @@ const useFirebase = () => {
       iconName: <BsDropletHalf className=" fs-3 iconContainer3" />,
     },
     {
-      linkName: "School Fee",
-      iconName: <FaSchool className=" fs-3 iconContainer1" />,
-    },
-    {
-      linkName: "Clge Fee",
-      iconName: <IoMdSchool className=" fs-3 iconContainer2" />,
-    },
-    {
       linkName: "Television",
-      iconName: <FiMonitor className=" fs-3 iconContainer3" />,
+      iconName: <FiMonitor className=" fs-3 iconContainer4" />,
     },
     {
       linkName: "Metro",
-      iconName: <FaTrain className=" fs-3 iconContainer4" />,
+      iconName: <FaTrain className=" fs-3 iconContainer1" />,
     },
     {
       linkName: "Air",
-      iconName: <FaTelegramPlane className=" fs-3 iconContainer1" />,
+      iconName: <FaTelegramPlane className=" fs-3 iconContainer2" />,
     }
   ];
   return {

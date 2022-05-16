@@ -7,7 +7,6 @@ import useAuth from "../../Hooks/useAuth";
 import DTH from "../Recharge/DTH/DTH";
 import BroadBand from "../Recharge/BroadBand/BroadBand";
 import LandPhone from "../Recharge/LandPhone/LandPhone";
-import School from "../Recharge/School/School";
 import Electricity from "../Recharge/Electricity/Electricity";
 import Gas from "../Recharge/Gas/Gas";
 import Water from "../Recharge/Water/Water";
@@ -15,7 +14,6 @@ import Options from "../Options/Options";
 import offer1 from "../../utilities/offer1.PNG";
 import offer2 from "../../utilities/offer2.PNG";
 import offer3 from "../../utilities/offer3.PNG";
-import College from "../Recharge/College/College";
 import Tv from "../Recharge/Tv/Tv";
 import Metro from "../Recharge/Metro/Metro";
 import Air from "../Recharge/Air/Air";
@@ -44,8 +42,6 @@ const RechargeMenu = () => {
                     {activeState === "Electricity" && <Electricity />}
                     {activeState === "Gas" && <Gas />}
                     {activeState === "Water" && <Water />}
-                    {activeState === "School Fee" && <School />}
-                    {activeState === "Clge Fee" && <College />}
                     {activeState === "Television" && <Tv />}
                     {activeState === "Metro" && <Metro />}
                     {activeState === "Air" && <Air />}

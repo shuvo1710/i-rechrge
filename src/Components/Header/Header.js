@@ -49,6 +49,7 @@ const Header = () => {
           <Modal.Title>Profile</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <div className="profileModalContainer">
           <div className="d-flex align-items-center justify-content-between mb-2">
             <ul className="d-flex align-items-center text-secondary mb-2">
               <li>
@@ -70,13 +71,11 @@ const Header = () => {
                 setUser("");
                 handleClose();
               }}
-              className="bg-transparent border-1 rounded border-info text-info"
+              className="bg-transparent border-1 border-dark rounded text-orange"
             >
               Logout
             </button>
           </div>
-
-          <div className="profileModalContainer">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-3 col-xl-3 p-1">
                 <div className="modalProfileImage">
@@ -95,7 +94,7 @@ const Header = () => {
                         </div>
                       </div>
                       <span className="text-secondary">
-                        <GoLocation className="me-2" /> Bangladesh
+                        <GoLocation className="me-2" />from Bangladesh
                       </span>
                       <div className="profileButtons mt-3">
                         <button>Recharge</button>

@@ -43,9 +43,6 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  .tabsHeader button {
-    border: 1px solid var(--secondary) !important;
-  }
   .featureOne {
     background-size: cover !important;
   }
@@ -178,15 +175,11 @@ h6 {
     box-shadow: none !important;
     border-radius: 0 !important;
   }
-  .offerSection {
-    background-image: none !important;
-  }
   .gradiant {
     border-radius: 0 !important;
     padding: 0 !important;
     border: none !important;
   }
-
   .gradiant h2 {
     font-size: 1.2rem !important;
   }
@@ -204,13 +197,6 @@ h6 {
   .subscriptionImage {
     height: 342px !important;
     width: 100% !important;
-  }
-  .tabsHeader button {
-    border: 1px solid var(--secondary);
-    width: 100%;
-    margin: 0 !important;
-    border-radius: 7px;
-    background: white;
   }
   .orderInfoContainer {
     width: 100% !important;
@@ -236,6 +222,58 @@ h6 {
   100% {
     opacity: 1;
   }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .onlySmallScreen {
+    display: block !important;
+}
+  .linksContainer ul {
+    display: block !important;
+}
+.closeBtnContainer {
+  display: block !important;
+}
+.navContainer {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 50% !important;
+  background: linear-gradient(-85deg, #f6f6f6, white);
+  z-index: 555;
+  height: 100vh;
+  left: -100%;
+  flex-direction: column-reverse;
+  justify-content: start !important;
+}
+.lginAndSign {
+  margin-left: 1.2rem;
+}
+.lginAndSign svg {
+  display: none !important;
+}
+.linksContainer ul li {
+  padding: .7rem 0;
+}
+.linksContainer ul {
+  margin-top: 1rem !important;
+}
+.profileContainer {
+  justify-content: start !important;
+  padding: 1rem;
+}
+.responsiveBorderPadding {
+  padding-left: 0 !important;
+  border-left: none !important;
+}
+.responsivePadding {
+  padding-right: 0 !important;
+}
+.allOffers {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+.tabsHeader {
+  width: 100% !important;
+}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .loginForm input {
