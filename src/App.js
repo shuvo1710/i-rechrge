@@ -14,6 +14,19 @@ import SignUp from "./Pages/SignUp/SignUp";
 import RechargePage from "./Pages/RechargePage/RechargePage";
 
 function App() {
+  // real loading time with preloader start
+
+  // const [loader, setLoader] = useState(true);
+  // const [loaderAnimation, setLoaderAnimation] = useState(true);
+  // window.addEventListener("load", () => {
+  //   setLoader(false);
+  //   setLoaderAnimation(false);
+  // });
+
+  // real loading time with preloader end
+
+  // fake loading time to show preloader start
+
   const [loader, setLoader] = useState(false);
   const [loaderAnimation, setLoaderAnimation] = useState(false);
   useEffect(() => {
@@ -22,12 +35,13 @@ function App() {
       setLoader(false);
     }, 2500);
   }, []);
-
   useEffect(() => {
     setTimeout(() => {
       setLoaderAnimation(true);
     }, 2000);
   }, []);
+
+  // fake loading time to show preloader end
 
   return (
     <>
