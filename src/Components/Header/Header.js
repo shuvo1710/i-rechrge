@@ -25,7 +25,10 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const { user, setUser } = useAuth();
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true);
+    setNav(!nav);
+  };
   const [stickyNav, setStickyNav] = useState(false);
 
   window.addEventListener("scroll", () => {
@@ -207,9 +210,9 @@ const Header = () => {
             <div className="closeBtn">
               <button className="border-0 bg-transparent" onClick={toggleNav}>
                 {!nav ? (
-                  <AiOutlineBars className="fs-2" />
+                  <AiOutlineBars className="fs-2 toggleBar" />
                 ) : (
-                  <GiTireIronCross className="fs-5" />
+                  <GiTireIronCross className="fs-5 toggleCrossBar" />
                 )}
               </button>
             </div>
