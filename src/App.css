@@ -43,6 +43,23 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+  .responsivePadding {
+    padding-right: 0rem !important;
+  }
+  .responsiveBorderPadding {
+    padding-left: 0rem !important;
+    border-left: none !important;
+  }
+  .onlyBigScreen {
+    display: none !important;
+  }
+  .onlySmallScreen {
+    display: block !important;
+  }
+  .linksContainer svg {
+    display: block !important;
+    color: #0043a7 !important;
+  }
   .featureOne {
     background-size: cover !important;
   }

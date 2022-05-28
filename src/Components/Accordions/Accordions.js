@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Accordion, Container } from "react-bootstrap";
-import img from "../../utilities/SL-110119-24650-47-removebg-preview.png";
+import img from "../../utilities/accordionImages/accordion.png";
 import "./Accordions.css";
 import Aos from "aos";
 import "aos/dist/aos.css";

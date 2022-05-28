@@ -175,15 +175,16 @@ td {
   right: 5%;
 }
 button.scrollTop {
-  background: white;
-  border: 1px solid var(--secondary);
+  background: linear-gradient(45deg, orange,tomato);
+  border: 1px solid rgb(224, 224, 224);
   padding: 5px;
   height: 40px;
   width: 40px;
   border-radius: 20px;
+  color: white;
 }
 button.scrollTop svg{
-  color: var(--third);
+  color: white;
 }
 .toggleBar {
   color: #652581;
@@ -201,22 +202,4 @@ button.scrollTop svg{
     transition: 1s;
   }
 }
-@media only screen and (max-width: 600px) {
-  .responsivePadding {
-    padding-right: 0rem;
-  }
-  .responsiveBorderPadding {
-    padding-left: 0rem !important;
-    border-left: none;
-  }
-  .onlyBigScreen {
-    display: none;
-  }
-  .onlySmallScreen {
-    display: block;
-  }
-  .linksContainer svg {
-    display: block !important;
-    color: #0043a7;
-  }
-}
+

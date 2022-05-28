@@ -1,5 +1,5 @@
 .featureOne {
-  background: url("../../utilities/v613-taus-16-urbangradientbackground.jpg");
+  background: url("../../utilities/backgroundImage/backgroundImage.png");
   padding: 15rem 0;
   background-size: 100% 100%;
   clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 92%);

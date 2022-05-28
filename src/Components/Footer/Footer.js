@@ -2,7 +2,7 @@ import React from "react";
 import { Container, FormControl, InputGroup } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import footerLogo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
+import logo from "../../utilities/logoImages/logo1.png";
 import { BsFillTelephoneFill, BsSkype, BsLinkedin } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
 import {
@@ -90,7 +90,7 @@ const Footer = () => {
             <h4>Subscribe for more..</h4>
             <Link to="/home">
               <div className="logo">
-                <img className="w-100 h-100" src={footerLogo2} alt="" />
+                <img className="w-100 h-100" src={logo} alt="" />
               </div>
             </Link>
             <InputGroup className="mt-3">

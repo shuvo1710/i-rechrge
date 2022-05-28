@@ -1,6 +1,6 @@
 import React from "react";
 import "./NotFound.css";
-import err from "../../utilities/2677143-removebg-preview.png";
+import err from "../../utilities/errorImage/error.png";
 import { useHistory } from "react-router-dom";
 const NotFound = () => {
   const history = useHistory();

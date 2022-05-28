@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import signImg from "../../utilities/4912309.jpg";
+import signImg from "../../utilities/loginAndRegisterImages/signUp.png";
 import { AiOutlineHome } from "react-icons/ai";
 const SignUp = () => {
   return (

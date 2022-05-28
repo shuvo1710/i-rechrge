@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Subscriptions.css";
-import image from "../../utilities/subs.png";
+import image from "../../utilities/subscription/subs.png";
 
 const Subscriptions = () => {
   return (

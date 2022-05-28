@@ -6,7 +6,7 @@ import Order from "./Pages/Order/Order";
 import Payment from "./Pages/Payment/Payment";
 import Success from "./Pages/Success/Success";
 import ScaleLoader from "react-spinners/ScaleLoader";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NotFound from "./Pages/NotFound/NotFound";
 import FeaturePage from "./Pages/FeaturePage/FeaturePage";
 import Login from "./Pages/Login/Login";
@@ -16,30 +16,30 @@ import RechargePage from "./Pages/RechargePage/RechargePage";
 function App() {
   // real loading time with preloader start
 
-  // const [loader, setLoader] = useState(true);
-  // const [loaderAnimation, setLoaderAnimation] = useState(true);
-  // window.addEventListener("load", () => {
-  //   setLoader(false);
-  //   setLoaderAnimation(false);
-  // });
+  const [loader, setLoader] = useState(true);
+  const [loaderAnimation, setLoaderAnimation] = useState(true);
+  window.addEventListener("load", () => {
+    setLoader(false);
+    setLoaderAnimation(false);
+  });
 
   // real loading time with preloader end
 
   // fake loading time to show preloader start
 
-  const [loader, setLoader] = useState(false);
-  const [loaderAnimation, setLoaderAnimation] = useState(false);
-  useEffect(() => {
-    setLoader(true);
-    setTimeout(() => {
-      setLoader(false);
-    }, 2500);
-  }, []);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaderAnimation(true);
-    }, 2000);
-  }, []);
+  // const [loader, setLoader] = useState(false);
+  // const [loaderAnimation, setLoaderAnimation] = useState(false);
+  // useEffect(() => {
+  //   setLoader(true);
+  //   setTimeout(() => {
+  //     setLoader(false);
+  //   }, 2500);
+  // }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoaderAnimation(true);
+  //   }, 2000);
+  // }, []);
 
   // fake loading time to show preloader end
 

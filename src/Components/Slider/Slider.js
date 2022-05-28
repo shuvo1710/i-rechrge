@@ -6,9 +6,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Slider.css";
 import { Container } from "react-bootstrap";
-import bannerImage from "../../utilities/3953918-removebg-preview.png";
-import bannerImage3 from "../../utilities/5138237.jpg";
-import bannerImage2 from "../../utilities/banner1.PNG";
+import bannerImage from "../../utilities/sliderImages/slider_image_1.png";
+import bannerImage3 from "../../utilities/sliderImages/slider_image_2.jpg";
+import bannerImage2 from "../../utilities/sliderImages/slider_image_3.png";
 
 const Carousel = () => {
   return (

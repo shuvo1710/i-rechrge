@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Modal, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo2 from "../../utilities/33893_705521_37309_image-removebg-preview.png";
+import logo2 from "../../utilities/logoImages/logo1.png";
 import { AiOutlineBars, AiOutlineHome, AiOutlineLogin,AiOutlineArrowUp } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
@@ -13,9 +13,12 @@ import {
   BsFillPeopleFill,
 } from "react-icons/bs";
 import { useHistory } from "react-router-dom";
-import modalImage from "../../utilities/modalProfile.PNG";
+import modalImage from "../../utilities/profileImages/modalProfile.png";
 import { GoLocation } from "react-icons/go";
 import useAuth from "../../Hooks/useAuth";
+
+
+
 const Header = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => {

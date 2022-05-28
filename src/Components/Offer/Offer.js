@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Container, Modal, Spinner } from "react-bootstrap";
 import "./Offer.css";
-import robi from "../../utilities/robi.PNG";
-import gp from "../../utilities/gp.png";
-import voda from "../../utilities/vodafone-plc-vector-logo-400x400.png";
-import starhub from "../../utilities/starhub.jpg";
-import du from "../../utilities/du.png";
-import airtel from "../../utilities/airtel-removebg-preview.png";
-import mOne from "../../utilities/mOne.png";
+import robi from "../../utilities/operatorImages/robi.png";
+import gp from "../../utilities/operatorImages/gp.png";
+import voda from "../../utilities/operatorImages/vodafone.png";
+import starhub from "../../utilities/operatorImages/starhub.png";
+import du from "../../utilities/operatorImages/du.png";
+import airtel from "../../utilities/operatorImages/airtel.png";
+import mOne from "../../utilities/operatorImages/mOne.png";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import offerImage from "../../utilities/3777.jpg";
+import offerImage from "../../utilities/operatorImageModal/operatorModal.png";
 const Offer = () => {
   const [all, setAll] = useState(true);
   const [internet, setInternet] = useState(false);

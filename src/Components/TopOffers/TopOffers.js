@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./TopOffers.css";
-import img from "../../utilities/featuredOffer.PNG";
-import img2 from "../../utilities/featureOffer2.PNG";
-import img3 from "../../utilities/featureOffer3.PNG";
-import img4 from "../../utilities/featureOffer4.PNG";
+import img from "../../utilities/discounts/featuredOffer.png";
+import img2 from "../../utilities/discounts/featureOffer2.png";
+import img3 from "../../utilities/discounts/featureOffer3.png";
+import img4 from "../../utilities/discounts/featureOffer4.png";
 const TopOffers = () => {
   return (
     <div className="discountSection">
