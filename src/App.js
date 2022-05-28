@@ -14,18 +14,18 @@ import SignUp from "./Pages/SignUp/SignUp";
 import RechargePage from "./Pages/RechargePage/RechargePage";
 
 function App() {
-  // real loading time with preloader start
-
+  // real loading time with preloader 
   const [loader, setLoader] = useState(true);
   const [loaderAnimation, setLoaderAnimation] = useState(true);
   window.addEventListener("load", () => {
     setLoader(false);
     setLoaderAnimation(false);
   });
+  // real loading time with preloader
 
-  // real loading time with preloader end
 
-  // fake loading time to show preloader start
+
+  // fake loading time to show preloader
 
   // const [loader, setLoader] = useState(false);
   // const [loaderAnimation, setLoaderAnimation] = useState(false);
@@ -41,7 +41,7 @@ function App() {
   //   }, 2000);
   // }, []);
 
-  // fake loading time to show preloader end
+  // fake loading time to show preloader
 
   return (
     <>
