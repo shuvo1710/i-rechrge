@@ -3,6 +3,12 @@ import { Container } from "react-bootstrap";
 import "./Feature1.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import paypal from '../../utilities/paymentImage/paypal.png'
+import ebl from '../../utilities/paymentImage/ebl.jpg'
+import ebl2 from '../../utilities/paymentImage/ebl2.jpg'
+import ebl3 from '../../utilities/paymentImage/ebl3.jpg'
+import ucb from '../../utilities/paymentImage/ucb.png'
+import animation from '../../utilities/gif/original.gif'
 
 const Feature1 = () => {
   useEffect(() => {
@@ -24,37 +30,37 @@ const Feature1 = () => {
             <ul className="transaction">
               <li>
                 <img
-                  src="https://www.paypal-prepaid.com/img/PayPal-Purple-MC-2017-Flat.png"
+                  src={paypal}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="https://www.ebl.com.bd/assets/cards/sub/Mastercard-Titanium-Debit-Card.jpg"
+                  src={ebl}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="https://www.ebl.com.bd/assets/cards/sub/Visa-Signature-Lite.jpg"
+                  src={ebl2}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="https://www.ebl.com.bd/assets/cards/sub/ebl_gold_card_v2.jpg"
+                  src={ebl3}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="https://www.cimbanque.com/cim/images/cards/mastercard/mastercard-silver-350.png"
+                  src={paypal}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="https://www.ucb.com.bd/images/cards/mastercard-platinum-card.png"
+                  src={ucb}
                   alt=""
                 />
               </li>
@@ -65,7 +71,7 @@ const Feature1 = () => {
             className="col-12 col-md-6 col-lg-6 col-xl-6"
           >
             <img
-              src="https://img.shoplineapp.com/media/image_clips/5f7d31e35fb5be0014ff6958/original.gif?1602040291"
+              src={animation}
               alt=""
               className="w-100"
             />

@@ -96,7 +96,6 @@ const PaymentForm = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <input className="py-1 px-3" type="submit" value="Proceed to Pay" /> */}
                   <button onClick={proceed} className="proceed rounded">
                     Proceed to Pay
                   </button>

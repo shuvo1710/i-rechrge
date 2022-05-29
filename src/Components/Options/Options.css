@@ -72,13 +72,7 @@ button.linkOption span {
   color: white;
   font-size: 0.8rem;
 }
-.swiper-wrapper:first-child .swiper-slide .option button:focus {
-  background: rgb(255, 0, 0) !important;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
-  padding: 6px 0 !important;
-  color: #04075c !important;
-}
+
 .swiper {
   margin-bottom: -2px;
 }

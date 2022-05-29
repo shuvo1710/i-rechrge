@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import CountUp from "react-countup";
 import "./Counter.css";
-
+import counterImage from '../../utilities/counterImage/Capture.PNG'
 const Counter = () => {
 
   return (
@@ -13,7 +13,7 @@ const Counter = () => {
         <div className="row border rounded">
           <div className="col-12 col-md-6 col-lg-5 col-xl-5 text-center counterImg p-0">
             <img
-              src="https://img.freepik.com/free-vector/group-people-different-nationalities-crowd-diverse-characters_316839-579.jpg?w=1380"
+              src={counterImage}
               alt=""
               className="w-100"
             />

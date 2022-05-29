@@ -26,12 +26,6 @@
   height: 48vh;
   object-fit: cover;
 }
-/* .gradiant {
-  background: var(--primary);
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 2rem;
-} */
 .gradiant {
   background: rgb(255 255 255);
   border-radius: 10px;
