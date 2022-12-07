@@ -1,17 +1,24 @@
 /* Project Name: iRecharge */
-/* Tag: Online Moibile Recharge and Bill Pay UI Template | Reac JS */
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Nunito&display=swap");
+/* Tag: Online Mobile Recharge and Bill Pay UI Template | React JS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&display=swap');
 :root {
-  --primary: rgb(255, 255, 255);
-  --secondary: #ff735c;
-  --third: #375a61;
+  --primary: rgb(254, 252, 252);
+  --secondary: #0c2f54;
+  --third: #f96f06;
+  --hover:#f0bb0c;
+  --font-primary: 'Barlow Semi Condensed', sans-serif;
+  --font-secondary: 'PT Sans', sans-serif;
 }
 body,
 html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  outline: 0;
   scroll-behavior: smooth;
+  font-family: var(--font-primary);
+  position: relative;
 }
 ul {
   list-style: none;
@@ -30,6 +37,7 @@ h6 {
   margin: 0;
   padding: 0;
   font-weight: 100 !important;
+  font-family: var(--font-secondary);
 }
 .preloader {
   height: 100vh;
@@ -357,6 +365,9 @@ h6 {
     width: 55% !important;
   }
   .allOffers {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  .feature{
     grid-template-columns: repeat(3, 1fr) !important;
   }
   .subscriptionImage {

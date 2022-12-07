@@ -1,8 +1,9 @@
 .subHeader {
-  background: #ff735c;
+  background: var(--secondary);
   color: white;
   padding: 5px;
 }
+
 .emailContainer {
   border-left: 1px solid white;
   padding-left: 1rem;

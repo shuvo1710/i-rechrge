@@ -19,32 +19,19 @@ const Footer = () => {
           <div className="col-6 col-md-6 col-lg-3">
             <ul>
               <li>
-                <h4>About Us</h4>
+                <h2 className=" FooterHead">About Us</h2>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing
                   elit.ernatur eum.
                 </p>
               </li>
-              <li>
-                <h6>Contact Us</h6>
-                <Link to="/home">
-                  <BsFillTelephoneFill className="me-2" />
-                  +9856-83245
-                </Link>
-              </li>
-              <li>
-                <Link to="/home">
-                  <FaEnvelope className="me-2" />
-                  example@gmail.com
-                </Link>
-              </li>
             </ul>
           </div>
           <div className="col-6 col-md-6 col-lg-3">
-            <h4>Information</h4>
+            <h4 className=" FooterHead">Information</h4>
             <ul>
               <li>
-                <Link to="/home">About Us</Link>
+                <Link  to="/home">About Us</Link>
               </li>
               <li>
                 <Link to="/home">More Search</Link>
@@ -64,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-6 col-md-6 col-lg-3">
-            <h4>Helpfull links</h4>
+            <h4 className=" FooterHead">Helpfull links</h4>
             <ul>
               <li>
                 <Link to="/home">Services</Link>
@@ -87,7 +74,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-6 col-md-6 col-lg-3">
-            <h4>Subscribe for more..</h4>
+            <h4 className=" FooterHead">Subscribe for more..</h4>
             <Link to="/home">
               <div className="logo">
                 <img className="w-100 h-100" src={logo} alt="" />
@@ -104,33 +91,45 @@ const Footer = () => {
                 aria-describedby="basic-addon1"
               />
             </InputGroup>
-            <div className="mt-4 d-flex align-items-center justify-content-between">
+            <div className="mt-4">
+              <ul>
+                <li>
+              <Link to="/home">
+                  <BsFillTelephoneFill className="me-2" />
+                  +9856-83245
+                </Link>
+              </li>
+              <li>
+                <Link to="/home">
+                  <FaEnvelope className="me-2" />
+                  example@gmail.com
+                </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-4 d-flex align-items-center footerIcon">
               <Link to="#">
-                <FaFacebookSquare className="fs-3" />
+                <FaFacebookSquare className="fs-4" />
               </Link>
               <Link to="#">
-                <AiFillInstagram className="fs-2" />
+                <AiFillInstagram className="fs-4" />
               </Link>
               <Link to="#">
-                <AiFillTwitterSquare className="fs-2" />
+                <AiFillTwitterSquare className="fs-4" />
               </Link>
               <Link to="#">
-                <BsSkype className="fs-3" />
+                <BsSkype className="fs-4" />
               </Link>
               <Link to="#">
-                <BsLinkedin className="fs-3" />
+                <BsLinkedin className="fs-4" />
               </Link>
               <Link to="#">
-                <AiFillYoutube className="fs-1" />
+                <AiFillYoutube className="fs-4" />
               </Link>
             </div>
           </div>
         </div>
-        <div className="subFooter">
-          <p className="text-secondary text-center p-0 m-0">
-            &copy; Allrights reserved by i-Recharge
-          </p>
-        </div>
+       
       </Container>
     </div>
   );

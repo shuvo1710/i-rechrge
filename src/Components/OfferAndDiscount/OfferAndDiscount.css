@@ -1,0 +1,78 @@
+.center {
+  text-align: center;
+}
+
+.discountHead {
+  font-size: 26px;
+  font-weight: 500 !important;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+.swiper-slide {
+
+  font-size: 18px;
+  background: #fff;
+  /* padding: 10px; */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.sliderContent {
+  border: 1px solid rgb(222, 217, 217);
+}
+
+
+.discountInfo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #00000066;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 0 5px #b1b1b1;
+}

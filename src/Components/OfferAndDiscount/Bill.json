@@ -1,0 +1,52 @@
+[
+   
+    {
+      "_id": "638f2a5b9d8d75a1283b3e501",
+      "picture": "meattroBill.jpg",
+      "discount": "5% ",
+      "offer": "On Metro Booking"
+    },
+    {
+      "_id": "638f2a5b9d8d75a",
+      "picture": "DTHBill.jpg",
+      "discount": "10% ",
+      "offer": "On DTH Bill "
+    },
+    {
+      "_id": "638f2a5b9d8d75a1283b3e502",
+      "picture": "electricityBill.jpg",
+      "discount": "7% ",
+      "offer": "On Electricity Bill"
+    },
+    {
+      "_id": "638f2a5b9d8",
+      "picture": "gasBill.jpg",
+      "discount": "6% ",
+      "offer": "On Gus Bill"
+    },
+    {
+      "_id": "638f2a5b9d8d75a1283b",
+      "picture": "DTHBill.jpg",
+      "discount": "8% ",
+      "offer": "On Water Bill"
+    },
+    {
+      "_id": "638f2a5b9d8d75a12",
+      "picture": "meattroBill.jpg",
+      "discount": "10% ",
+      "offer": "On BroadBand Bill"
+    },
+    {
+      "_id": "638f2a5b9d8d75a1283b3e5",
+      "picture": "electricityBill.jpg",
+      "discount": "10% ",
+      "offer": "On LandPhone Bill"
+    },
+    {
+      "_id": "638f2a5b9d8d75a1283b3e",
+      "picture": "gasBill.jpg",
+      "discount": "10% ",
+      "offer": "On Air Bill"
+    }
+  
+  ]

@@ -15,11 +15,11 @@ const SubHeader = () => {
             <div className="contactAndEmail">
               <div className="callContainer d-flex align-items-center">
                 <BsFillTelephonePlusFill className="me-1" />
-                +88-54521821
+                <span className="contactNumber">+88-54521821</span>
               </div>
               <div className="emailContainer d-flex align-items-center">
                 <BsFillEnvelopeFill className="me-1" />
-                example@gmail.com
+                <span>example@gmail.com</span>
               </div>
             </div>
           </div>

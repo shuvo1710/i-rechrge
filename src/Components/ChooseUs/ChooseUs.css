@@ -1,0 +1,50 @@
+.choose-section {
+    margin: 80px 0;
+}
+
+.ChooseContent {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ChooseHead{
+    margin-bottom: 50px;
+}
+.ChooseHead h2{
+    font-size: 26px;
+    font-weight: 500 !important;
+}
+
+.center p {
+    margin-bottom: 30px;
+}
+
+.ChooseItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.roundedIcon {
+    aspect-ratio: 1/1;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 40px;
+    color: var(--secondary);
+    /* background-color: var(--primary); */
+    border: 1px solid var(--secondary);
+}
+
+.chooseText {
+    margin-left: 10px;
+}
+
+.chooseText h5 {
+    font-size: 22px;
+    font-weight: 800 !important;
+}

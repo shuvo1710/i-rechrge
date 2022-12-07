@@ -1,0 +1,53 @@
+.logInImg {
+    height: 100vh;
+    width: 100vw;
+}
+
+.imageOverLay {
+    background: rgba(151, 148, 148, 0.49);
+}
+
+.inputPass {
+    margin-bottom: 20px;
+}
+
+.logInHeader {
+    font-size: 50px;
+    font-weight: 800 !important;
+    color: var(--third);
+}
+
+.loginForm input {
+    width: 30%;
+    margin-top: 5px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.logInBtn{
+    border: none;
+    width: 15%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--secondary);
+    font-weight: 600;
+}
+.backHome{
+    font-size: 50px ;
+    color: var(--third);
+    border: 1px solid var(--secondary);
+    padding: 0 5px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.backHome:hover{
+    background-color: var(--secondary);
+    color: white;
+    transition: 0.5s;
+}
+.LoginLink:hover{
+    color: rgb(251, 251, 251);
+}

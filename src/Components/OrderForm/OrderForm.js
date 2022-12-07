@@ -41,7 +41,7 @@ const OrderForm = () => {
       <Container>
         <div className="orderInfoContainer">
           <Table hover>
-            <tbody>
+            <tbody className="order-form">
               <tr>
                 <td>Mobile Number</td>
                 <td className="text-end">+985XXXXXXXXX</td>

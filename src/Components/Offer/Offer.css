@@ -1,3 +1,9 @@
+.offerHead {
+  color: var(--secondary);
+  font-size: 26px;
+  font-weight: 500 !important;
+}
+
 .offersContainer {
   background: rgba(255, 255, 255, 0);
   min-height: 60vh;
@@ -6,51 +12,93 @@
   padding: 0 3rem;
   border-radius: 10px;
   overflow-y: hidden;
+  margin-top: 30px;
 }
+
+.offerContainerGrid {
+  display: grid;
+
+}
+
 .operatorImage {
   height: 45px;
   width: 45px;
   overflow: hidden;
 }
+
 .offerHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .allOffers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-.singleOffer {
-  padding: 0.7rem;
-  text-align: center;
-  border-radius: 5px;
+
+.bgPrimary {
+  color: white;
+  padding: 5px 25px;
+  background-color: #103f71;
+  border: 1px solid var(--secondary);
+}
+
+.bgPrimary:hover {
+  background-color: var(--secondary);
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.card-img-height img {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.singleOffer{
+  border-radius: 0px;
   transition: 0.2s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  box-shadow: 5px 5px 5px #bbbbbb, -5px -5px 15px white;
+  border: 1px solid #dedede;  
 }
+
 .tabsHeader {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: 50%;
-  margin: 1rem auto;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.singleOffer:hover {
-  transform: scale(1.05);
+
+.tabsHeader button {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tabsHeader button:hover {
+  color: var(--hover); 
 }
 
 .singleOffer:hover .offerButtons {
   left: 0%;
 }
+
 .offerSection {
   padding: 4rem 0rem;
   margin: 3rem 0;
-  background: linear-gradient(45deg, #ffeef9, #c6f5ff,#ffeef9, #c6f5ff);
+ 
   background-size: 100% 100%;
 }
+
 .viewMore {
   transition: 0.4s;
   padding: 7px 9px;
@@ -58,23 +106,81 @@
   background: var(--secondary);
   color: #ffffff;
 }
-.bgPrimary {
-  background: #008dee;
-}
+
 .viewMore:hover {
   padding: 7px 9px;
   border: 1px solid var(--secondary);
   background: transparent;
   color: var(--secondary);
 }
+
 .tabsHeader button {
   border: 1px solid transparent;
   background: rgba(255, 255, 255, 0);
   border-radius: 5px;
+  padding: 5px 10px;
 }
+
 .activeBorder {
   color: #000000;
   padding: 6px;
-  border-radius: 15px !important;
-  box-shadow: 5px 5px 10px #dddddd, -5px -5px 15px rgb(253 253 253 / 79%);
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--hover) !important;
+}
+
+.offerText{
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.packageFlex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.packAgeInfo p{
+  margin: 0;
+}
+.card-container1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.cardPadding{
+  padding: 0px 0.7rem;
+ 
+}
+.card-text-container{
+  width: 70%;
+}
+.card-image-container {
+  width: 30%;
+}
+.packageView{
+  border-top: 1px solid #dedede;
+  width: 100%;
+}
+.packageView a {
+  padding: 0.5rem;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: var(--third);
+}
+.packageView a:hover{
+  color: var(--third);
+}
+.packagePrice{
+  border: 1px solid var(--secondary);
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+.packagePrice:hover{
+  background-color: var(--secondary);
+  color: white;
+  transition: 0.4s;
+}
+.packageType{
+  font-weight: 600;
+  color: var(--third);
 }

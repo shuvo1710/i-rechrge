@@ -57,7 +57,7 @@ const Header = () => {
         <Modal.Body>
           <div className="profileModalContainer">
           <div className="d-flex align-items-center justify-content-between mb-2">
-            <ul className="d-flex align-items-center text-secondary mb-2">
+            <ul className="d-flex align-items-center text-secondary mb-2 hovarColor">
               <li>
                 <Link className="text-secondary" to="/">
                   Home

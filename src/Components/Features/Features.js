@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <div className="feature">
       <Container>
-        <h3 className="text-center mb-2">Why Choose Us</h3>
+        <h3 className="text-center mb-2 fw-normal featureHea">Why Choose Us</h3>
         <p className="w-75 text-center mx-auto pb-3">Lorem ipsum dolor sit amet consectetur, adipisiciecto.</p>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-3 col-xl-3">
@@ -17,8 +17,10 @@ const Features = () => {
               <div className="iconContainer1 commonIconContainer">
                 <AiFillLock className="fs-3" />
               </div>
-              <h4>100% Secure Payments</h4>
-              <p>Moving your card details to a much more secured place.</p>
+              <h5>100% Secure Payments</h5>
+              
+                <p className="line-clamp">Moving your card details to a much more secured place.</p>
+              
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3 col-xl-3">
@@ -26,8 +28,8 @@ const Features = () => {
               <div className="iconContainer2 commonIconContainer">
                 <FaHandshake className="fs-3" />
               </div>
-              <h4>24/7 Support</h4>
-              <p>
+              <h5>24/7 Support</h5>
+              <p className="line-clamp">
                 We are providing 24 hour support for any technical issua or
                 customization
               </p>
@@ -38,8 +40,8 @@ const Features = () => {
               <div className="iconContainer3 commonIconContainer">
                 <BsCurrencyDollar className="fs-3" />
               </div>
-              <h4>Bonus on reference</h4>
-              <p>Refer to your friend and get up to 15% bonus</p>
+              <h5>Bonus on reference</h5>
+              <p className="line-clamp">Refer to your friend and get up to 15% bonus</p>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3 col-xl-3">
@@ -47,8 +49,8 @@ const Features = () => {
               <div className="iconContainer4 commonIconContainer">
                 <FaChalkboardTeacher className="fs-3" />
               </div>
-              <h4>Easy operating system</h4>
-              <p>
+              <h5>Easy operating system</h5>
+              <p className="line-clamp">
                 Very easy to get understand about our events and plan packages
               </p>
             </div>

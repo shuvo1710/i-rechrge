@@ -9,9 +9,9 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 import { useState } from "react";
 import NotFound from "./Pages/NotFound/NotFound";
 import FeaturePage from "./Pages/FeaturePage/FeaturePage";
-import Login from "./Pages/Login/Login";
-import SignUp from "./Pages/SignUp/SignUp";
 import RechargePage from "./Pages/RechargePage/RechargePage";
+import Login from "./Components/Login/Login";
+import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
   // real loading time with preloader 
@@ -73,7 +73,7 @@ function App() {
                   <FeaturePage />
                 </Route>
                 <Route path="/login">
-                  <Login />
+                  <Login/>
                 </Route>
                 <Route path="/signup">
                   <SignUp />
@@ -88,7 +88,7 @@ function App() {
             </BrowserRouter>
           </AuthProvider>
         </div>
-      )}
+      )} 
     </>
   );
 }

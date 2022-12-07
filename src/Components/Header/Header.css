@@ -3,14 +3,21 @@
   align-items: center;
   position: relative;
 }
+
 .logoContainer {
   width: 30%;
 }
+
 .headerSection {
   padding: 1rem 0;
-  background: #ffe2da;
+  background: #150135;
   z-index: 55555;
+  position: sticky;
+  top: 0px;
+  color: white;
 }
+
+
 .navContainer {
   width: 85%;
   display: flex;
@@ -18,33 +25,46 @@
   justify-content: end;
   transition: 0.4s;
 }
+
 .linksContainer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .linksContainer {
   padding-right: 0.7rem;
 }
+
 .linksContainer ul li a {
-  color: #000000;
+
+  color: white;
   font-weight: 400;
   font-size: 17px;
 }
+
+.linksContainer ul li a:hover {
+  color: var(--hover);
+}
+
 .linksContainer ul li {
   margin-right: 3rem;
+
 }
+
 .logo {
   height: 40px;
   width: 150px;
   cursor: pointer;
 }
+
 .profileContainer {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: end;
 }
+
 .profileImage {
   height: 50px;
   width: 50px;
@@ -53,34 +73,43 @@
   border: 2px solid #f1f1f1;
   cursor: pointer;
 }
+
 .left0 {
   left: 0% !important;
 }
+
 .closeBtn {
   display: flex;
   align-items: center;
   justify-content: end;
 }
+
 .closeBtnContainer {
   width: 70%;
   display: none;
 }
+
 .onlyBigScreen {
   display: block;
 }
+
 .onlySmallScreen {
   display: none;
 }
+
 .profileContainer h5 {
   color: #0043a7;
   font-weight: bolder !important;
 }
+
 .linksContainer svg {
   display: none !important;
 }
+
 .modalProfileImage img {
   object-fit: cover;
 }
+
 .modalProfileImage {
   width: 120px;
   height: 120px;
@@ -89,11 +118,13 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
 .profileModalContainer {
   box-shadow: 0 0 5px #e8e8e8;
   border-radius: 7px;
   padding: 1rem;
 }
+
 tbody,
 td,
 tfoot,
@@ -104,6 +135,7 @@ tr {
   border-style: none !important;
   border-width: 0;
 }
+
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
@@ -112,9 +144,11 @@ th {
   display: flex;
   align-items: center;
 }
+
 td {
   color: #807e7e;
 }
+
 .profileButtons button {
   padding: 5px 14px;
   margin: 0 5px;
@@ -124,30 +158,37 @@ td {
   transition: 0.4s;
   color: #0b7696;
 }
+
 .profileButtons button:hover {
   border: 1px solid transparent;
   background: #0b7696;
   color: white;
 }
+
 .profileDetails h3 {
   color: #0b7696;
   font-weight: 600 !important;
 }
+
 .profileButtons button:first-child {
   margin-left: 0px !important;
 }
+
 .Shadow {
   box-shadow: 0 0 5px #e0e0e0;
   padding: 1rem;
   border-radius: 5px;
 }
+
 .responsiveBorderPadding {
   padding-left: 3rem !important;
   border-left: 1px solid grey;
 }
+
 .responsivePadding {
   padding-right: 3rem !important;
 }
+
 .sticky {
   position: fixed;
   width: 100%;
@@ -159,23 +200,28 @@ td {
   animation: stickyNav 0.4s;
   background: white;
 }
+
 .lginAndSign svg {
   color: #0043a7;
 }
+
 .lginAndSign {
   text-decoration: none;
-  color: black;
+  color: white;
 }
+
 .lginAndSign:hover {
-  color: black;
+  color: var(--hover);
 }
-.scrollTop{
+
+.scrollTop {
   position: fixed;
   top: 80%;
   right: 5%;
 }
+
 button.scrollTop {
-  background: linear-gradient(45deg, orange,tomato);
+  background: linear-gradient(45deg, orange, tomato);
   border: 1px solid rgb(224, 224, 224);
   padding: 5px;
   height: 40px;
@@ -183,23 +229,27 @@ button.scrollTop {
   border-radius: 20px;
   color: white;
 }
-button.scrollTop svg{
+
+button.scrollTop svg {
   color: white;
 }
+
 .toggleBar {
   color: #652581;
 }
+
 .toggleCrossBar {
   color: #ff3c1f;
 }
+
 @keyframes stickyNav {
   0% {
     margin-top: -100px;
     transition: 1s;
   }
+
   100% {
     margin-top: 0px;
     transition: 1s;
   }
 }
-

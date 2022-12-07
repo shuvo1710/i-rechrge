@@ -5,7 +5,7 @@
 }
 .rechargeBg {
   padding: 7rem 0;
-  background: url("../../utilities/backgroundImage/backgroundImage.png");
+  /* background: url("../../utilities/backgroundImage/backgroundImage.png"); */
   background-size: contain;
   height: 40vh;
   width: 100%;
@@ -31,11 +31,13 @@
   color: #041C52;
 }
 .rechargeContainer {
-    padding: 2rem 1rem;
     background: rgb(255, 255, 255);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px solid #375a61;
+    
+    
+    
+   
 }
 .shadoW {
   box-shadow: 0 0 3px #80808066;

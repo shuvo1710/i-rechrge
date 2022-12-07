@@ -1,0 +1,50 @@
+.signUpHeader{
+    font-size: 55px;
+    font-weight: 800 !important;
+    color: white;
+}
+.SignUpForm{
+    border: 1px solid var(-primary);
+}
+.SignUpName input{
+    width: 120% !important;
+}
+.lastName{
+    margin-left: 54px;
+}
+.SignUpForm input {
+    width: 40%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.createDot{
+    color: var(--third);
+    font-size: 90px;
+}
+.LoginLink{
+    text-decoration: none;
+    color: var(--third);
+}
+.signUpSubmit{
+    border: none;
+    width: 15%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--secondary);
+    font-weight: 600;
+}
+.signUpIcon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.faceBook{
+    color: #057df5;
+    margin: 0 0.7rem;
+}
+.twitter{
+    color: #4487f6;
+}

@@ -29,7 +29,7 @@ const OfferTab = () => {
           </div>
         </div>
 
-        <div className="singleOffer">
+        {/* <div className="singleOffer">
           <div className="offerHeader">
             <span className="text-dark fs-6">60 GB + 1200 Minutes</span>
             <div className="operatorImage">
@@ -178,7 +178,7 @@ const OfferTab = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
