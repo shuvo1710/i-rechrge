@@ -1,0 +1,19 @@
+.ChooseIcons{
+    margin: 2rem 0;
+    font-size: 40px;
+    color: rgba(0, 145, 255, 0.619);
+}
+.items-center{
+   
+    text-align: center;
+    margin: 2rem 0;
+
+}
+.items-center h4{
+    color: var(--secondary);
+    font-weight: 500 !important;
+}
+.items-center p{
+    width: 99%;
+    padding: 0 10px;
+}

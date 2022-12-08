@@ -12,6 +12,7 @@ import "./Home.css"
 
 import ChooseUs from "../../Components/ChooseUs/ChooseUs"
 import Banner from "../../Components/Banner/Banner";
+import FAQ from "../../Components/FAQ/FAQ";
 const Home = () => {
   
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <Subscriptions/>
         <OfferAndDisount></OfferAndDisount>
         <ChooseUs></ChooseUs>
+        <FAQ></FAQ>
         <Footer/>
     </div>
   );

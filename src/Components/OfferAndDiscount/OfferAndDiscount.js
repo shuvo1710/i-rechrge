@@ -16,8 +16,8 @@ const OfferAndDiscount = () => {
   return (
     <div className='container pt-5 '>
       <div className='mb-5'>
-        <h2 className='discountHead'>Featured Offers</h2>
-        <p>Get Best Offers & Discounts</p>
+        <h2 className='discountHead text-center'>Featured Offers</h2>
+        <p className='text-center'>Get Best Offers & Discounts</p>
       </div>
       <div>
         <Swiper

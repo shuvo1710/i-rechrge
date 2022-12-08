@@ -1,0 +1,7 @@
+.featureBannerImg{
+    width: 100vw;
+    height: 400px;
+}
+.featureBannerHead{
+    color: var(--secondary);
+}

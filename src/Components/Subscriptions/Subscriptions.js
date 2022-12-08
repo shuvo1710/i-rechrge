@@ -26,11 +26,11 @@ const Subscriptions = () => {
               </div>
               <div className="d-flex gap-3 mt-3">
                   <div className="iconHight">
-                  <img src={Google} alt="" srcSet="" />
+                  <img src={Google} className="h-100" alt="" srcSet="" />
                   </div>
 
                   <div className="iconHight">
-                  <img src={Apple} alt="" srcSet="" />
+                  <img src={Apple} className="h-100" alt="" srcSet="" />
                   </div>
                   
                 </div>

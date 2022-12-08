@@ -1,0 +1,21 @@
+.referHead{
+    margin: 2rem 0;
+    text-align: center;
+}
+.singleRefer{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgba(153, 151, 151, 0.247);
+}
+.singleRefer h1{
+   margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 600 !important;
+    color: rgba(0, 145, 255, 0.619);
+    background-color: rgba(160, 154, 154, 0.162);
+   
+ 
+}

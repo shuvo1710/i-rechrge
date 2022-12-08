@@ -3,14 +3,11 @@ import { Container, FormControl, InputGroup } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../../utilities/logoImages/logo1.png";
-import { BsFillTelephoneFill, BsSkype, BsLinkedin } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
-import {
-  AiFillInstagram,
-  AiFillTwitterSquare,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { BsFillTelephoneFill} from "react-icons/bs";
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
+
 import { FaEnvelope } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className="footer">
@@ -112,20 +109,18 @@ const Footer = () => {
                 <FaFacebookSquare className="fs-4" />
               </Link>
               <Link to="#">
-                <AiFillInstagram className="fs-4" />
+                <FiInstagram className="fs-4" />
               </Link>
               <Link to="#">
-                <AiFillTwitterSquare className="fs-4" />
+                <FaTwitterSquare className="fs-4" />
               </Link>
               <Link to="#">
-                <BsSkype className="fs-4" />
+                <FaLinkedin className="fs-4" />
               </Link>
               <Link to="#">
-                <BsLinkedin className="fs-4" />
+                <FaYoutubeSquare className="fs-4" />
               </Link>
-              <Link to="#">
-                <AiFillYoutube className="fs-4" />
-              </Link>
+            
             </div>
           </div>
         </div>

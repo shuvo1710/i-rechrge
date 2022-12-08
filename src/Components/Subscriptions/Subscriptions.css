@@ -28,10 +28,10 @@
   transition: 0.5;
 }
 .subsContainer {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 .iconHight img{
-  width: 200px;
+width: 200px;
 }
 @keyframes image {
   0% {

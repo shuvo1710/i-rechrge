@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Modal, Spinner } from "react-bootstrap";
 import "./Offer.css";
-import Reveal from 'react-reveal/Reveal';
 import robi from "../../utilities/operatorImages/robi.png";
 import gp from "../../utilities/operatorImagesNew/gp.png";
 import voda from "../../utilities/operatorImagesNew/vodafone.png";
@@ -10,7 +9,8 @@ import airtel from "../../utilities/operatorImagesNew/airtel.png";
 import mOne from "../../utilities/operatorImagesNew/mOne.png";
 import startHub from "../../utilities/operatorImagesNew/starhub.png"
 import offerImage from "../../utilities/operatorImageModal/operatorModal.png";
-import { Link } from "react-router-dom";
+
+
 import OfferCard from "./OfferCard/OfferCard";
 const Offer = () => {
   const [all, setAll] = useState(true);
@@ -68,11 +68,6 @@ const Offer = () => {
   return (
 
     <>
-      {spinner ? (
-        <div className="text-center">
-          <Spinner animation="grow" variant="info" />
-        </div>
-      ) : (
         <section className="offerSection">
           <Modal
             size="lg"
@@ -116,13 +111,14 @@ const Offer = () => {
             </Modal.Body>
           </Modal>
           <Container>
-            <h2 className=" offerHead">Our Offer</h2>
+            <h2 className=" offerHead text-center">Our Offer</h2>
+            <p className="text-center">Lorem ipsum dolor sit amet.</p>
             <div className="offersContainer">
               <div className="">
                 <div className="tabsHeader">
                   <button
                     onClick={showAll}
-                    className={` mx-3 ${all ? "activeBorder" : ""} `}
+                    className={`${all ? "activeBorder" : ""} `}
                   >
                     All
                   </button>
@@ -153,33 +149,24 @@ const Offer = () => {
                   </button>
                 </div>
                 <div className="tabsContent">
-                  {all && (
-                    
-
-                    <Reveal effect="fadeInUp">
+                  {all && (               
                     <div className="allContent">
-                      <div className="row g-3">
-                        
+                      <div className="row g-3"> 
                         {
                           packages.map((_,i)=><div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{img:_}} handleShow={handleShow}/></div>)
-                        }
-                        
+                        }                       
                       </div>
                       <div className="text-center mt-5">
                         <button className="viewMore rounded">View More</button>
                       </div>
                     </div>
-                    </Reveal>
-
-                  )}
+                  )}              
                   {internet && (
                     <div className="allContent">
                       <div className="row g-3">
-
                         {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
                         }
-
                       </div>
                       <div className="text-center mt-5">
                         <button className="viewMore rounded">View More</button>
@@ -189,11 +176,9 @@ const Offer = () => {
                   {talkTime && (
                     <div className="allContent">
                       <div className="row g-3">
-
                         {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
                         }
-
                       </div>
                       <div className="text-center mt-5">
                         <button className="viewMore rounded">View More</button>
@@ -203,11 +188,9 @@ const Offer = () => {
                   {combo && (
                     <div className="allContent">
                       <div className="row g-3">
-
                         {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
                         }
-
                       </div>
                       <div className="text-center mt-5">
                         <button className="viewMore rounded">View More</button>
@@ -217,11 +200,9 @@ const Offer = () => {
                   {sms && (
                     <div className="allContent">
                       <div className="row g-3">
-
                         {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
                         }
-
                       </div>
                       <div className="text-center mt-5">
                         <button className="viewMore rounded">View More</button>
@@ -233,7 +214,6 @@ const Offer = () => {
             </div>
           </Container>
         </section>
-      )}
     </>
   );
 };

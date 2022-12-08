@@ -1,0 +1,16 @@
+.FaqBody{
+    margin: 3rem 0;
+}
+.FaqHead{
+font-size: 26px;
+font-weight: 500 !important;
+margin-bottom: 2rem;
+}
+.pointer{
+    cursor: pointer;
+}
+.singleFAQ{
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    margin-bottom: 1.5rem;
+}

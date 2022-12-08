@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Zoom from 'react-reveal/Zoom';
 
 const OfferCard = ({ data, handleShow }) => {
     return (
-        <div className="singleOffer" onClick={handleShow}>
+        <Zoom>
+
+<div className="singleOffer" onClick={handleShow}>
             <div className="card-container1 cardPadding py-2">
                 <div className="card-text-container">
                     <h4 className="offerText"><span className='fw-1 fs-3'>50%</span><br /> Discount</h4>
@@ -32,6 +35,7 @@ const OfferCard = ({ data, handleShow }) => {
                 <Link to="#">View Details</Link>
             </div>
         </div>
+        </Zoom>
     );
 };
 

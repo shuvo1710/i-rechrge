@@ -1,17 +1,23 @@
 .rechargeNow {
   padding: 7px 9px;
-  border: 1px solid #22b072;
+  border: 1px solid var(--secondary);
   background: white;
-  color: #0c9a5c;
+  color: var(--secondary);
   transition: 0.4s;
 }
 .rechargeNow:hover {
   padding: 7px 9px;
-  border: 1px solid #0087db00;
-  background: #22b072;
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
   color: #ffffff;
 }
 h1 span {
   color: #5ae4a8;
   font-weight: 400;
+}
+.SecondBannerImg img{
+  height: 300px;
+}
+.headerMoney{
+  color: var(--secondary);
 }
