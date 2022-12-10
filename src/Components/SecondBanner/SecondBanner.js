@@ -4,9 +4,9 @@ import banner from "../../utilities/bannerImages/moneyTransform.jpg";
 import "./SecondBanner.css";
 const SecondBanner = () => {
   return (
-    <div>
+    <section className="secondBannerContend py-5">
       <Container>
-        <div className="row align-items-center my-5">
+        <div className="row align-items-center">
           <div className="col-12 col-md-12 col-lg-6 col-xl-6">
             <h1>
               Simple & Easy Way To Manage <br /> <span className="headerMoney">Your Money</span>
@@ -25,7 +25,7 @@ const SecondBanner = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

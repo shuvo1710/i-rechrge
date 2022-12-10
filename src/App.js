@@ -10,17 +10,20 @@ import { useState } from "react";
 import NotFound from "./Pages/NotFound/NotFound";
 import FeaturePage from "./Pages/FeaturePage/FeaturePage";
 import RechargePage from "./Pages/RechargePage/RechargePage";
-import Login from "./Components/Login/Login";
-import SignUp from "./Components/SignUp/SignUp";
+import { useEffect } from "react";
 
 function App() {
   // real loading time with preloader 
   const [loader, setLoader] = useState(true);
   const [loaderAnimation, setLoaderAnimation] = useState(true);
-  window.addEventListener("load", () => {
-    setLoader(false);
-    setLoaderAnimation(false);
-  });
+
+  useEffect(()=>{
+    window.addEventListener("load", () => {
+      setLoader(false);
+      setLoaderAnimation(false);
+    });
+  },[])
+
   // real loading time with preloader
 
 
@@ -72,12 +75,7 @@ function App() {
                 <Route path="/feature">
                   <FeaturePage />
                 </Route>
-                <Route path="/login">
-                  <Login/>
-                </Route>
-                <Route path="/signup">
-                  <SignUp />
-                </Route>
+               
                 <Route path="/recharge">
                   <RechargePage />
                 </Route>

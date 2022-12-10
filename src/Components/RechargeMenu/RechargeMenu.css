@@ -11,19 +11,17 @@
   width: 100%;
 }
 .rechargeMenu {
-    margin-top: -14rem;
+    margin-top: -4rem;
+    position: relative;
+    background: white;
 }
 .rechargeButton {
   border: 1px solid transparent;
-  padding: 10px 5px;
+  padding: 5px;
   background: #041C52;
   color: var(--primary);
   transition: 0.4s;
   border-radius: 7px;
-  position: absolute;
-  bottom: -6%;
-  left: 5%;
-  width: 90%;
 }
 .rechargeButton:hover {
   border: 1px solid #041C52;
@@ -44,7 +42,7 @@
 }
 .rechargeItemMenu {
   height: 353px;
-  border: 1px solid var(--third);
+  /* border: 1px solid var(--third); */
   padding: 1.5rem;
   border-radius: 10px;
   position: relative;

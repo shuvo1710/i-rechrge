@@ -11,3 +11,7 @@
     font-size: 40px;
     margin-bottom: 10px;
 }
+.fontSize{
+    font-size: 30px;
+    font-weight: 600 !important;
+}

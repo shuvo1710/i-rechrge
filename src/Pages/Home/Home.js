@@ -16,13 +16,12 @@ import FAQ from "../../Components/FAQ/FAQ";
 const Home = () => {
   
   return (
-    <div className="bg-transparent">
-
+    <div>
         <SubHeader/>
         <Header/>
         <Banner></Banner>
-        {/* <SwiperApp></SwiperApp>
-        <RechargeMenu/> */}
+        {/* <SwiperApp></SwiperApp> */}
+        <RechargeMenu/>
         <Offer/>
         <Subscriptions/>
         <OfferAndDisount></OfferAndDisount>

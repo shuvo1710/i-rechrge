@@ -1,7 +1,8 @@
 import React from "react";
 import Accordions from "../../Components/Accordions/Accordions";
-import ChooseFeature from "../../Components/ChooseFeature/ChooseFeature";
+
 import Counter from "../../Components/Counter/Counter";
+import ExtraFeature from "../../Components/ExtraFeature/ExtraFeature";
 import Rafer from "../../Components/FAQ/Rafer/Rafer";
 
 
@@ -11,8 +12,7 @@ import FeatureBanner from "../../Components/FeatureBanner/FeatureBanner";
 import Features from "../../Components/Features/Features";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-
-import SecondBanner from "../../Components/SecondBanner/SecondBanner";
+import OnlineRechargeAndPay from "../../Components/OnlineRechargeAndPay/OnlineRechargeAndPay";
 import SubHeader from "../../Components/SubHeader/SubHeader";
 
 const FeaturePage = () => {
@@ -21,13 +21,17 @@ const FeaturePage = () => {
       <SubHeader/>
       <Header />
       <FeatureBanner/>
-      <SecondBanner />
+      {/* <SecondBanner /> */}
       {/* <Feature1 />
       <Feature2 /> */}
       {/* <Accordions /> */}
-      <Counter/>
+     
       <Rafer/>
-      <ChooseFeature/>
+      <OnlineRechargeAndPay/>
+      <Counter/>
+      
+     
+      <ExtraFeature/>
       <Footer />
     </div>
   );

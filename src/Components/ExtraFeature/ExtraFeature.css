@@ -1,0 +1,35 @@
+.iconsCircel{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.extraHead h2{
+    font-size: 26px;
+    font-weight: 500 !important;
+}
+.extraFeatureIcons{
+    margin: 10px 0;
+    font-size: 60px;
+    color: white; 
+}
+.ExtraFeatureText p{
+ width: 75%;
+margin: 0 auto;
+}
+.bgGreen{
+    background-color: rgb(20, 159, 20);
+}
+.bgOrange{
+    background-color: orange;
+}
+.bgPurple{
+    background-color: #7207de;
+}
+.bgRed{
+    background-color: rgba(230, 18, 18, 0.888);
+}
