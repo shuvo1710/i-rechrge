@@ -1,18 +1,23 @@
 import React from "react";
 import { Form, FormControl, InputGroup } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import useAuth from "../../../Hooks/useAuth";
+
 
 const RechargeForm = () => {
+  const {activeState} = useAuth()
   const history = useHistory();
   const OrderNow = () => {
     history.push("/order");
   };
   return (
     <div className="rechargeItemMenu">
-      <h3>Mobile Recharge or Bill Payment</h3>
+      { activeState === 'Mobile' ? <h3>Mobile Recharge or Bill Payment</h3> : <h3>Bill Payment</h3>}
       <Form>
         <div key="inline-radio" className="mb-4">
-          <Form.Check
+          {
+            activeState === 'Mobile' && <div>
+              <Form.Check
             inline
             label="Prepaid"
             name="group1"
@@ -26,44 +31,83 @@ const RechargeForm = () => {
             type="radio"
             id="inline-radio-2"
           />
+            </div>
+          }
+          
         </div>
       </Form>
       <form>
       <div className="row">
-        <div className="col-12 col-md-6 col-lg-3">
+        {
+          activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
+          <Form.Control
+              type="number"
+              placeholder="Mobile Number"
+              id="inputPassword5"
+              aria-describedby="passwordHelpBlock"
+              className="border-0 border-bottom rounded-0"
+            />
+          </div>
+          :
+          <div className="col-12 col-md-6 col-lg-3">
         <Form.Control
-            type="text"
-            placeholder="Mobile Number"
+            type="number"
+            placeholder="Account Number"
             id="inputPassword5"
             aria-describedby="passwordHelpBlock"
             className="border-0 border-bottom rounded-0"
           />
         </div>
-        <div className="col-12 col-md-6 col-lg-3">
+
+        }
+        {
+          activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
+          <Form.Select
+            className="mb-4 border-0 border-bottom rounded-0 optionColor"
+            aria-label="Default select example"
+          >
+            <option>Select Your Operator</option>
+            <option value="1">Grameen</option>
+            <option value="2">Airtel</option>
+            <option value="3">Banglalink</option>
+          </Form.Select>
+          </div> 
+          :
+          <div className="col-12 col-md-6 col-lg-3">
         <Form.Select
           className="mb-4 border-0 border-bottom rounded-0"
           aria-label="Default select example"
         >
-          <option>Select Your Operator</option>
-          <option value="1">Grameen</option>
-          <option value="2">Airtel</option>
-          <option value="3">Banglalink</option>
+          <option>Select Month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
         </Form.Select>
         </div>
+        }
         <div className="col-12 col-md-6 col-lg-3">
         <InputGroup className="mb-4">
           <FormControl
             className="border-0 border-bottom rounded-0"
             aria-label="Amount (to the nearest dollar)"
             placeholder="$ Enter Amount"
+            type="number"
           />
         </InputGroup>
         </div>
-        <div className="col-12 col-md-6 col-lg-3">
+        {
+          activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
+          <button onClick={OrderNow} className="rechargeButton w-100">
+            Recharge Now
+          </button>
+          </div>
+          : 
+          <div className="col-12 col-md-6 col-lg-3">
         <button onClick={OrderNow} className="rechargeButton w-100">
-          Recharge Now
+          Pay Now
         </button>
         </div>
+        }
       </div>
       </form>
     </div>

@@ -1,3 +1,9 @@
+.bgRefer{
+    /* background-color: #f2f6fd; */
+    background-image: url(../../../utilities/bannerImages/bg-refer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .referBody{
     margin: 2rem 0;
     text-align: center;
@@ -6,11 +12,11 @@
     font-size: 26px;
     font-weight: 500 !important;
 }
-.singleRefer{
+.singleRefer {
     padding: 50px;
     text-align: center;
     background-color: white;
-    border: 1px solid rgba(153, 151, 151, 0.247);
+    box-shadow: 5px 5px 5px #cbc3c324;
 }
 .singleRefer h1{
    margin: 20px auto;

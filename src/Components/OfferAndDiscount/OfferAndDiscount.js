@@ -22,6 +22,8 @@ const OfferAndDiscount = () => {
       <div>
         <Swiper
           navigation={false}
+          loop={true}
+          loopFillGroupWithBlank={true}
           autoplay={{
             delay: 1000,
             disableOnInteraction: false,
@@ -38,7 +40,7 @@ const OfferAndDiscount = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 50,
             },
           }}

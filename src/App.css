@@ -2,10 +2,11 @@
 /* Tag: Online Mobile Recharge and Bill Pay UI Template | React JS */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&display=swap');
 :root {
-  --primary: rgb(254, 252, 252);
-  --secondary: #0c2f54;
-  --third: #f96f06;
-  --hover:#f0bb0c;
+  --primary: rgba(225, 218, 218, 0.594);
+  --secondary: #1FDED8;
+  --third: #3A9188;
+  /* --hover:#7B6CF6; */
+  --hover:#ce3b80e7;
   --font-primary: 'Barlow Semi Condensed', sans-serif;
   --font-secondary: 'PT Sans', sans-serif;
 }

@@ -10,14 +10,13 @@
 }
 .optionsContainer {
   position: relative;
-  padding: 0.5rem 0 0 0;
+  /* padding: 0.5rem 0 0 0; */
   margin: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 .option {
   width: 100%;
-  color: var(--secondary);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -30,7 +29,7 @@
   color: white;
   padding: 0.4rem;
   border-radius: 50%;
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
   position: relative;
   z-index: -1;
 }
@@ -52,17 +51,24 @@
   border-top-left-radius: 5px !important;
   border-top-right-radius: 5px !important;
   overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2;
+  gap: 10px;
 }
-.activeOption{
-  background: white !important;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
-  padding: 6px 0 !important;
-  color: #04075c !important;
-}
-.activeOption span {
-  color: rgb(0, 0, 0) !important;
-}
+
 button.linkOption span {
   font-size: 0.8rem;
 }
+.activeStateColor{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+
+}
+
+.bgOption{
+  background-color: #0c2f55;
+}
+

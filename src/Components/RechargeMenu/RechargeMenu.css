@@ -1,3 +1,6 @@
+.bgRechargeMenu{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .carousel-item img {
   height: 35vh;
   object-fit: cover;
@@ -5,45 +8,54 @@
 }
 .rechargeBg {
   padding: 7rem 0;
-  /* background: url("../../utilities/backgroundImage/backgroundImage.png"); */
   background-size: contain;
   height: 40vh;
   width: 100%;
 }
 .rechargeMenu {
-    margin-top: -4rem;
+    margin-top: -44px;
     position: relative;
     background: white;
 }
 .rechargeButton {
   border: 1px solid transparent;
   padding: 5px;
-  background: #041C52;
-  color: var(--primary);
+  background: var(--hover);
+  color: white;
   transition: 0.4s;
   border-radius: 7px;
 }
 .rechargeButton:hover {
-  border: 1px solid #041C52;
-  background: var(--primary);
-  color: #041C52;
+  border: 1px solid var(--hover);
+  background: transparent;
+  color: var(--hover);
 }
 .rechargeContainer {
     background: rgb(255, 255, 255);
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    
-    
-    
-   
+    border-bottom-right-radius: 5px;   
 }
 .shadoW {
   box-shadow: 0 0 3px #80808066;
 }
 .rechargeItemMenu {
-  height: 353px;
-  /* border: 1px solid var(--third); */
+  height: 210px;
   padding: 1.5rem;
   border-radius: 10px;
   position: relative;
+}
+.form-select:focus {
+  background-color: #fff;
+  /* border-color: 0px !important; */
+  border-bottom: 0px !important ;
+  outline: 1px solid var(--secondary) !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  /* border-color: 0px !important; */
+  border-bottom: 0px !important ;
+  outline: 1px solid var(--secondary) !important;
+  box-shadow: none !important;
 }

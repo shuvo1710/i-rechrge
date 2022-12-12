@@ -1,6 +1,6 @@
-.iconsCircel{
-    height: 100px;
-    width: 100px;
+.iconsCircel {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
 }
 .extraFeatureIcons{
     margin: 10px 0;
-    font-size: 60px;
+    font-size: 25px;
     color: white; 
 }
 .ExtraFeatureText p{

@@ -106,16 +106,18 @@
   transition: 0.4s;
   padding: 7px 9px;
   border: 1px solid #0087db00;
-  background: var(--secondary);
+  background: var(--hover);
   color: #ffffff;
 }
-
 .viewMore:hover {
   padding: 7px 9px;
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--hover);
   background: transparent;
-  color: var(--secondary);
+  color: var(--hover);
 }
+
+
+
 
 .tabsHeader button {
   border: 1px solid transparent;

@@ -26,8 +26,8 @@ const RechargeMenu = () => {
     img3: offer3,
   };
   return (
-    <div>
-        <Container className="p-0">
+    <div className="">
+        <Container className="p-0 bgRechargeMenu">
           <div className="rechargeMenu">
               <Options/>
               <Mobile />

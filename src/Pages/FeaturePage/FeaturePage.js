@@ -1,5 +1,6 @@
 import React from "react";
 import Accordions from "../../Components/Accordions/Accordions";
+import Banner from "../../Components/Banner/Banner";
 
 import Counter from "../../Components/Counter/Counter";
 import ExtraFeature from "../../Components/ExtraFeature/ExtraFeature";
@@ -16,22 +17,36 @@ import OnlineRechargeAndPay from "../../Components/OnlineRechargeAndPay/OnlineRe
 import SubHeader from "../../Components/SubHeader/SubHeader";
 
 const FeaturePage = () => {
+  const data = {
+    heading:'Feature',
+    img:'feature.png',
+    breadCumb:[
+      {
+      title:'Home',
+      link:'/home'
+    },{
+      title:'Feature',
+      link:'/feature'
+    }
+  ]
+  }
   return (
     <div>
       <SubHeader/>
       <Header />
-      <FeatureBanner/>
+      <Banner data={data}/>
       {/* <SecondBanner /> */}
       {/* <Feature1 />
       <Feature2 /> */}
-      {/* <Accordions /> */}
+      
      
-      <Rafer/>
       <OnlineRechargeAndPay/>
-      <Counter/>
+      <Rafer/>
+      {/* <Counter/> */}
       
      
       <ExtraFeature/>
+      <Accordions />
       <Footer />
     </div>
   );

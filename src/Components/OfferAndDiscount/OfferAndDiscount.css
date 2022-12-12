@@ -5,6 +5,7 @@
 .discountHead {
   font-size: 26px;
   font-weight: 500 !important;
+  color: var(--secondary);
 }
 
 html,

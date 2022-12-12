@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="col-6 col-md-6 col-lg-3">
             <ul>
               <li>
-                <h2 className=" FooterHead">About Us</h2>
+                <h2 className="FooterHead">About Us</h2>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing
                   elit.ernatur eum.
@@ -82,7 +82,7 @@ const Footer = () => {
                 <FaEnvelope className="pointer" />
               </InputGroup.Text>
               <FormControl
-                className="bg-transparent text-light"
+                className="footerSubs text-black"
                 placeholder="Enter your email"
                 aria-label="Email"
                 aria-describedby="basic-addon1"

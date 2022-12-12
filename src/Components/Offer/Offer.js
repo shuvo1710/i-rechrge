@@ -193,7 +193,7 @@ const Offer = () => {
                         }
                       </div>
                       <div className="text-center mt-5">
-                        <button className="viewMore rounded">View More</button>
+                        <button className="viewMore rounded">View More </button>
                       </div>
                     </div>
                   )}

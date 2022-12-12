@@ -1,36 +1,62 @@
 import React, { useState } from "react";
-import { Button, Container, Form, Modal, Table } from "react-bootstrap";
+import { Container, Form, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo2 from "../../utilities/logoImages/logo1.png";
-import { AiOutlineBars, AiOutlineHome, AiOutlineLogin, AiOutlineArrowUp } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineHome, AiOutlineArrowUp } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
-import { FaGoogle, FaHandHoldingUsd, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaHandHoldingUsd, FaInstagram } from "react-icons/fa";
 import { BsCardList, } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
 import { useHistory } from "react-router-dom";
 
 
 
 const Header = () => {
-
+  const [nav, setNav] = useState(false);
+  const [stickyNav, setStickyNav] = useState(false);
+  // signup modal start
+  const [showSignUp, setShowSignUp] = useState(false);
+  const handleSignUpClose = () => setShowSignUp(false);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const [nav, setNav] = useState(false);
+
+  const history = useHistory();
+
+  const handleSignUpShow = () => {
+    setShowSignUp(true)
+    handleClose()
+  };
+  // signup modal end
+
+
+
+
+  const handleShow = () => {
+    setShow(true)
+    handleSignUpClose()
+  };
   const toggleNav = () => {
     setNav(!nav);
   };
-  const history = useHistory();
-  const [stickyNav, setStickyNav] = useState(false);
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       setStickyNav(true);
-    } else {
+
+    }
+    else {
       setStickyNav(false);
     }
   });
+
   const scrollTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo(
+      {
+        top: 0,
+        behavior: "smooth"
+      }
+    );
   }
   return (
     <div className={`headerSection ${stickyNav ? "sticky" : ""}`}>
@@ -38,47 +64,105 @@ const Header = () => {
         stickyNav && <button onClick={scrollTop} className="scrollTop"><AiOutlineArrowUp /></button>
       }
 
-      <Modal show={show} onHide={handleClose}>
-    
-          <div className="LogInHead">Log in</div>
-    
-
-        
-                 
-        <p>New To i-recharge? <button className="signUpButton">Please Sign Up</button></p>
+      {/* signIn modal start */}
+      <Modal show={show} className="signInModal" onHide={handleClose}>
+        <div className="LogInHead position-relative text-center">
+          <h1 className="mt-4 signInHead">Sign in</h1>
+          <span onClick={handleClose} className="position-absolute  closeBtn">x</span>
+          <p>New To i-recharge? <Link onClick={handleSignUpShow} className="signUp">Please Sign Up</Link></p>
+        </div>
         <Modal.Body>
           <Form >
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
+            <Form.Group className="mb-2 w-75 mx-auto " controlId="exampleForm.ControlInput1">
+              <Form.Label className="signInLabel">Email address</Form.Label>
+              <input
+                className="w-100 SignInInput"
                 type="email"
                 placeholder="name@example.com"
                 autoFocus
               />
             </Form.Group>
-
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-2 w-75 mx-auto inputShadow" controlId="exampleForm.ControlInput1">
               <Form.Label>Password</Form.Label>
-              <Form.Control
+              <input
+                className="w-100 SignInInput"
+                type="password"
+                placeholder="Inter Your Password"
+                autoFocus
+              />
+            </Form.Group>
+            <div className="w-50 mx-auto">
+              <button className="SubmitButton w-100 mx-auto mt-3" type="submit">Sign in</button>
+            </div>
+            <div className="text-center mt-4">
+              <FcGoogle className="me-2  socialIcon" />
+              <FaInstagram className="me-2 socialIcon instraColor"></FaInstagram>
+              <FaFacebook className="me-2 text-primary socialIcon"></FaFacebook>
+            </div>
+          </Form>
+        </Modal.Body>
+      </Modal>
+      {/* signIn modal end */}
+
+      {/* signUp modal start */}
+
+      <Modal show={showSignUp} onHide={handleSignUpClose}>
+        <div className="LogInHead position-relative text-center">
+          <h1 className="mt-4 signInHead">Sign up</h1>
+          <span onClick={handleSignUpClose} className="position-absolute  SignUPCloseBtn">x</span>
+          <p>Already have an account? <Link onClick={handleShow} className="signUp">Please Sign Up</Link></p>
+        </div>
+        <Modal.Body>
+          <Form >
+            <Form.Group className="mb-2 w-75 mx-auto " controlId="exampleForm.ControlInput1">
+              <Form.Label className="signInLabel">User Name</Form.Label>
+              <input
+                className="w-100 SignInInput"
+                type="text"
+                placeholder="Marzuk"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-2 w-75 mx-auto inputShadow" controlId="exampleForm.ControlInput1">
+              <Form.Label>E-mail</Form.Label>
+              <input
+                className="w-100 SignInInput"
+                type="email"
+                placeholder="example@gmail.com"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-2 w-75 mx-auto inputShadow" controlId="exampleForm.ControlInput1">
+              <Form.Label>Phone Number</Form.Label>
+              <input
+                className="w-100 SignInInput"
+                type="number"
+                placeholder="017********"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-2 w-75 mx-auto inputShadow" controlId="exampleForm.ControlInput1">
+              <Form.Label>Password</Form.Label>
+              <input
+                className="w-100 SignInInput"
                 type="password"
                 placeholder="******"
                 autoFocus
               />
             </Form.Group>
-
-            <button className="SubmitButton" type="submit">Log in</button>
-
-            <div className="text-center mt-4">
-              <FaGoogle className="mx-2 fs-3 socialIcon"></FaGoogle>
-              <FaInstagram className="mx-2 fs-3 socialIcon"></FaInstagram>
-              <FaLinkedin className="mx-2 fs-3 socialIcon"></FaLinkedin>
-          
+            <div className="w-50 mx-auto">
+              <button className="SubmitButton w-100 mx-auto mt-3" type="submit">Sign up</button>
             </div>
-
+            <div className="text-center mt-4">
+              <FcGoogle className="me-2  socialIcon" />
+              <FaInstagram className="me-2 socialIcon instraColor"></FaInstagram>
+              <FaFacebook className="me-2 text-primary socialIcon"></FaFacebook>
+            </div>
           </Form>
         </Modal.Body>
-        
       </Modal>
+
+      {/* signUp modal end */}
 
       <Container>
         <div className="headerContainer">

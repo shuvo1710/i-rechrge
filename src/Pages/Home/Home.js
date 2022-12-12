@@ -14,19 +14,22 @@ import ChooseUs from "../../Components/ChooseUs/ChooseUs"
 import Banner from "../../Components/Banner/Banner";
 import FAQ from "../../Components/FAQ/FAQ";
 const Home = () => {
-  
+  const data = {
+    heading:'Online Mobile Recharge',
+    img:'banner.png',
+    text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus incidunt nulla magni iste? Doloremque repellendus, excepturi rerum sed qui quod adipisci, expedita ipsam possimus dolores et impedit totam necessitatibus nam quos culpa. Laborum dolore unde nesciunt consequuntur dignissimos, quod nihil, aperiam ad molestiae quaerat id, tenetur explicabo modi deleniti!'
+  }
   return (
     <div>
         <SubHeader/>
         <Header/>
-        <Banner></Banner>
+        <Banner data={data}/>
         {/* <SwiperApp></SwiperApp> */}
         <RechargeMenu/>
         <Offer/>
         <Subscriptions/>
-        <OfferAndDisount></OfferAndDisount>
-        <ChooseUs></ChooseUs>
-        <FAQ></FAQ>
+        <OfferAndDisount/>
+        <ChooseUs/>
         <Footer/>
     </div>
   );

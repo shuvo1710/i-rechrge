@@ -1,26 +1,25 @@
 import React, { useEffect } from "react";
 import { Accordion, Container } from "react-bootstrap";
+import { Fade } from "react-reveal";
 import img from "../../utilities/accordionImages/accordion.png";
 import "./Accordions.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Accordions = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
   return (
     <div className="accordions">
       <Container>
         <div className="row align-items-center">
+          <Fade left>
+            <div
+
+              className="col-12 col-md-12 col-lg-6 col-xl-6"
+            >
+              <img className="w-100" src={img} alt="" />
+            </div>
+          </Fade>
+          <Fade right>
           <div
-            data-aos="zoom-out"
-            className="col-12 col-md-12 col-lg-6 col-xl-6"
-          >
-            <img className="w-100" src={img} alt="" />
-          </div>
-          <div
-            data-aos="zoom-out"
             className="col-12 col-md-12 col-lg-6 col-xl-6"
           >
             <Accordion defaultActiveKey="0">
@@ -71,6 +70,7 @@ const Accordions = () => {
               </Accordion.Item>
             </Accordion>
           </div>
+          </Fade>
         </div>
       </Container>
     </div>

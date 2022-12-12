@@ -11,9 +11,10 @@
 .headerSection {
   padding: 1rem 0;
   background: #ffffff;
-  z-index: 55555;
-  top: 0px;
+  z-index: 105 ;
+  top: 0px ;
   color: white;
+  
 }
 
 
@@ -24,14 +25,17 @@
   justify-content: end;
   transition: 0.4s;
 }
+
 .linksContainer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .linksContainer ul li {
   text-align: end;
 }
+
 .linksContainer ul li a {
   color: #000000;
   font-weight: 400;
@@ -184,7 +188,7 @@ td {
   padding-right: 3rem !important;
 }
 
-.sticky {
+.headerSection.sticky {
   position: fixed;
   width: 100%;
   z-index: 10055555555555555555550;
@@ -238,50 +242,85 @@ button.scrollTop svg {
 .toggleCrossBar {
   color: #ff3c1f;
 }
-.textCenter{
+
+.textCenter {
   text-align: center;
 
   margin: 0 auto;
 }
+
 .modal-header .btn-close {
   padding: 0;
   margin: 0 auto;
 }
-.LogInHead{
+.signInModal{
+  z-index: 2222222222;
+}
+.LogInHead {
   display: block;
   margin: 0 auto;
 }
-.SubmitButton{
-  border: none;
-  padding: 10px 20px;
-  /* background-color: var(--secondary); */
+
+.signInHead {
+  font-size: 26px;
+  font-weight: 500 !important;
   color: var(--secondary);
-  background-color: transparent;
-  border: 1px solid var(--secondary);
-  /* color: white; */
+}
+
+.SubmitButton {
+  border: none;
+  padding: 8px;
+  font-weight: 500 !important;
+  background-color: #3282B8;
   border-radius: 5px;
-  font-weight: 500 !important;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.SubmitButton:hover{
-  background-color: var(--secondary);
-  color: var(--secondary);
   color: white;
-  font-weight: 500 !important;
-  transition: 0.5s;
 }
-.signUpButton{
+
+.signUp {
   border: none;
   background-color: transparent;
-  color:#1971c2 ;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.socialIcon {
+  font-size: 25px;
+}
+
+.closeBtn {
+  right: -103px;
+  font-size: 26px;
+  font-weight: 600;
+  top: 15px !important;
+  cursor: pointer;
+  display: block;
+  color: rgba(231, 11, 11, 0.701);
+}
+
+.signInLabel {
+  display: block;
+}
+
+.SignInInput {
+  padding: 10px;
+  border: 1px solid rgba(153, 151, 151, 0.247);
+  border-radius: 5px;
+}
+.SignInInput:focus{
+  outline: 2px solid var(--secondary);
   
 }
-.socialIcon:hover{
-  color: var(--hover);
-  /* padding-right: 10px; */
+.SignUPCloseBtn{
+  right: -90px;
+  font-size: 26px;
+  font-weight: 600;
+  top: 15px !important;
+  cursor: pointer;
+  display: block;
+  color: rgba(231, 11, 11, 0.701);
+}
+.instraColor{
+  color:#ef440b;
 }
 @keyframes stickyNav {
   0% {
