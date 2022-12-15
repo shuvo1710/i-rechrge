@@ -10,7 +10,6 @@ const Success = () => {
     <div>
       <SubHeader/>
       <Header />
-      <Progress3 />
       <Successful />
       <Footer />
     </div>

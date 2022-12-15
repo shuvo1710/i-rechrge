@@ -14,19 +14,20 @@ import Features from "../../Components/Features/Features";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import OnlineRechargeAndPay from "../../Components/OnlineRechargeAndPay/OnlineRechargeAndPay";
+import CustomerReview from "../../Components/PaymentForm/CustomerReview/CustomerReview";
 import SubHeader from "../../Components/SubHeader/SubHeader";
 
 const FeaturePage = () => {
   const data = {
     heading:'Feature',
-    img:'feature.png',
-    breadCumb:[
+    img:'pageBanner.png',
+    breadCrumb:[
       {
       title:'Home',
       link:'/home'
     },{
       title:'Feature',
-      link:'/feature'
+      
     }
   ]
   }
@@ -38,15 +39,13 @@ const FeaturePage = () => {
       {/* <SecondBanner /> */}
       {/* <Feature1 />
       <Feature2 /> */}
-      
-     
-      <OnlineRechargeAndPay/>
-      <Rafer/>
-      {/* <Counter/> */}
-      
-     
       <ExtraFeature/>
+       <Rafer/>
+      {/* <OnlineRechargeAndPay/> */}
+      
       <Accordions />
+      <Counter/>
+      <CustomerReview/>
       <Footer />
     </div>
   );

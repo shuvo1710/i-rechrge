@@ -1,12 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./PaymentForm.css";
-import { BsFillCreditCard2BackFill, BsInfoCircle } from "react-icons/bs";
-import { FiRefreshCw } from "react-icons/fi";
+import { BsBank2, BsFillCreditCard2BackFill } from "react-icons/bs";
 import { FaPaypal } from "react-icons/fa";
 import "./PaymentForm.css";
 import { useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
+import Notice from "./Notice/Notice";
+import bank from "../../utilities/paymentImage/bank.jpg"
+import card from "../../utilities/paymentImage/ebl2_200x100.jpg"
+import paypalCard from "../../utilities/paymentImage/paypal_200x100.png"
+import acceptedCard1 from "../../utilities/paymentImage/ebl.jpg"
 
 const PaymentForm = () => {
   const history = useHistory();
@@ -18,41 +22,72 @@ const PaymentForm = () => {
   return (
     <div className="paymentSection">
       <Container>
-        <div className="paymentContainer my-5">
+        <div className="paymentContainer ">
           <div className="row">
-            <div className="col-12 col-md-12 col-lg-7 col-xl-7 p-1">
+          <div className="col-12 col-md-12 col-lg-3 col-xl-3">
+             <div className="paymentFormContainer">
+             <h2 className="paymentHead text-center">We are Accepted</h2>
+             <div className="pb-2">
+              <img src={acceptedCard1} className="img-fluid " alt="" srcset="" />
+             </div>
+             <div className="pb-2">
+              <img src={acceptedCard1} className="img-fluid" alt="" srcset="" />
+             </div>
+             <div>
+              <img src={acceptedCard1} className="img-fluid" alt="" srcset="" />
+             </div>
+             </div>
+          </div>
+            <div className="col-12 col-md-12 col-lg-6 col-xl-6 ">
               <div className="paymentFormContainer">
-                <h4>Select A Payment Method</h4>
-                <div className="row my-3">
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-4 mb-2">
-                    <div className="paymentOption paymentActive">
-                      <BsFillCreditCard2BackFill className="fs-2" />
-                      <br />
-                      <span>Credit Card</span>
+                <h2 className="paymentHead text-center">Select A Payment Method</h2>
+                <div className="paymentFrom">
+                <div>
+                <div className="payment-options">
+                  <div className="position-relative positionAfter">
+                    <div className=" mr-2 img-fluid backImg">
+                      <img className="" src={bank} alt="" />
                     </div>
+                     <div className="transitionText">
+                        <BsBank2 className="fs-2" />
+                         <span>Bank Transfer</span>
+                     </div>
                   </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-4 mb-2">
-                    <div className="paymentOption">
-                      <FiRefreshCw className="fs-2" />
-                      <br />
-                      <span>Bank Transfer</span>
+                  <div className="position-relative positionAfter">
+                    <div className="mr-2 img-fluid backImg">
+                      <img src={card} alt="" />
                     </div>
+                     <div className="transitionText">
+                        <BsFillCreditCard2BackFill className="fs-2" />
+                         <span>Credit Card</span>
+                     </div>
                   </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-4 mb-2">
-                    <div className="paymentOption">
-                      <FaPaypal className="fs-2" />
-                      <br />
-                      <span>Paypal</span>
+                  <div className="position-relative positionAfter">
+                    <div className="mr-2 img-fluid backImg">
+                      <img src={paypalCard} alt="" />
                     </div>
+                     <div className="transitionText">
+                        <FaPaypal className="fs-2" />
+                         <span>Bank Transfer</span>
+                     </div>
                   </div>
                 </div>
-                <form>
-                  <div className="mb-3">
+                <form className="mt-3">
+                  <div className="w-100">
+                  <div className="mb-3 ">
                     <label htmlFor="">Name on Card</label>
                     <input
                       className="w-100 rounded border border-1 p-2"
                       type="text"
                       placeholder="Card Name"
+                    />
+                  </div>
+                  <div className="mb-3 ">
+                    <label htmlFor="">Card Holder Name</label>
+                    <input
+                      className="w-100 rounded border border-1 p-2"
+                      type="text"
+                      placeholder="Card Holder Name"
                     />
                   </div>
                   <div className="mb-3">
@@ -80,48 +115,44 @@ const PaymentForm = () => {
                         <label
                           className="d-flex align-items-center justify-content-between"
                           htmlFor=""
-                        >
+                        />
                           CVV
-                          <div className="info">
-                            <BsInfoCircle />
-                            <div className="subInfo">Information</div>
-                          </div>
-                        </label>
-                        <select className="w-100 rounded border border-1 p-2">
-                          <option>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
+                        <input type="text" placeholder="CVV Number" className="w-100 rounded border border-1 p-2" />
                       </div>
                     </div>
                   </div>
-                  <button onClick={proceed} className="proceed rounded">
+                  <div className="payButton">
+                  <button onClick={proceed} className="proceed ">
                     Proceed to Pay
                   </button>
+                  </div>
+                  </div>
                 </form>
+                </div>
+                </div>
+              
               </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div className="col-12 col-md-12 col-lg-3 col-xl-3">
               <div className="paymentFormContainer">
-                <h4>Amount to Pay</h4>
-                <div className="border-bottom pb-3">
-                  <div className="my-2 d-flex align-items-center justify-content-between">
+                <h2 className="paymentHead text-center">Amount to Pay</h2>
+                <div className="border-bottom">
+                  <div className="mb-2 d-flex align-items-center justify-content-between">
                     <span>Date</span>
                     <span>28 April 2022</span>
                   </div>
-                  <div className="my-2 d-flex align-items-center justify-content-between">
+                  <div className="mb-2 d-flex align-items-center justify-content-between">
                     <span>Amount</span>
                     <span>$150</span>
                   </div>
-                  <div className="my-2 d-flex align-items-center justify-content-between">
+                  <div className="mb-2 d-flex align-items-center justify-content-between">
                     <div>
                       <span>Discount</span>
                       <span>(10% Off)</span>
                     </div>
                     <span>-$15</span>
                   </div>
-                  <div className="my-2 d-flex align-items-center justify-content-between">
+                  <div className="mb-2 d-flex align-items-center justify-content-between">
                     <span>Vat</span>
                     <span>$2</span>
                   </div>
@@ -130,14 +161,8 @@ const PaymentForm = () => {
                   <span className="fw-bold fs-6">Total Amount</span>
                   <span className="fw-bold fs-6">$150</span>
                 </div>
-                <div className="notice">
-                  <h6>i-Recharge</h6>
-                  <p>
-                    [NB] : Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Alias itaque quisquam vitae illo odio aliquam
-                    architecto assumenda recusandae repellendus, eos qui tem?
-                    Molestiae.
-                  </p>
+                <div className="notice w-100 pt-3">
+                  <Notice/>
                 </div>
               </div>
             </div>

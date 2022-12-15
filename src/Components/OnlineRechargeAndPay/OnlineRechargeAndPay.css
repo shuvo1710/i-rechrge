@@ -2,7 +2,9 @@
     font-size: 26px;
     font-weight: 500 !important;
 }
-
+.onlineRechargeImg{
+    height: 700px;
+}
 .iconColor{
     color: rgba(0, 145, 255, 0.619);
 }

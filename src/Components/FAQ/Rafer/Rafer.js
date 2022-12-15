@@ -1,17 +1,20 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import { BsArrowRight } from 'react-icons/bs';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import "./Rafer.css"
 
 const Rafer = () => {
     return (
-        <section className='py-5 my-5 bgRefer'>
-            <div className='container'>
+        <section className='bgRefer'>
+            <Container className='p-0'>
                 <div className='referBody'>
                     <div className='referHead'>
                     <h2>Refer And Earn</h2>
-                    <p>Refer your friends and earn up to $20</p>
+                    <p className='m-0'>Refer your friends and earn up to $20</p>
                     </div>
-                    <div className='d-flex gap-4'>
+                    <div className='d-flex gap-3 pb-4'>
                         <div className='singleRefer'>
                             <h1>1</h1>
                             <h4>You Refer friends</h4>
@@ -30,9 +33,9 @@ const Rafer = () => {
                             <p>You Get $20. you can use these credits to take recharge.</p>
                         </div>
                     </div>
-                    <p className='earnLink'>Get start Earn <span><FaArrowRight/></span></p>
+                    <Link className='earnLink'>Get start Earn <span><BsArrowRight/></span></Link>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 };

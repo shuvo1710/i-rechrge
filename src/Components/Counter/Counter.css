@@ -1,10 +1,9 @@
 .counterBody{
-    margin: 2rem 0;
-    background-color: rgba(0, 145, 255, 0.619);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .singleCounter{
     text-align: center;
-    color: white;
+    color: var(--secondary);
     
 }
 .CounterIcon{

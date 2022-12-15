@@ -9,9 +9,11 @@ const OnlineRechargeAndPay = () => {
         <section className='container pt-5'>
             <div className='row align-items-center'>
                 <div className='col-6 col-lg-6 col-md-6 col-sm-12'>
+                    <div className='onlineRechargeImg'>
                     <Zoom duration={1500}>
-                    <img src={image} className="h-75 " alt="" srcset="" />
+                    <img src={image} className="h-100 w-100" alt="" srcset="" />
                     </Zoom>
+                    </div>
                 </div>
                 <div className='col-6 col-lg-6 col-md-6 col-sm-12'>
                     <Bounce duration={1500} right>
@@ -26,7 +28,7 @@ const OnlineRechargeAndPay = () => {
                                     <AiOutlineRightCircle className='fs-3 d-inline iconColor' />
                                 </span>
                                 <div className='ps-3'>
-                                    <h5 className='m-0'>Choose what to do</h5>
+                                    <h5 className='m-0'>Download Our App</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate fugit doloremque molestiae necessitatibus at!</p>
                                 </div>
                             </div>

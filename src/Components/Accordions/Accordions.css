@@ -14,11 +14,7 @@
   background-color: #e7f1ff00 !important;
 }
 .accordions {
-  padding: 10rem 0;
+  padding: 4rem 0;
   background: rgb(255, 255, 255);
 }
-.accordions {
-  padding: 10rem 0;
-  background: rgb(250 250 250);
-  /* clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); */
-}
+

@@ -3,11 +3,12 @@ import { Container, FormControl, InputGroup } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../../utilities/logoImages/logo1.png";
-import { BsFillTelephoneFill} from "react-icons/bs";
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaFacebookSquare, FaLinkedin,  FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
 
 import { FaEnvelope } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="footer">
@@ -28,7 +29,7 @@ const Footer = () => {
             <h4 className=" FooterHead">Information</h4>
             <ul>
               <li>
-                <Link  to="/home">About Us</Link>
+                <Link to="/home">About Us</Link>
               </li>
               <li>
                 <Link to="/home">More Search</Link>
@@ -77,6 +78,7 @@ const Footer = () => {
                 <img className="w-100 h-100" src={logo} alt="" />
               </div>
             </Link>
+            <div className="">
             <InputGroup className="mt-3">
               <InputGroup.Text id="basic-addon1 pointer">
                 <FaEnvelope className="pointer" />
@@ -88,19 +90,20 @@ const Footer = () => {
                 aria-describedby="basic-addon1"
               />
             </InputGroup>
+            </div>
             <div className="mt-4">
               <ul>
                 <li>
-              <Link to="/home">
-                  <BsFillTelephoneFill className="me-2" />
-                  +9856-83245
-                </Link>
-              </li>
-              <li>
-                <Link to="/home">
-                  <FaEnvelope className="me-2" />
-                  example@gmail.com
-                </Link>
+                  <Link to="/home">
+                    <BsFillTelephoneFill className="me-2" />
+                    +9856-83245
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/home">
+                    <FaEnvelope className="me-2" />
+                    example@gmail.com
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -120,11 +123,11 @@ const Footer = () => {
               <Link to="#">
                 <FaYoutubeSquare className="fs-4" />
               </Link>
-            
+
             </div>
           </div>
         </div>
-       
+
       </Container>
     </div>
   );

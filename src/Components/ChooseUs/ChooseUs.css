@@ -1,5 +1,5 @@
 .choose-section {
-    margin: 80px 0;
+    padding: 4rem 0;
 }
 
 .ChooseContent {
@@ -9,7 +9,6 @@
 }
 
 .ChooseHead{
-    margin-bottom: 50px;
     text-align: center;
 }
 .ChooseHead h2{
@@ -37,15 +36,25 @@
     align-items: center;
     border-radius: 50%;
     font-size: 40px;
-    color: var(--third);
-    border: 1px solid var(--third);
+    color: var(--hover);
+    border: 1px solid var(--hover);
+}
+.chooseTextHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .chooseText {
     margin-left: 10px;
 }
+.chooseText p{
+    margin: 0;
+}
 
 .chooseText h5 {
     font-size: 22px;
     font-weight: 800 !important;
+    margin: 0;
 }

@@ -1,3 +1,6 @@
+.ExtraFeatureSection{
+    padding: 4rem 0;
+}
 .iconsCircel {
     height: 50px;
     width: 50px;
@@ -7,7 +10,12 @@
     align-items: center;
     margin: 30px auto;
 }
-
+.featureItems{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.extraHead{
+    padding: 16px 0;
+}
 .extraHead h2{
     font-size: 26px;
     font-weight: 500 !important;

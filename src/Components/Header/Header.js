@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Form, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo2 from "../../utilities/logoImages/logo1.png";
-import { AiOutlineBars, AiOutlineHome, AiOutlineArrowUp } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineHome, AiOutlineArrowUp, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
 import { FaFacebook, FaHandHoldingUsd, FaInstagram } from "react-icons/fa";
@@ -65,11 +65,14 @@ const Header = () => {
       }
 
       {/* signIn modal start */}
-      <Modal show={show} className="signInModal" onHide={handleClose}>
-        <div className="LogInHead position-relative text-center">
+      <Modal centered show={show} className="signInModal" onHide={handleClose}>
+        <div className="LogInHead  text-center">
           <h1 className="mt-4 signInHead">Sign in</h1>
-          <span onClick={handleClose} className="position-absolute  closeBtn">x</span>
-          <p>New To i-recharge? <Link onClick={handleSignUpShow} className="signUp">Please Sign Up</Link></p>
+          <div className="position-relative">
+            <span onClick={handleClose} className="position-absolute d-flex justify-content-center align-items 
+             center  closeBtn"><AiOutlineClose /></span>
+          </div>
+          <p>New To i-recharge? <Link to="" onClick={handleSignUpShow} className="signUp">Please Sign Up</Link></p>
         </div>
         <Modal.Body>
           <Form >
@@ -106,11 +109,14 @@ const Header = () => {
 
       {/* signUp modal start */}
 
-      <Modal show={showSignUp} onHide={handleSignUpClose}>
-        <div className="LogInHead position-relative text-center">
+      <Modal centered show={showSignUp} onHide={handleSignUpClose}>
+        <div className="LogInHead  text-center">
           <h1 className="mt-4 signInHead">Sign up</h1>
-          <span onClick={handleSignUpClose} className="position-absolute  SignUPCloseBtn">x</span>
-          <p>Already have an account? <Link onClick={handleShow} className="signUp">Please Sign Up</Link></p>
+          <div className="position-relative ">
+            <span onClick={handleSignUpClose} className="position-absolute  d-flex justify-content-center 
+            align-items-center SignUPCloseBtn"><AiOutlineClose /></span>
+          </div>
+          <p>Already have an account? <Link to="" onClick={handleShow} className="signUp">Please Sign Up</Link></p>
         </div>
         <Modal.Body>
           <Form >

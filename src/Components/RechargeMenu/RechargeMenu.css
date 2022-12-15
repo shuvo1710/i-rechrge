@@ -44,18 +44,4 @@
   border-radius: 10px;
   position: relative;
 }
-.form-select:focus {
-  background-color: #fff;
-  /* border-color: 0px !important; */
-  border-bottom: 0px !important ;
-  outline: 1px solid var(--secondary) !important;
-  box-shadow: none !important;
-}
-.form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  /* border-color: 0px !important; */
-  border-bottom: 0px !important ;
-  outline: 1px solid var(--secondary) !important;
-  box-shadow: none !important;
-}
+

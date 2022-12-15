@@ -6,10 +6,10 @@ import Google from "../../utilities/googleIcon/AppleIcon.png"
 import Apple from "../../utilities/googleIcon/GoogleIcon.png"
 const Subscriptions = () => {
   return (
-    <div>
-      <Container>
+    <section>
+      <Container className="p-0">
         <div className="subsContainer">
-          <div className="row align-items-center">
+          <div className="row align-items-center m-0">
             <div className="col-12 col-md-6 col-lg-6 col-xl-5">
               <div className="subscriptionText">
                 <h2 className="subscription-head">Download Our App</h2>
@@ -44,7 +44,7 @@ const Subscriptions = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

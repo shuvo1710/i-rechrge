@@ -1,47 +1,61 @@
-.paymentOption {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid rgb(230, 230, 230);
-  transition: 0.4s;
-  color: #302d7a;
-}
-
 .paymentFormContainer {
   padding: 1rem;
   border-radius: 7px;
 }
-.paymentOption:hover {
-  background: var(--third);
+.paymentHead{
+  font-size: 26px;
+  font-weight: 500 !important;
   color: var(--secondary);
 }
-.paymentActive {
-  background: var(--third);
-  color: var(--secondary) !important;
+.payment-options{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
 }
-.notice {
-  padding: 1rem;
-  margin-top: 2rem;
-  background: #ffe2dd;
-  border-radius: 5px;
+.backImg{
+   width: 100%;
+   height: 100%;
 }
-.notice p {
-  margin-top: 10px;
-  color: #4596ff;
-  text-align: justify;
+.backImg>img{
+  width: 100%;
+  height: 100%;
 }
-.notice h6 {
-  font-size: 3rem;
-  font-weight: 700 !important;
-  margin: 0;
-  color: #0087db;
-  text-align: center;
+.positionAfter::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(81, 80, 80, 0.621);
+}
+.transitionText{
+  position: absolute;
+  z-index: 444444;
+  display: flex;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.paymentFrom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transitionText:hover{  cursor: pointer;
+  scale: 1.2;
+  transition: 0.4s;
 }
 .paymentSection {
   background: #f9f9f9;
   padding: 3rem 0;
-  margin: 3rem 0;
+
 }
 .paymentContainer {
   padding: 3rem;
@@ -79,13 +93,22 @@
 .proceed:hover {
   padding: 7px 9px;
   background: transparent;
-  border: 1px solid var(--secondary);
-  color: var(--secondary);
+  border: 1px solid var(--hover);
+  color: var(--hover);
+  transition: 0.4s;
+  border-radius: 5px;
 }
 .proceed {
   padding: 7px 9px;
-  border: 1px solid var(--secondary);
-  background: var(--secondary);
-  color: var(--primary);
+  border: 1px solid var(--hover);
+  background: var(--hover);
+  color: white;
   transition: 0.4s;
+  border-radius: 5px;
+}
+.payButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

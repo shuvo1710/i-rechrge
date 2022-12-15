@@ -1,0 +1,9 @@
+.oneLine {
+    height: 2px;
+    width: 100%;
+    background-color: var(--hover);
+    border: 1px;
+    margin: 0 auto;
+    top: 75%;
+    z-index: -1;
+}

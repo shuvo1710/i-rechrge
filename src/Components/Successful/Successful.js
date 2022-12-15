@@ -4,19 +4,29 @@ import anim from "../../utilities/gif/successful.gif";
 import "./Successful.css";
 import useAuth from "../../Hooks/useAuth";
 import { Link } from "react-router-dom";
+import { AiOutlineClose, AiOutlinePrinter } from "react-icons/ai";
+import { BiSave } from "react-icons/bi";
+import successImg from "../../utilities/paymentImage/success.gif"
+import { FaShare } from "react-icons/fa";
+
 const Successful = () => {
   const { successful, handleClose } = useAuth();
 
   return (
     <div>
       <Modal show={successful} onHide={handleClose} centered size="">
-        <Modal.Header closeButton>
-          <h5 className="m-0">Successfull</h5>
-        </Modal.Header>
+        <div className="border-bottom  d-flex justify-content-between p-2 position-relative">
+          <h5 className="m-0 ">Successfull</h5>
+          <div className="">
+           <span className="position-absolute  paymentModalClose">
+           <AiOutlineClose onClick={handleClose}  className="mx-auto"/>
+           </span>
+          </div>
+        </div>
         <div className="successfullMessage text-center">
           <div>
             <div className="succAnimation">
-              <img src={anim} alt="" className="w-100 h-100" />
+              <img src={successImg} alt="" className="w-100 h-100 img-fluid" />
             </div>
             <h4>Payment Successful</h4>
             <p>
@@ -74,18 +84,18 @@ const Successful = () => {
           <div className="actionsButtons mt-3">
             <div className="row">
               <div className="col-4 p-1">
-                <button className="iconContainer1 border-0 text-light py-2 px-3 rounded">
-                  Save
+                <button className="successBtn1 border-0  py-2 px-3 rounded">
+                  Save <span><BiSave/></span>
                 </button>
               </div>
               <div className="col-4 p-1">
-                <button className="iconContainer2 border-0 text-light py-2 px-3 rounded">
-                  Print
+                <button className="successBtn2 border-0 py-2 px-3 rounded">
+                  Print <span><AiOutlinePrinter/></span>
                 </button>
               </div>
               <div className="col-4 p-1">
-                <button className="iconContainer4 border-0 text-light py-2 px-3 rounded">
-                  Send
+                <button className="successBtn3 border-0  py-2 px-3 rounded">
+                  Send <FaShare/>
                 </button>
               </div>
             </div>

@@ -9,10 +9,8 @@
   min-height: 60vh;
   width: 100%;
   background-size: 100% 100%;
-
   border-radius: 10px;
   overflow-y: hidden;
-  margin-top: 30px;
 }
 
 .offerContainerGrid {
@@ -75,8 +73,8 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 40px;
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 16px ;
 }
 
 .tabsHeader button {
@@ -96,9 +94,7 @@
 }
 
 .offerSection {
-  padding: 4rem 0rem;
-  margin: 3rem 0;
- 
+  padding: 4rem 0rem; 
   background-size: 100% 100%;
 }
 

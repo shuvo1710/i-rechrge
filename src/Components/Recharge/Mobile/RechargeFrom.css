@@ -1,0 +1,14 @@
+/* .mobileInput:focus {
+    color: black;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 1px var(--secondary) !important;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+} */
+.mobileInput:focus {
+    color: #212529;
+    background-color: #fff;
+    outline: 1px solid var(--secondary) !important;
+    box-shadow: none !important;
+    border: none !important;
+}

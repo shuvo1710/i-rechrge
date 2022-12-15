@@ -5,19 +5,21 @@ import "./ExtraFeature.css"
 import { MdMobileFriendly, MdSupport } from 'react-icons/md';
 import { FaUserCheck } from 'react-icons/fa';
 import { RiUserStarFill } from 'react-icons/ri';
+import { Container } from 'react-bootstrap';
 
 const ExtraFeature = () => {
     return (
-        <section className='container py-5'>
-            <div className='text-center '>
+        <section className='ExtraFeatureSection'>
+            <Container className='p-0'>
+            <div className='text-center'>
                 <div className='extraHead'>
                     <h2>Our Features & Services</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className='m-0'>Lorem ipsum dolor sit amet.</p>
                 </div>
 
-                <div className='row g-2'>
+                <div className='row g-2 '>
 
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgGreen'>
                             <span>
                                 <RxUpdate className='extraFeatureIcons' />
@@ -29,7 +31,7 @@ const ExtraFeature = () => {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgOrange'>
                             <span>
                                 <BsBox className='extraFeatureIcons' />
@@ -41,7 +43,7 @@ const ExtraFeature = () => {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgPurple'>
                             <span>
                                 <MdMobileFriendly className='extraFeatureIcons' />
@@ -53,7 +55,7 @@ const ExtraFeature = () => {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgRed'>
                             <span>
                                 <MdSupport className='extraFeatureIcons' />
@@ -64,7 +66,7 @@ const ExtraFeature = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur adipis</p>
                         </div>
                     </div>
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgGreen'>
                             <span>
                                 <RiUserStarFill className='extraFeatureIcons' />
@@ -76,7 +78,7 @@ const ExtraFeature = () => {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-6 col-lg-4 p-2 align-items-center'>
+                    <div className='col-6 col-md-6 col-lg-4 p-2 m-0 align-items-center'>
                         <div className='iconsCircel bgOrange'>
                             <span>
                                 <BsBox className='extraFeatureIcons' />
@@ -89,6 +91,7 @@ const ExtraFeature = () => {
                     </div>
                 </div>
             </div>
+            </Container>
         </section>
     );
 };

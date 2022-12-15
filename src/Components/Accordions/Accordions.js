@@ -7,15 +7,15 @@ import "./Accordions.css";
 const Accordions = () => {
 
   return (
-    <div className="accordions">
-      <Container>
+    <section className="accordions">
+      <Container className="p-0">
         <div className="row align-items-center">
           <Fade left>
             <div
 
-              className="col-12 col-md-12 col-lg-6 col-xl-6"
+              className="col-12 col-md-12 col-lg-6 col-xl-6 h-50"
             >
-              <img className="w-100" src={img} alt="" />
+              <img className="w-100 h-100" src={img} alt="" />
             </div>
           </Fade>
           <Fade right>
@@ -73,7 +73,7 @@ const Accordions = () => {
           </Fade>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

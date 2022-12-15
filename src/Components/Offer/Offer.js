@@ -112,13 +112,13 @@ const Offer = () => {
           </Modal>
           <Container>
             <h2 className=" offerHead text-center">Our Offer</h2>
-            <p className="text-center">Lorem ipsum dolor sit amet.</p>
+            <p className="text-center m-0">Lorem ipsum dolor sit amet.</p>
             <div className="offersContainer">
               <div className="">
                 <div className="tabsHeader">
                   <button
                     onClick={showAll}
-                    className={`${all ? "activeBorder" : ""} `}
+                    className={`mx-3 ${all ? "activeBorder" : ""} `}
                   >
                     All
                   </button>
@@ -143,7 +143,7 @@ const Offer = () => {
                   </button>
                   <button
                     onClick={showSms}
-                    className={` mx-3 ${sms ? "activeBorder" : " "}`}
+                    className={`mx-3 ${sms ? "activeBorder" : " "}`}
                   >
                     Sms
                   </button>
@@ -168,7 +168,7 @@ const Offer = () => {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
                         }
                       </div>
-                      <div className="text-center mt-5">
+                      <div className="text-center pt-5">
                         <button className="viewMore rounded">View More</button>
                       </div>
                     </div>

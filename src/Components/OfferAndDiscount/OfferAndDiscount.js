@@ -14,10 +14,11 @@ const OfferAndDiscount = () => {
 
 
   return (
-    <div className='container pt-5 '>
-      <div className='mb-5'>
+    <div className='container '>
+      <div className='discountContainer'>
+      <div className='discountText'>
         <h2 className='discountHead text-center'>Featured Offers</h2>
-        <p className='text-center'>Get Best Offers & Discounts</p>
+        <p className='text-center m-0'>Get Best Offers & Discounts</p>
       </div>
       <div>
         <Swiper
@@ -33,15 +34,15 @@ const OfferAndDiscount = () => {
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 15,
             },
           }}
           className="mySwiper"
@@ -66,7 +67,7 @@ const OfferAndDiscount = () => {
           }
         </Swiper>
       </div>
-
+      </div>
     </div>
   );
 };

@@ -11,10 +11,10 @@
 .headerSection {
   padding: 1rem 0;
   background: #ffffff;
-  z-index: 105 ;
-  top: 0px ;
+  z-index: 105;
+  top: 0px;
   color: white;
-  
+
 }
 
 
@@ -222,7 +222,7 @@ td {
 }
 
 button.scrollTop {
-  background: linear-gradient(45deg, orange, tomato);
+  background-color: var(--hover);
   border: 1px solid rgb(224, 224, 224);
   padding: 5px;
   height: 40px;
@@ -253,9 +253,11 @@ button.scrollTop svg {
   padding: 0;
   margin: 0 auto;
 }
-.signInModal{
+
+.signInModal {
   z-index: 2222222222;
 }
+
 .LogInHead {
   display: block;
   margin: 0 auto;
@@ -271,9 +273,18 @@ button.scrollTop svg {
   border: none;
   padding: 8px;
   font-weight: 500 !important;
-  background-color: #3282B8;
+  background-color: var(--hover);
   border-radius: 5px;
   color: white;
+  transition: 0.4s;
+}
+
+.SubmitButton:hover {
+  outline: 1px solid var(--hover);
+  color: var(--hover);
+  font-weight: 500 !important;
+  background-color: transparent;
+  transition: 0.4s;
 }
 
 .signUp {
@@ -288,13 +299,26 @@ button.scrollTop svg {
 }
 
 .closeBtn {
-  right: -103px;
-  font-size: 26px;
+  right: -138px;
+  font-size: 16px;
   font-weight: 600;
-  top: 15px !important;
+  top: -71px;
   cursor: pointer;
-  display: block;
-  color: rgba(231, 11, 11, 0.701);
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 0 !important;
+  background-color: var(--hover);
+  transition: 0.4s;
+}
+
+.closeBtn:hover {
+  background-color: white;
+  color: var(--hover);
+  transition: 0.4s;
+  outline: 1px solid var(--hover);
+
 }
 
 .signInLabel {
@@ -306,22 +330,38 @@ button.scrollTop svg {
   border: 1px solid rgba(153, 151, 151, 0.247);
   border-radius: 5px;
 }
-.SignInInput:focus{
+
+.SignInInput:focus {
   outline: 2px solid var(--secondary);
-  
+
 }
-.SignUPCloseBtn{
-  right: -90px;
-  font-size: 26px;
+
+.SignUPCloseBtn {
+  right: -117px;
+  font-size: 16px;
   font-weight: 600;
-  top: 15px !important;
+  top: -71px;
   cursor: pointer;
-  display: block;
-  color: rgba(231, 11, 11, 0.701);
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 0 !important;
+  background-color: var(--hover);
+  transition: 0.4s;
 }
-.instraColor{
-  color:#ef440b;
+
+.SignUPCloseBtn:hover {
+  background-color: white;
+  color: var(--hover);
+  outline: 1px solid var(--hover);
+  transition: 0.4s;
 }
+
+.instraColor {
+  color: #ef440b;
+}
+
 @keyframes stickyNav {
   0% {
     margin-top: -100px;

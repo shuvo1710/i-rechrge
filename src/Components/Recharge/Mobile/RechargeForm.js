@@ -8,7 +8,10 @@ const RechargeForm = () => {
   const {activeState} = useAuth()
   const history = useHistory();
   const OrderNow = () => {
-    history.push("/order");
+    history.push("/order");}
+    
+  const payment = () => {
+    history.push("/payment");
   };
   return (
     <div className="rechargeItemMenu">
@@ -45,7 +48,7 @@ const RechargeForm = () => {
               placeholder="Mobile Number"
               id="inputPassword5"
               aria-describedby="passwordHelpBlock"
-              className="border-0 border-bottom rounded-0"
+              className="border-0 border-bottom rounded-0 mobileInput"
             />
           </div>
           :
@@ -55,7 +58,7 @@ const RechargeForm = () => {
             placeholder="Account Number"
             id="inputPassword5"
             aria-describedby="passwordHelpBlock"
-            className="border-0 border-bottom rounded-0"
+            className="border-0 border-bottom rounded-0 mobileInput"
           />
         </div>
 
@@ -63,7 +66,7 @@ const RechargeForm = () => {
         {
           activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
           <Form.Select
-            className="mb-4 border-0 border-bottom rounded-0 optionColor"
+            className="mb-4 border-0 border-bottom rounded-0 optionColor rechargeOption"
             aria-label="Default select example"
           >
             <option>Select Your Operator</option>
@@ -88,7 +91,7 @@ const RechargeForm = () => {
         <div className="col-12 col-md-6 col-lg-3">
         <InputGroup className="mb-4">
           <FormControl
-            className="border-0 border-bottom rounded-0"
+            className="border-0 border-bottom rounded-0 mobileInput"
             aria-label="Amount (to the nearest dollar)"
             placeholder="$ Enter Amount"
             type="number"
@@ -97,13 +100,13 @@ const RechargeForm = () => {
         </div>
         {
           activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
-          <button onClick={OrderNow} className="rechargeButton w-100">
+          <button onClick={payment} className="rechargeButton w-100">
             Recharge Now
           </button>
           </div>
           : 
           <div className="col-12 col-md-6 col-lg-3">
-        <button onClick={OrderNow} className="rechargeButton w-100">
+        <button onClick={payment} className="rechargeButton w-100">
           Pay Now
         </button>
         </div>

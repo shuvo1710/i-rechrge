@@ -16,7 +16,7 @@ import FAQ from "../../Components/FAQ/FAQ";
 const Home = () => {
   const data = {
     heading:'Online Mobile Recharge',
-    img:'banner.png',
+    img:'banner2.png',
     text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus incidunt nulla magni iste? Doloremque repellendus, excepturi rerum sed qui quod adipisci, expedita ipsam possimus dolores et impedit totam necessitatibus nam quos culpa. Laborum dolore unde nesciunt consequuntur dignissimos, quod nihil, aperiam ad molestiae quaerat id, tenetur explicabo modi deleniti!'
   }
   return (

@@ -3,7 +3,6 @@
   padding: 3rem 0;
   /* background: #f9f9f9; */
   background-color: var(--primary);
-
 }
 .footer a{
   color: #535353;
@@ -15,7 +14,9 @@
 .footer ul li {
   line-height: 25px;
 }
-
+.logo{
+  margin-bottom: 10px;
+}
 .pointer{
   cursor: pointer;
 }
@@ -34,11 +35,4 @@
   color: var(--secondary);
 }
 
-.footerSubs:focus{
-  border: 0 !important;
-  color: #212529;
-  background-color: #fff;
-  border: none !important;
-  outline: 0 !important;
-  box-shadow: none !important;
-}
+

@@ -8,7 +8,7 @@ import CountUp from 'react-countup';
 const Counter = () => {
     return (
         <section className='counterBody'>
-            <div className='container'>
+            <Counter className='p-0'>
                 <div className='d-flex gap-2'>
                     <div className='py-4 singleCounter w-100'>
                         <FaUserAlt className='CounterIcon' />
@@ -44,8 +44,7 @@ const Counter = () => {
                         <h6>App Review</h6>
                     </div>
                 </div>
-
-            </div>
+            </Counter>
         </section>
     );
 };
