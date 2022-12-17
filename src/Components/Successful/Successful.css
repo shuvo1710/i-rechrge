@@ -48,7 +48,7 @@
 }
 .paymentModalClose {
   left: 97%;
-  background-color: var(--hover);
+  background-color: var(--third);
   height: 25px;
   width: 25px;
   text-align: center;
@@ -62,8 +62,8 @@
 }
 .paymentModalClose:hover{
   background-color: white;
-  outline: 1px solid var(--hover);
-  color: var(--hover);
+  outline: 1px solid var(--third);
+  color: var(--third);
   transition: 0.4s;
 }
 .successBtn1{
@@ -91,14 +91,14 @@
   transition: 0.4s;
 }
 .successBtn3{
-  background-color: var(--hover);
+  background-color: var(--third);
   color: white;
-  outline: 1px solid var(--hover);
+  outline: 1px solid var(--third);
   transition: 0.4s;
 }
 .successBtn3:hover{
   background-color: transparent;
-  color: var(--hover);
-  outline: 1px solid var(--hover);
+  color: var(--third);
+  outline: 1px solid var(--third);
   transition: 0.4s;
 }

@@ -13,10 +13,8 @@ import paypalCard from "../../utilities/paymentImage/paypal_200x100.png"
 import acceptedCard1 from "../../utilities/paymentImage/ebl.jpg"
 
 const PaymentForm = () => {
-  const history = useHistory();
   const { handleShow } = useAuth();
   const proceed = () => {
-    history.push("/success");
     handleShow();
   };
   return (

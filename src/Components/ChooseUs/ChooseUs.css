@@ -36,8 +36,8 @@
     align-items: center;
     border-radius: 50%;
     font-size: 40px;
-    color: var(--hover);
-    border: 1px solid var(--hover);
+    color: var(--third);
+    border: 1px solid var(--third);
 }
 .chooseTextHead{
     display: flex;

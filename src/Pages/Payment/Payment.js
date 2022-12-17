@@ -24,13 +24,10 @@ const Payment = () => {
       }
     return (
         <div>
-            <SubHeader/>
-            <Header/>
             <Banner data={data}/>
             {/* <Progress2/> */}
             <PaymentForm/>
             <ChooseUs/>
-            <Footer/>
         </div>
     );
 };

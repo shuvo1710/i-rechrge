@@ -26,13 +26,10 @@ const RechargePage = () => {
   }
   return (
     <div>
-      <SubHeader />
-      <Header />
       <Banner data={data} />
       <RechargeMenu />
       <Subscriptions />
       <ChooseUs/>
-      <Footer />
     </div>
   );
 };

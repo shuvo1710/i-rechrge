@@ -5,13 +5,13 @@ import "./OrderForm.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const OrderForm = () => {
-  const history = useHistory();
+
 
   const [promo, setPromo] = useState(false);
   const [promoButton, setPromoButton] = useState(true);
   const [appliedPromo, setAppliedPromo] = useState(false);
   const payment = () => {
-    history.push("/payment");
+
   };
   const [promoModal, setPromoModal] = useState(false);
   const handleClose = () => {

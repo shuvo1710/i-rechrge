@@ -8,7 +8,7 @@ import { GiTireIronCross } from "react-icons/gi";
 import { FaFacebook, FaHandHoldingUsd, FaInstagram } from "react-icons/fa";
 import { BsCardList, } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
-import { useHistory } from "react-router-dom";
+
 
 
 
@@ -21,16 +21,13 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
 
-  const history = useHistory();
+
 
   const handleSignUpShow = () => {
     setShowSignUp(true)
     handleClose()
   };
   // signup modal end
-
-
-
 
   const handleShow = () => {
     setShow(true)
@@ -173,8 +170,8 @@ const Header = () => {
       <Container>
         <div className="headerContainer">
           <div className="logoContainer">
-            <div onClick={() => history.push("/home")} className="logo">
-              <img className="w-100 h-100" src={logo2} alt="" />
+            <div className="logo">
+              <Link to="/"><img className="w-100 h-100" src={logo2} alt="" /></Link>
             </div>
           </div>
           <div className={`navContainer ${nav && "left0"}`}>

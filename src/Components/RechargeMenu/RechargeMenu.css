@@ -20,15 +20,15 @@
 .rechargeButton {
   border: 1px solid transparent;
   padding: 5px;
-  background: var(--hover);
+  background: var(--third);
   color: white;
   transition: 0.4s;
   border-radius: 7px;
 }
 .rechargeButton:hover {
-  border: 1px solid var(--hover);
+  border: 1px solid var(--third);
   background: transparent;
-  color: var(--hover);
+  color: var(--third);
 }
 .rechargeContainer {
     background: rgb(255, 255, 255);

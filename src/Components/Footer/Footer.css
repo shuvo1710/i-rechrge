@@ -8,7 +8,7 @@
   color: #535353;
 }
 .footer a:hover{
-  color: var(--hover);
+  color: var(--third);
 }
 
 .footer ul li {

@@ -43,7 +43,7 @@
 }
 
 .linksContainer ul li a:hover {
-  color: var(--hover);
+  color: var(--third);
 }
 
 .linksContainer ul li {
@@ -212,7 +212,7 @@ td {
 }
 
 .lginAndSign:hover {
-  color: var(--hover);
+  color: var(--third);
 }
 
 .scrollTop {
@@ -222,18 +222,22 @@ td {
 }
 
 button.scrollTop {
-  background-color: var(--hover);
-  border: 1px solid rgb(224, 224, 224);
-  padding: 5px;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
+  background-color: var(--third);
+  border: 1px solid var(--third);
+  /* padding: 5px; */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
   color: white;
 }
-
-button.scrollTop svg {
-  color: white;
+button.scrollTop:hover{
+  color: var(--third);
+  background-color: white;
+  outline: 1px solid var(--third);
 }
+/* button.scrollTop svg {
+  color: white;
+} */
 
 .toggleBar {
   color: #652581;
@@ -273,15 +277,15 @@ button.scrollTop svg {
   border: none;
   padding: 8px;
   font-weight: 500 !important;
-  background-color: var(--hover);
+  background-color: var(--third);
   border-radius: 5px;
   color: white;
   transition: 0.4s;
 }
 
 .SubmitButton:hover {
-  outline: 1px solid var(--hover);
-  color: var(--hover);
+  outline: 1px solid var(--third);
+  color: var(--third);
   font-weight: 500 !important;
   background-color: transparent;
   transition: 0.4s;
@@ -309,15 +313,15 @@ button.scrollTop svg {
   width: 25px;
   border-radius: 50%;
   padding: 0 !important;
-  background-color: var(--hover);
+  background-color: var(--third);
   transition: 0.4s;
 }
 
 .closeBtn:hover {
   background-color: white;
-  color: var(--hover);
+  color: var(--third);
   transition: 0.4s;
-  outline: 1px solid var(--hover);
+  outline: 1px solid var(--third);
 
 }
 
@@ -347,14 +351,14 @@ button.scrollTop svg {
   width: 25px;
   border-radius: 50%;
   padding: 0 !important;
-  background-color: var(--hover);
+  background-color: var(--third);
   transition: 0.4s;
 }
 
 .SignUPCloseBtn:hover {
   background-color: white;
-  color: var(--hover);
-  outline: 1px solid var(--hover);
+  color: var(--third);
+  outline: 1px solid var(--third);
   transition: 0.4s;
 }
 

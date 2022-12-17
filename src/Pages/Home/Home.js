@@ -1,18 +1,12 @@
 import React from "react";
-import Features from "../../Components/Features/Features";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
 import Offer from "../../Components/Offer/Offer";
 import Subscriptions from "../../Components/Subscriptions/Subscriptions";
-
 import RechargeMenu from "../../Components/RechargeMenu/RechargeMenu";
-import SubHeader from "../../Components/SubHeader/SubHeader";
 import OfferAndDisount from "../../Components/OfferAndDiscount/OfferAndDiscount";
 import "./Home.css"
-
 import ChooseUs from "../../Components/ChooseUs/ChooseUs"
 import Banner from "../../Components/Banner/Banner";
-import FAQ from "../../Components/FAQ/FAQ";
+
 const Home = () => {
   const data = {
     heading:'Online Mobile Recharge',
@@ -21,16 +15,13 @@ const Home = () => {
   }
   return (
     <div>
-        <SubHeader/>
-        <Header/>
         <Banner data={data}/>
-        {/* <SwiperApp></SwiperApp> */}
         <RechargeMenu/>
         <Offer/>
         <Subscriptions/>
         <OfferAndDisount/>
         <ChooseUs/>
-        <Footer/>
+    
     </div>
   );
 };

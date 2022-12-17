@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Accordion, Container } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import img from "../../utilities/accordionImages/accordion.png";

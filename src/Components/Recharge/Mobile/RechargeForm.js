@@ -1,21 +1,15 @@
 import React from "react";
 import { Form, FormControl, InputGroup } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 
 const RechargeForm = () => {
   const {activeState} = useAuth()
-  const history = useHistory();
-  const OrderNow = () => {
-    history.push("/order");}
-    
-  const payment = () => {
-    history.push("/payment");
-  };
+
   return (
     <div className="rechargeItemMenu">
-      { activeState === 'Mobile' ? <h3>Mobile Recharge or Bill Payment</h3> : <h3>Bill Payment</h3>}
+      { activeState === 'Mobile' ? <h3>Mobile Recharge or Bill Payment</h3> : <h3>{activeState} Bill Payment</h3>}
       <Form>
         <div key="inline-radio" className="mb-4">
           {
@@ -100,15 +94,15 @@ const RechargeForm = () => {
         </div>
         {
           activeState === 'Mobile' ? <div className="col-12 col-md-6 col-lg-3">
-          <button onClick={payment} className="rechargeButton w-100">
+          <Link to="/payment"><button  className="rechargeButton w-100">
             Recharge Now
-          </button>
+          </button></Link>
           </div>
           : 
           <div className="col-12 col-md-6 col-lg-3">
-        <button onClick={payment} className="rechargeButton w-100">
+        <Link to="/payment"><button  className="rechargeButton w-100">
           Pay Now
-        </button>
+        </button></Link>
         </div>
         }
       </div>

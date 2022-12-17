@@ -1,11 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { BsArrowRight } from 'react-icons/bs';
-import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import "./Rafer.css"
+import "./Refer.css"
 
-const Rafer = () => {
+const Refer = () => {
     return (
         <section className='bgRefer'>
             <Container className='p-0'>
@@ -40,4 +39,4 @@ const Rafer = () => {
     );
 };
 
-export default Rafer;
+export default Refer;

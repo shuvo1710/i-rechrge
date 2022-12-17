@@ -71,4 +71,18 @@ button.linkOption span {
 .bgOption{
   background-color: #0c2f55;
 }
+.moreButton {
+  position: absolute;
+  width: 135px;
+  background-color: #0c2f55;
+  color: white;
+  padding: 20px 10px;
+  top: 100%;
+  right: 0;
+  display: none;
+  z-index: 111;
+}
 
+.show-option{
+display: block;
+}

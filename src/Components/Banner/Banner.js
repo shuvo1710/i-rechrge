@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdDoubleArrow } from 'react-icons/md';
+import { MdDoubleArrow, MdKeyboardArrowRight,  } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import "./Banner.css"
 const Banner = (props) => {
@@ -16,14 +16,14 @@ const Banner = (props) => {
                                 breadCrumb && <ul className='d-flex justify-content-center 
                                  align-items-center pb-4'>
                                     {
-                                        breadCrumb?.map((item, i) => <li><Link
+                                        breadCrumb?.map((item, i) => <li><Link key={i}
                                             className='text-light' to={item.link}>
                                             {item.title}</Link>{i === (breadCrumb.length - 
                                                1)
                                                 ?
                                                 ''
                                                 :
-                                                <MdDoubleArrow />}</li>)
+                                                <MdKeyboardArrowRight />}</li>)
                                     }
                                 </ul>
                             }

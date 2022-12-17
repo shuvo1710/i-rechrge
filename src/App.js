@@ -1,16 +1,10 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {  RouterProvider} from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./AuthProvider/AuthProvider";
-import Home from "./Pages/Home/Home";
-import Order from "./Pages/Order/Order";
-import Payment from "./Pages/Payment/Payment";
-import Success from "./Pages/Success/Success";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import { useState } from "react";
-import NotFound from "./Pages/NotFound/NotFound";
-import FeaturePage from "./Pages/FeaturePage/FeaturePage";
-import RechargePage from "./Pages/RechargePage/RechargePage";
 import { useEffect } from "react";
+import { router } from "./Router/Router";
 
 function App() {
   // real loading time with preloader 
@@ -55,35 +49,7 @@ function App() {
       ) : (
         <div className={`${loaderAnimation && "animation"}`}>
           <AuthProvider>
-            <BrowserRouter>
-              <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route path="/home">
-                  <Home />
-                </Route>
-                <Route path="/order">
-                  <Order />
-                </Route>
-                <Route path="/payment">
-                  <Payment />
-                </Route>
-                <Route path="/success">
-                  <Success />
-                </Route>
-                <Route path="/feature">
-                  <FeaturePage />
-                </Route>
-               
-                <Route path="/recharge">
-                  <RechargePage />
-                </Route>
-                <Route path="*">
-                  <NotFound />
-                </Route>
-              </Switch>
-            </BrowserRouter>
+            <RouterProvider router={router}></RouterProvider>
           </AuthProvider>
         </div>
       )} 

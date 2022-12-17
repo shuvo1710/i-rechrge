@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import { AiFillStar } from 'react-icons/ai';
 import { HiArrowSmRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,8 @@ import "./CustomerReview.css"
 
 const CustomerReview = () => {
     return (
-        <section className='container py-5'>
+        <section className='py-5 bgReview'>
+            <Container>
             <div className='reviewHead text-center'>
                 <h2>What people are saying about us</h2>
                 <p>Send a top-up experience people love to talk about</p>
@@ -116,6 +118,7 @@ const CustomerReview = () => {
             <div className='text-center '>
                 <Link className='moreReview'>See More People Review <span><HiArrowSmRight/></span></Link>
             </div>
+            </Container>
         </section>
     );
 };

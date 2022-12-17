@@ -8,7 +8,6 @@ import { FaFacebookSquare, FaLinkedin,  FaTwitterSquare, FaYoutubeSquare } from 
 
 import { FaEnvelope } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="footer">
