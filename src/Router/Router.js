@@ -3,7 +3,6 @@ import Main from "../LayOut/Main"
 import FeaturePage from "../Pages/FeaturePage/FeaturePage"
 import Home from "../Pages/Home/Home"
 import NotFound from "../Pages/NotFound/NotFound"
-import Order from "../Pages/Order/Order"
 import Payment from "../Pages/Payment/Payment"
 import RechargePage from "../Pages/RechargePage/RechargePage"
 import Success from "../Pages/Success/Success"
@@ -21,10 +20,6 @@ export  const router = createBrowserRouter([
             {
                 path:"/home",
                 element:<Home></Home>
-            },
-            {
-                path:"/order",
-                element:<Order></Order>
             },
             {
                 path:"/payment",

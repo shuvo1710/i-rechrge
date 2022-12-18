@@ -12,7 +12,7 @@ const Options = () => {
     <>
       <div id="recharge" className="optionsContainer">
         <div className="container px-0">
-          <div className="d-flex align-items-center justify-content-around bgOption">
+          <div className="d-flex align-items-center justify-content-between bgOption">
             {navItems.slice(0, 8).map((item, i) => (
               <>
                 <div key={i} className="d-flex">
@@ -34,9 +34,10 @@ const Options = () => {
                 <ul>
                   {
                     navItems.slice(8,navItems.length).map((moreItem, i)=>
-                    <div className={`option ${activeState === moreItem?.linkName ? 'activeStateColor' : ''}`}>
+                    <div key={i} className={`option ${activeState === moreItem?.linkName ? 'activeStateColor' : ''}`}>
                     <button
-                      onClick={() => activeTab(moreItem?.linkName)}
+
+                      onClick={() => activeTab(moreItem?.linkName, setShowOption(false))}
                       className={'linkOption rounded-top'}
                     >
                       {moreItem?.iconName}

@@ -3,7 +3,6 @@ import { BsBox } from 'react-icons/bs';
 import { RxUpdate } from 'react-icons/rx';
 import "./ExtraFeature.css"
 import { MdMobileFriendly, MdSupport } from 'react-icons/md';
-import { FaUserCheck } from 'react-icons/fa';
 import { RiUserStarFill } from 'react-icons/ri';
 import { Container } from 'react-bootstrap';
 

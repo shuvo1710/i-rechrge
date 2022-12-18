@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Modal } from "react-bootstrap";
-import anim from "../../utilities/gif/successful.gif";
 import "./Successful.css";
 import useAuth from "../../Hooks/useAuth";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdDoubleArrow, MdKeyboardArrowRight,  } from 'react-icons/md';
+import {  MdKeyboardArrowRight,  } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import "./Banner.css"
 const Banner = (props) => {

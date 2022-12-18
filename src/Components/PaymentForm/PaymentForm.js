@@ -4,7 +4,6 @@ import "./PaymentForm.css";
 import { BsBank2, BsFillCreditCard2BackFill } from "react-icons/bs";
 import { FaPaypal } from "react-icons/fa";
 import "./PaymentForm.css";
-import { useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import Notice from "./Notice/Notice";
 import bank from "../../utilities/paymentImage/bank.jpg"
