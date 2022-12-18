@@ -7,10 +7,7 @@ import Successful from "../../Components/Successful/Successful";
 const Success = () => {
   return (
     <div>
-      <SubHeader/>
-      <Header />
       <Successful />
-      <Footer/>
     </div>
   );
 };

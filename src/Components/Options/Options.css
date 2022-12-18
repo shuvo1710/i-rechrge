@@ -82,7 +82,20 @@ button.linkOption span {
   display: none;
   z-index: 111;
 }
-
 .show-option{
 display: block;
+}
+.iconContainer1 {
+  background: #009dff;
+}
+
+.iconContainer2 {
+  background: #9c77ff;
+}
+
+.iconContainer3 {
+  background: #ff5ee4;
+}
+.iconContainer4 {
+  background: #2dde60;
 }

@@ -10,6 +10,7 @@ import bank from "../../utilities/paymentImage/bank.jpg"
 import card from "../../utilities/paymentImage/ebl2_200x100.jpg"
 import paypalCard from "../../utilities/paymentImage/paypal_200x100.png"
 import acceptedCard1 from "../../utilities/paymentImage/ebl.jpg"
+import { Link } from "react-router-dom";
 
 const PaymentForm = () => {
   const { handleShow } = useAuth();
@@ -119,9 +120,11 @@ const PaymentForm = () => {
                     </div>
                   </div>
                   <div className="payButton">
+                  <Link to="/success">
                   <button onClick={proceed} className="proceed ">
                     Proceed to Pay
                   </button>
+                  </Link>
                   </div>
                   </div>
                 </form>
