@@ -30,16 +30,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
-
+/* 
 .linksContainer ul li {
   text-align: end;
-}
+} */
 
 .linksContainer ul li a {
   color: #000000;
   font-weight: 400;
   font-size: 17px;
+  
 }
 
 .linksContainer ul li a:hover {
@@ -48,7 +50,6 @@
 
 .linksContainer ul li {
   margin-left: 3rem;
-
 }
 
 .logo {
@@ -101,10 +102,6 @@
   font-weight: bolder !important;
 }
 
-.linksContainer svg {
-  display: none !important;
-}
-
 .modalProfileImage img {
   object-fit: cover;
 }
@@ -124,29 +121,6 @@
   padding: 1rem;
 }
 
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  border-color: inherit;
-  border-style: none !important;
-  border-width: 0;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-  color: #0b7696;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-}
-
-td {
-  color: #807e7e;
-}
 
 .profileButtons button {
   padding: 5px 14px;
@@ -200,15 +174,12 @@ td {
   background: white;
 }
 
-.lginAndSign svg {
-  color: #0043a7;
-}
-
 .lginAndSign {
   border: none;
   text-decoration: none;
   color: #000000;
   background-color: transparent;
+  font-size: 17px;
 }
 
 .lginAndSign:hover {
@@ -361,11 +332,47 @@ button.scrollTop:hover{
   outline: 1px solid var(--third);
   transition: 0.4s;
 }
-
-.instraColor {
+.instagramColor {
   color: #ef440b;
 }
-
+.userLogo {
+  background-color: #d5d9dd;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.User {
+  position: absolute;
+  top: 100%;
+  right: -150%;
+  z-index: 222222 !important;
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: fit-content;
+  border-radius: 4px;
+}
+.userItem{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.userUpdate {
+  width: 100%;
+  border-bottom: 1px solid rgb(135, 130, 130);
+  white-space: nowrap;
+  display: block;
+  padding: 3px 10px;
+  
+}
+.userUpdate:last-child{
+  border-bottom: none;
+}
 @keyframes stickyNav {
   0% {
     margin-top: -100px;

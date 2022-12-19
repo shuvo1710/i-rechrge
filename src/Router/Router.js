@@ -6,6 +6,7 @@ import NotFound from "../Pages/NotFound/NotFound"
 import Payment from "../Pages/Payment/Payment"
 import RechargePage from "../Pages/RechargePage/RechargePage"
 import Success from "../Pages/Success/Success"
+import TransactionPage from "../Pages/TransactionPage/TransactionPage"
 
 export  const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ export  const router = createBrowserRouter([
                 path:"/recharge",
                 element:<RechargePage></RechargePage>
             },
+            {
+                path:"/transaction",
+                element:<TransactionPage></TransactionPage>
+            }
         ]
     }
 ])

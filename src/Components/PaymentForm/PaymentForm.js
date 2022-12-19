@@ -120,8 +120,7 @@ const PaymentForm = () => {
                     </div>
                   </div>
                   <div className="payButton">
-                  <Link to="/success">
-                  <button onClick={proceed} className="proceed ">
+                  <Link to="/success"><button onClick={proceed} className="proceed ">
                     Proceed to Pay
                   </button>
                   </Link>

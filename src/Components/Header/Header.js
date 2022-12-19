@@ -5,11 +5,10 @@ import logo2 from "../../utilities/logoImages/logo1.png";
 import { AiOutlineBars, AiOutlineHome, AiOutlineArrowUp, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
-import { FaFacebook, FaHandHoldingUsd, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaHandHoldingUsd, FaInstagram, FaUserAlt  } from "react-icons/fa";
 import { BsCardList, } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
-
-
+import { GrTransaction } from "react-icons/gr";
 
 
 const Header = () => {
@@ -20,19 +19,20 @@ const Header = () => {
   const handleSignUpClose = () => setShowSignUp(false);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-
-
+  // toggle user
+  const [showUser, setShowUser] = useState(false)
 
   const handleSignUpShow = () => {
     setShowSignUp(true)
     handleClose()
   };
-  // signup modal end
 
+  // signup modal end
   const handleShow = () => {
     setShow(true)
     handleSignUpClose()
   };
+
   const toggleNav = () => {
     setNav(!nav);
   };
@@ -55,6 +55,7 @@ const Header = () => {
       }
     );
   }
+
   return (
     <div className={`headerSection ${stickyNav ? "sticky" : ""}`}>
       {
@@ -96,7 +97,7 @@ const Header = () => {
             </div>
             <div className="text-center mt-4">
               <FcGoogle className="me-2  socialIcon" />
-              <FaInstagram className="me-2 socialIcon instraColor"></FaInstagram>
+              <FaInstagram className="me-2 socialIcon instagramColor"></FaInstagram>
               <FaFacebook className="me-2 text-primary socialIcon"></FaFacebook>
             </div>
           </Form>
@@ -167,7 +168,7 @@ const Header = () => {
 
       {/* signUp modal end */}
 
-      <Container>
+      <Container className="px-0">
         <div className="headerContainer">
           <div className="logoContainer">
             <div className="logo">
@@ -179,27 +180,43 @@ const Header = () => {
               <ul>
                 <li>
                   <Link to="/home" className="d-flex align-items-center">
-                    <AiOutlineHome className="me-2" />
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link to="/recharge" className="d-flex align-items-center">
-                    <FaHandHoldingUsd className="me-2" />
                     Recharge & pay Bill
                   </Link>
                 </li>
                 <li>
                   <Link to="/feature" className="d-flex align-items-center">
-                    <BsCardList className="me-2" />
                     Feature
                   </Link>
                 </li>
                 <li>
                   <button onClick={handleShow} className="lginAndSign">
-
-                    Login / Sign Up
+                    Login
                   </button>
+                </li>
+                <li className="text-black">
+                    <div className="position-relative d-flex justify-content-center align-items-center">
+                    <span className="userLogo"><FaUserAlt onClick={()=>setShowUser(!showUser)}/></span>
+                    <div className={`User ${showUser ? "d-block" : ""}`}>
+                      <div onClick={()=>setShowUser(!showUser)} className="userItem">
+                        <span className="userUpdate">
+                        <Link to="/transaction" >Latest Transaction</Link>
+                        </span>
+                        <span className="userUpdate">
+                        <Link >Update Profile</Link>
+                        </span>
+                        <span className="userUpdate">
+                        <Link >log Out</Link>
+                        </span>
+                      </div>
+                    </div>
+                    </div>
+                
+
                 </li>
               </ul>
             </div>

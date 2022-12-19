@@ -15,6 +15,17 @@
   align-items: center;
   justify-content: end;
 }
+.selectLanguage {
+  padding: 3px 10px;
+  outline: 1px solid rgb(230 217 217);
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.selectLanguage:focus-within{
+  outline: 1px solid var(--secondary);
+}
 @media only screen and (max-width: 600px) {
   .emailContainer {
     padding-left: 0.5rem;

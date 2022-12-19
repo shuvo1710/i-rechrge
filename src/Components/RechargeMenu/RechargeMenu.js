@@ -8,7 +8,7 @@ import Options from "../Options/Options";
 const RechargeMenu = () => {
 
   return (
-    <div className="">
+    <div className="pos">
         <Container className="p-0 bgRechargeMenu">
           <div className="rechargeMenu">
               <Options/>

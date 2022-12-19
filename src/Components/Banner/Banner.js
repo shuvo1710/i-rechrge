@@ -5,11 +5,11 @@ import "./Banner.css"
 const Banner = (props) => {
     const { heading, img, text, breadCrumb } = props?.data
     return (
-        <div>
-            <div className='bannerImg position-relative'>
+        <section className='banner'>
+            <div className='bannerImg'>
                 <img src={require(`../../utilities/bannerImages/${img}`)} alt="" srcSet="" />
-                <div className='bgOverlay position-absolute top-0 start-0 h-100 w-100 
-                d-flex align-items-center'>
+            </div>
+            <div className='banner-content d-flex align-items-center'>
                     <div className='container'>
                         <div className='bannerText text-center'>
                             {
@@ -33,9 +33,8 @@ const Banner = (props) => {
                             }
                         </div>
                     </div>
-                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

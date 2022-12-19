@@ -4,7 +4,6 @@ import Banner from "../../Components/Banner/Banner";
 import Counter from "../../Components/Counter/Counter";
 import ExtraFeature from "../../Components/ExtraFeature/ExtraFeature";
 import CustomerReview from "../../Components/PaymentForm/CustomerReview/CustomerReview";
-// import Refar from "../../Components/Refar/Refar";
 import Refer from "../../Components/Refer/Refer";
 
 
@@ -30,7 +29,6 @@ const FeaturePage = () => {
       <Banner data={data} />
       <ExtraFeature />
       <Refer/>
-      {/* <Refar/> */}
       <Accordions />
       <Counter />
       <CustomerReview />

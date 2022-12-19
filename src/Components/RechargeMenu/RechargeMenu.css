@@ -16,6 +16,7 @@
     margin-top: -44px;
     position: relative;
     background: white;
+    z-index: 6;
 }
 .rechargeButton {
   border: 1px solid transparent;

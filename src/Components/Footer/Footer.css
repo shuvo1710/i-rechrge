@@ -2,7 +2,7 @@
 .footer {
   padding: 3rem 0;
   /* background: #f9f9f9; */
-  background-color: var(--primary);
+  background-color: rgba(225, 218, 218, 0.594);
 }
 .footer a{
   color: #535353;
