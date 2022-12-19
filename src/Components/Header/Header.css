@@ -17,7 +17,6 @@
 
 }
 
-
 .navContainer {
   width: 85%;
   display: flex;
@@ -32,10 +31,6 @@
   justify-content: space-between;
   width: 100%;
 }
-/* 
-.linksContainer ul li {
-  text-align: end;
-} */
 
 .linksContainer ul li a {
   color: #000000;
@@ -97,55 +92,7 @@
   display: none;
 }
 
-.profileContainer h5 {
-  color: #0043a7;
-  font-weight: bolder !important;
-}
 
-.modalProfileImage img {
-  object-fit: cover;
-}
-
-.modalProfileImage {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  border: 2px solid #e6e6e6;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.profileModalContainer {
-  box-shadow: 0 0 5px #e8e8e8;
-  border-radius: 7px;
-  padding: 1rem;
-}
-
-
-.profileButtons button {
-  padding: 5px 14px;
-  margin: 0 5px;
-  border: 1px solid #0b7696;
-  background: transparent;
-  border-radius: 5px;
-  transition: 0.4s;
-  color: #0b7696;
-}
-
-.profileButtons button:hover {
-  border: 1px solid transparent;
-  background: #0b7696;
-  color: white;
-}
-
-.profileDetails h3 {
-  color: #0b7696;
-  font-weight: 600 !important;
-}
-
-.profileButtons button:first-child {
-  margin-left: 0px !important;
-}
 
 .Shadow {
   box-shadow: 0 0 5px #e0e0e0;
@@ -153,14 +100,7 @@
   border-radius: 5px;
 }
 
-.responsiveBorderPadding {
-  padding-left: 3rem !important;
-  border-left: 1px solid grey;
-}
 
-.responsivePadding {
-  padding-right: 3rem !important;
-}
 
 .headerSection.sticky {
   position: fixed;
@@ -206,9 +146,6 @@ button.scrollTop:hover{
   background-color: white;
   outline: 1px solid var(--third);
 }
-/* button.scrollTop svg {
-  color: white;
-} */
 
 .toggleBar {
   color: #652581;
@@ -344,6 +281,7 @@ button.scrollTop:hover{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 .User {
   position: absolute;
