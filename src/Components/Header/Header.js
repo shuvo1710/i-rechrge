@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Container, Form, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo2 from "../../utilities/logoImages/logo1.png";
-import { AiOutlineBars, AiOutlineHome, AiOutlineArrowUp, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineArrowUp, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
-import { FaFacebook, FaHandHoldingUsd, FaInstagram, FaUserAlt  } from "react-icons/fa";
-import { BsCardList, } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaUserAlt  } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { GrTransaction } from "react-icons/gr";
+
 
 
 const Header = () => {
@@ -207,7 +206,7 @@ const Header = () => {
                         <Link to="/transaction" >Latest Transaction</Link>
                         </span>
                         <span className="userUpdate">
-                        <Link >Update Profile</Link>
+                        <Link to="/updateProfile">Update Profile</Link>
                         </span>
                         <span className="userUpdate">
                         <Link >log Out</Link>

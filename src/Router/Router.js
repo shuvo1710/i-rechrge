@@ -7,6 +7,7 @@ import Payment from "../Pages/Payment/Payment"
 import RechargePage from "../Pages/RechargePage/RechargePage"
 import Success from "../Pages/Success/Success"
 import TransactionPage from "../Pages/TransactionPage/TransactionPage"
+import UpdateProfilePage from "../Pages/UpdateProfilePage/UpdateProfilePage"
 
 export  const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ export  const router = createBrowserRouter([
             {
                 path:"/transaction",
                 element:<TransactionPage></TransactionPage>
+            },
+            {
+                path:"/updateProfile",
+                element:<UpdateProfilePage></UpdateProfilePage>
             }
         ]
     }

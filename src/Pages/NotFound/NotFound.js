@@ -11,7 +11,7 @@ const NotFound = () => {
       <div className="Error  align-items-center">
         <div className="DoubleFore">
         4
-        <span className="routedFull"> <img src={image} alt="" srcset="" /></span>
+        <span className="routedFull"> <img src={image} alt="" srcSet="" /></span>
         4
         </div>
         <h3 className="text-center">There's Nothing Here...</h3>

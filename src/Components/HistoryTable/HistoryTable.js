@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import "./HistoryTable.css"
 
 const HistoryTable = () => {
@@ -31,7 +31,7 @@ const HistoryTable = () => {
                                         <td>@mdo</td>
                                     </tr>
                                     <tr>
-                                        <td>1</td>
+                                        <td>2</td>
                                         <td>Mark</td>
                                         <td>Otto</td>
                                         <td>@mdo</td>

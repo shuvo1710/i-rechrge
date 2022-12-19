@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Modal, Spinner } from "react-bootstrap";
+import { Container, Modal } from "react-bootstrap";
 import "./Offer.css";
 import robi from "../../utilities/operatorImages/robi.png";
 import gp from "../../utilities/operatorImagesNew/gp.png";
@@ -18,7 +18,7 @@ const Offer = () => {
   const [talkTime, setTalkTime] = useState(false);
   const [combo, setCombo] = useState(false);
   const [sms, setSms] = useState(false);
-  const [spinner, setSpinner] = useState(true);
+
 
   const showAll = () => {
     setAll(true);
@@ -59,9 +59,7 @@ const Offer = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  setTimeout(() => {
-    setSpinner(false);
-  }, 2000);
+
 
   // const packages = [du,du,du, du, du,du, du]
   const packages = [du, airtel, startHub, mOne, voda, gp]

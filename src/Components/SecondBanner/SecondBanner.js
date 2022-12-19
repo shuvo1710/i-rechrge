@@ -20,7 +20,7 @@ const SecondBanner = () => {
           </div>
           <div className="col-12 col-md-12 col-lg-6 col-xl-6">
             <div className="SecondBannerImg">
-              <img src={banner} className="w-100  " alt="" srcset="" />
+              <img src={banner} className="w-100  " alt="" srcSet="" />
             </div>
           </div>
         </div>

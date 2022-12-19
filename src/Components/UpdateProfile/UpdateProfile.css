@@ -1,0 +1,90 @@
+.updateContainer{
+    padding-top: 9rem ;
+    padding-bottom: 4rem;
+}
+.profileBody{
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.UserImg {
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.UserImg img{
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: block;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 25%);
+    background-size: cover;
+    background-position: center;
+}
+.userName{
+    color: #777777;
+    font-size: 18px;
+}
+.ProfileInput{
+    display: grid;
+    grid-template-columns:  repeat(2,1fr);
+    grid-gap: 20px;
+}
+.profileForm label{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #777777;
+}
+.ProfileInput input{
+        padding: 10px 20px;
+        border: 1px solid #e5e5e5;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        color: #363636;
+        min-height: 50px;
+        box-shadow: 0 0px 5px #00000005;  
+}
+.UpdateAddress input{
+    padding: 10px 20px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #363636;
+    min-height: 50px;
+    box-shadow: 0 0px 5px #00000005;  
+}
+.ProfileSubmit{
+    padding: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500 !important;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--third);
+    color: white;
+    outline: 1px solid var(--third);
+    transition: 0.4s;
+}
+.ProfileSubmit:hover{
+    background-color: white;
+    color: var(--third);
+    outline: 1px solid var(--third);
+    transition: 0.4s;
+}

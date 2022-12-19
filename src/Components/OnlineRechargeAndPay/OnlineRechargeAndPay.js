@@ -11,7 +11,7 @@ const OnlineRechargeAndPay = () => {
                 <div className='col-6 col-lg-6 col-md-6 col-sm-12'>
                     <div className='onlineRechargeImg'>
                     <Zoom duration={1500}>
-                    <img src={image} className="h-100 w-100" alt="" srcset="" />
+                    <img src={image} className="h-100 w-100" alt="" srcSet="" />
                     </Zoom>
                     </div>
                 </div>

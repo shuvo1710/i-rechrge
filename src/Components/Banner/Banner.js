@@ -16,8 +16,8 @@ const Banner = (props) => {
                                 breadCrumb && <ul className='d-flex justify-content-center 
                                  align-items-center pb-4'>
                                     {
-                                        breadCrumb?.map((item, i) => <li><Link key={i}
-                                            className='text-light' to={item.link}>
+                                        breadCrumb?.map((item, i) => <li key={i}><Link 
+                                            className='text-light' to={item?.link}>
                                             {item.title}</Link>{i === (breadCrumb.length - 
                                                1)
                                                 ?

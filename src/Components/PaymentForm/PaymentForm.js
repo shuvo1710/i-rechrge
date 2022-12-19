@@ -26,13 +26,13 @@ const PaymentForm = () => {
              <div className="paymentFormContainer">
              <h2 className="paymentHead text-center">We are Accepted</h2>
              <div className="pb-2">
-              <img src={acceptedCard1} className="img-fluid " alt="" srcset="" />
+              <img src={acceptedCard1} className="img-fluid " alt="" srcSet="" />
              </div>
              <div className="pb-2">
-              <img src={acceptedCard1} className="img-fluid" alt="" srcset="" />
+              <img src={acceptedCard1} className="img-fluid" alt="" srcSet="" />
              </div>
              <div>
-              <img src={acceptedCard1} className="img-fluid" alt="" srcset="" />
+              <img src={acceptedCard1} className="img-fluid" alt="" srcSet="" />
              </div>
              </div>
           </div>
