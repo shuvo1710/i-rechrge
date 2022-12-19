@@ -13,7 +13,7 @@
 .contactAndEmail {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .selectLanguage {
   padding: 3px 10px;

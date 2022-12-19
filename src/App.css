@@ -159,7 +159,7 @@ h6 {
     height: 100vh;
     left: -100%;
     flex-direction: column-reverse;
-    justify-content: start !important;
+    justify-content: flex-start !important;
   }
   .responsiveWidth {
     width: 100%;
@@ -179,7 +179,7 @@ h6 {
   }
   .profileContainer {
     width: 100% !important;
-    justify-content: start !important;
+    justify-content: flex-start !important;
     padding: 2rem;
     background: #ffffff;
   }
@@ -267,7 +267,7 @@ h6 {
   height: 100vh;
   left: -100%;
   flex-direction: column-reverse;
-  justify-content: start !important;
+  justify-content: flex-start !important;
 }
 .lginAndSign {
   margin-left: 1.2rem;
@@ -282,7 +282,7 @@ h6 {
   margin-top: 1rem !important;
 }
 .profileContainer {
-  justify-content: start !important;
+  justify-content: flex-start !important;
   padding: 1rem;
 }
 .responsiveBorderPadding {

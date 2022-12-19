@@ -71,7 +71,7 @@
   width: 50%;
   gap: 10px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
   padding: 16px ;

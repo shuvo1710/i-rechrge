@@ -21,7 +21,7 @@
   width: 85%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   transition: 0.4s;
 }
 
@@ -57,7 +57,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .profileImage {
@@ -76,7 +76,7 @@
 .closeBtn {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .closeBtnContainer {
