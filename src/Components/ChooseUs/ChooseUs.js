@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { AiFillLock } from 'react-icons/ai';
@@ -5,34 +6,54 @@ import { FaHandsHelping, FaNotEqual, FaRocket } from 'react-icons/fa';
 import { FiLifeBuoy } from 'react-icons/fi';
 import { GiElephant } from 'react-icons/gi';
 import Fade from 'react-reveal/Fade';
-
+// import SingleChoose from "../SingleChoose/SingleChoose"
 
 import "./ChooseUs.css"
 const ChooseUs = () => {
+
+    const { data: chooses = [], isLoading } = useQuery({
+        queryKey: ['harleyBike'],
+        queryFn: async () => {
+            const res = await fetch('http://192.168.68.116/paycharge/api/v1/choose/index')
+            const data = await res.json()
+            return data
+        }
+    })
+    if (isLoading) {
+        return <div><h1>load..</h1></div>
+    }
+
+
     return (
         <section>
             <Container className='p-0'>
-               <div className='choose-section'>
-               <div className='ChooseHead'>
-                    <h2 className=''>Why choose I-Recharge? </h2>
-                    <p className='m-0'>Save Time and Money!</p>
-                </div>
-                <div className='py-4'>
-                <div className='ChooseContent'>
-                    <Fade left>
+                <div className='choose-section'>
+                    <div className='ChooseHead'>
+                        <h2 className=''>Why choose I-Recharge? </h2>
+                        <p className='m-0'>Save Time and Money!</p>
+                    </div>
+                    <div className='py-4'>
+                        <div className='ChooseContent'>
+                           {/* {
+                            chooses?.data?.map(singleChoose=> <SingleChoose 
+                                key={singleChoose.id} 
+                                singleChoose={singleChoose}
+                                ></SingleChoose>)
+                           } */}
+                            <Fade left>
                         <div className='ChooseItem'>
                             <div>
-                                <span className='roundedIcon'><GiElephant /></span>
+                                <span className='roundedIcon'><GiElephant/></span>
                             </div>
                             <div className='chooseTextHead'>
-                                <div className='chooseText'>
-                                    <h5>Low cost</h5>
-                                    <p>Always get cheapest price with the best in the industry.</p>
-                                </div>
+                            <div className='chooseText'>
+                                <h5 >Fast</h5>
+                                <p>Get your recharge to family and friends in minutes</p>
+                            </div>
                             </div>
                         </div>
                     </Fade>
-                    <Fade right>
+                            <Fade right>
                         <div className='ChooseItem'>
                             <div>
                                 <span className='roundedIcon'><FaRocket /></span>
@@ -45,8 +66,9 @@ const ChooseUs = () => {
                             </div>
                         </div>
                     </Fade>
-                </div>
-                <div className='ChooseContent'>
+                        </div>
+
+                        <div className='ChooseContent'>
                     <Fade left>
                         <div className='ChooseItem'>
                             <div>
@@ -102,8 +124,9 @@ const ChooseUs = () => {
                         </div>
                     </Fade>
                 </div>
+
+                    </div>
                 </div>
-               </div>
             </Container>
         </section>
     );

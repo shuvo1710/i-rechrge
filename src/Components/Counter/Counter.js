@@ -15,7 +15,7 @@ const Counter = () => {
                         <FaUserAlt className='CounterIcon' />
                         <br />
                         <CountUp className='fontSize' end={155000}> 
-                        <h3>10155M</h3>
+                     
                         </CountUp>
                         <h6>Members</h6>
                     </div>
@@ -31,7 +31,7 @@ const Counter = () => {
                         <HiDownload className='CounterIcon' />
                         <br />
                         <CountUp className='fontSize' end={1200000}>
-                        <h3 >51313</h3>
+                   
                         </CountUp>
                         <h6>App Download</h6>
                     </div>
@@ -39,7 +39,7 @@ const Counter = () => {
                         <FaComments className='CounterIcon' />
                         <br />
                         <CountUp className='fontSize' end={135000} >
-                        <h3 className='fontSize'>54546</h3>
+                       
                         </CountUp>
                         <h6>App Review</h6>
                     </div>

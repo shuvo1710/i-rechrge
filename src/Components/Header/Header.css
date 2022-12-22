@@ -40,7 +40,7 @@
 }
 
 .linksContainer ul li a:hover {
-  color: var(--third);
+  color: var(--secondary);
 }
 
 .linksContainer ul li {
@@ -123,7 +123,7 @@
 }
 
 .lginAndSign:hover {
-  color: var(--third);
+  color: var(--secondary);
 }
 
 .scrollTop {
@@ -133,8 +133,8 @@
 }
 
 button.scrollTop {
-  background-color: var(--third);
-  border: 1px solid var(--third);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
   /* padding: 5px; */
   height: 30px;
   width: 30px;
@@ -142,9 +142,9 @@ button.scrollTop {
   color: white;
 }
 button.scrollTop:hover{
-  color: var(--third);
+  color: var(--secondary);
   background-color: white;
-  outline: 1px solid var(--third);
+  outline: 1px solid var(--secondary);
 }
 
 .toggleBar {
@@ -186,15 +186,15 @@ button.scrollTop:hover{
   border: none;
   padding: 8px;
   font-weight: 500 !important;
-  background-color: var(--third);
+  background-color: var(--secondary);
   border-radius: 5px;
   color: white;
   transition: 0.4s;
 }
 
 .SubmitButton:hover {
-  outline: 1px solid var(--third);
-  color: var(--third);
+  outline: 1px solid var(--secondary);
+  color: var(--secondary);
   font-weight: 500 !important;
   background-color: transparent;
   transition: 0.4s;
@@ -222,16 +222,15 @@ button.scrollTop:hover{
   width: 25px;
   border-radius: 50%;
   padding: 0 !important;
-  background-color: var(--third);
+  background-color: var(--secondary);
   transition: 0.4s;
 }
 
 .closeBtn:hover {
   background-color: white;
-  color: var(--third);
+  color: var(--secondary);
   transition: 0.4s;
-  outline: 1px solid var(--third);
-
+  outline: 1px solid var(--secondary);
 }
 
 .signInLabel {
@@ -260,14 +259,14 @@ button.scrollTop:hover{
   width: 25px;
   border-radius: 50%;
   padding: 0 !important;
-  background-color: var(--third);
+  background-color: var(--secondary);
   transition: 0.4s;
 }
 
 .SignUPCloseBtn:hover {
   background-color: white;
-  color: var(--third);
-  outline: 1px solid var(--third);
+  color: var(--secondary);
+  outline: 1px solid var(--secondary);
   transition: 0.4s;
 }
 .instagramColor {

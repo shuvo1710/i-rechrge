@@ -93,15 +93,15 @@
 .proceed:hover {
   padding: 7px 9px;
   background: transparent;
-  border: 1px solid var(--third);
-  color: var(--third);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
   transition: 0.4s;
   border-radius: 5px;
 }
 .proceed {
   padding: 7px 9px;
-  border: 1px solid var(--third);
-  background: var(--third);
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
   color: white;
   transition: 0.4s;
   border-radius: 5px;

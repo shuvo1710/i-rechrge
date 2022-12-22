@@ -79,14 +79,14 @@
 
 .tabsHeader button {
   display: block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   
   align-items: center;
 }
 
 .tabsHeader button:hover {
-  color: var(--third); 
+  color: var(--secondary); 
 }
 
 .singleOffer:hover .offerButtons {
@@ -102,14 +102,14 @@
   transition: 0.4s;
   padding: 7px 9px;
   border: 1px solid #0087db00;
-  background: var(--third);
+  background: var(--secondary);
   color: #ffffff;
 }
 .viewMore:hover {
   padding: 7px 9px;
-  border: 1px solid var(--third);
+  border: 1px solid var(--secondary);
   background: transparent;
-  color: var(--third);
+  color: var(--secondary);
 }
 
 
@@ -126,7 +126,7 @@
   color: #000000;
   padding: 6px;
   border-radius: 0 !important;
-  border-bottom: 2px solid var(--third) !important;
+  border-bottom: 2px solid var(--secondary)!important;
 }
 
 .offerText{
@@ -170,17 +170,17 @@
   transition: 0.4s;
 }
 .packageView a:hover{
-  color: var(--third);
+  color: var(--secondary);
   transition: 0.4s;
 }
 .packagePrice{
-  border: 1px solid var(--third);
+  border: 1px solid var(--secondary);
   padding: 0 1rem;
   border-radius: 5px;
   transition: 0.4s;
 }
 .packagePrice:hover{
-  background-color: var(--third);
+  background-color: var(--secondary);
   color: white;
   transition: 0.4s;
 }

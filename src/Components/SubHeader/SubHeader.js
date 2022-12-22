@@ -1,9 +1,54 @@
-import React from "react";
+
+import { useEffect, useState } from "react";
+
 import { Container } from "react-bootstrap";
 import { BsFillTelephonePlusFill, BsFillEnvelopeFill } from "react-icons/bs";
 import "./SubHeader.css";
 
+
+
 const SubHeader = () => {
+
+  let code = localStorage.getItem('country')
+  if(code == null){
+    code ='null'
+  }
+  const [countryCode, setCountryCode] = useState([])
+  useEffect(() => {
+      fetch('http://192.168.68.116/paycharge/api/v1/language/locale',{
+        headers:{
+          "X-localization":code
+        }
+      })
+      .then(res => res.json())
+      .then(data => { setCountryCode(data.data)})
+
+  },[code])
+
+  const [countries, setCountries] = useState([])
+  // console.log(code)
+  useEffect(() => {
+    fetch('http://192.168.68.116/paycharge/api/v1/language/index',{
+      headers:{
+        "X-localization":code
+      }
+    })
+      .then(res => res.json())
+      .then(data => { setCountries(data.data)
+        // console.log(data)
+      })
+  }, [code])
+
+const changeLanguage = event =>{
+  const countryCode = event.target.value;
+  fetch(`http://192.168.68.116/paycharge/api/v1/language/change/${(countryCode)}`)
+  .then(res=>res.json())
+  .then(data=>{
+    localStorage.setItem('country', data.data)
+  })
+  .catch(error=>console.error(error))
+ }
+
   return (
     <div className="subHeader">
       <Container className="px-0">
@@ -15,10 +60,31 @@ const SubHeader = () => {
             <div className="contactAndEmail">
               <div className="callContainer d-flex align-items-center">
                 <div className="me-3">
-                  <select name="" id=""  className="selectLanguage border-0">
-                    <option value="">English</option>
-                    <option value="">Bangla</option>
-                    <option value="">Hindi</option>
+                  <select onChange={changeLanguage} name="" id="" className="selectLanguage border-0">
+                    {
+                      countries?.map(country => {
+                          let test = localStorage.getItem('country')
+                          // console.log(test)
+                          if(test){
+                            if (test === country.code) {
+                              return <option  selected key={country.id} value={country.code}>{country?.name}</option>
+                            }
+                            else {
+                              return <option key={country.id} value={country.code}>{country?.name}</option>
+                            }
+                          }
+                          else{
+                            if (country.is_default === 1) {
+                              return <option  selected key={country.id} value={country.code}>{country?.name}</option>
+                            }
+                            else {
+                              return <option key={country.id} value={country.code}>{country?.name}</option>
+                            }
+                          }
+                      }
+                      )
+                    }
+
                   </select>
                 </div>
                 <BsFillTelephonePlusFill className="me-1" />

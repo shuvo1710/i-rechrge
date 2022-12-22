@@ -8,7 +8,7 @@
   color: #535353;
 }
 .footer a:hover{
-  color: var(--third);
+  color: var(--secondary);
 }
 
 .footer ul li {
@@ -34,5 +34,84 @@
   font-weight: 700 !important;
   color: var(--secondary);
 }
+.subsField {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.subsField:focus-within{
+  outline: 1px solid var(--secondary)!important;
+}
+
+.subsField input{
+  width: 90%;
+  padding: 10px;
+}
+
+.subsField input:focus {
+  outline: none !important;
+}
+
+.subsIcon{
+  width: 100%;
+  color: var(--primary);
+  font-size: 30px;
+}
+.ReviewButton{
+  background: var(--secondary);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: 1px solid var(--secondary);
+  transition: 0.4s;
+}
+.ReviewButton:hover{
+background-color: transparent;
+outline: 1px solid var(--secondary);
+color: var(--secondary);
+transition: 0.4s;
+}
+
+.reviewCloseBtn {
+  right: -200px;
+  font-size: 16px;
+  font-weight: 600;
+  top: -71px;
+  cursor: pointer;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 0 !important;
+  background-color: var(--secondary);
+  transition: 0.4s;
+  text-align: center;
+}
+
+.reviewCloseBtn:hover {
+  background-color: white;
+  color: var(--secondary);
+  transition: 0.4s;
+  outline: 1px solid var(--secondary);
+}
 
 
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #ffa742e6;
+}
+.off {
+  color: #ccc;
+}

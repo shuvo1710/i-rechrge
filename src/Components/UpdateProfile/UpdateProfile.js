@@ -22,44 +22,44 @@ const UpdateProfile = () => {
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>First Name</label>
                                 <br />
-                                <input type="text" className='w-100' />
+                                <input type="text" className='w-100 profileField '/>
                             </div>
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>Last Name</label>
                                 <br />
-                                <input type="text"  className='w-100'/>
+                                <input type="text"  className='w-100 profileField'/>
                             </div>
                         </div>
                         <div className='ProfileInput mb-3 '>
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>Mobile Number</label>
                                 <br />
-                                <input type="text" className='w-100' />
+                                <input type="text" className='w-100 profileField' />
                             </div>
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>State</label>
                                 <br />
-                                <input type="text"  className='w-100'/>
+                                <input type="text"  className='w-100 profileField'/>
                             </div>
                         </div>
                         <div className='ProfileInput mb-3 '>
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>Zip Code</label>
                                 <br />
-                                <input type="text" className='w-100' />
+                                <input type="text" className='w-100 profileField' />
                             </div>
                             <div  className='w-100 '>
                                 <label htmlFor="" className='py-2'>City</label>
                                 <br />
-                                <input type="text"  className='w-100'/>
+                                <input type="text"  className='w-100 profileField'/>
                             </div>
                         </div>
                         <div className='UpdateAddress mb-3'>
                             <label htmlFor="" className='py-2'>Address</label>
-                            <input type="text" className='w-100' name="" id="" />
+                            <input type="text" className='w-100 profileField' name="" id="" />
                         </div>
                         <div className='py-4'>
-                        <input type="submit" value="Update Profile" className='ProfileSubmit' />
+                        <input type="submit" value="Update Profile" className='ProfileSubmit ' />
                         </div>
                         </form>
                     </div>

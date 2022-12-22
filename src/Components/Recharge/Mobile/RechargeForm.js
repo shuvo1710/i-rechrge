@@ -9,7 +9,7 @@ const RechargeForm = () => {
 
   return (
     <div className="rechargeItemMenu">
-      { activeState === 'Mobile' ? <h3>Mobile Recharge or Bill Payment</h3> : <h3>{activeState} Bill Payment</h3>}
+      { activeState === 'Mobile' ? <h3>Mobile Recharge or Bill Payment</h3> : <h3 className="">{activeState} Bill Payment</h3>}
       <Form>
         <div key="inline-radio" className="mb-4">
           {

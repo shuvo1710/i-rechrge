@@ -1,4 +1,4 @@
-.choose-section {
+ .choose-section {
     padding: 4rem 0;
 }
 
@@ -36,8 +36,8 @@
     align-items: center;
     border-radius: 50%;
     font-size: 40px;
-    color: var(--third);
-    border: 1px solid var(--third);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
 }
 .chooseTextHead{
     display: flex;
@@ -55,6 +55,6 @@
 
 .chooseText h5 {
     font-size: 22px;
-    font-weight: 800 !important;
+    font-weight: 500 !important;
     margin: 0;
 }

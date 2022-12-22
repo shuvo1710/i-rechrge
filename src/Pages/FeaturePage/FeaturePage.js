@@ -30,7 +30,7 @@ const FeaturePage = () => {
       <ExtraFeature />
       <Refer/>
       <Accordions />
-      <Counter />
+      <Counter/>
       <CustomerReview />
     </div>
   );

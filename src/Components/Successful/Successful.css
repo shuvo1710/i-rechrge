@@ -35,20 +35,20 @@
 }
 .rechargeAgain{
   padding: 7px 9px;
-  border: 1px solid var(--third);
-  background: var(--third);
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
   /* color: var(--primary); */
   color: white;
   transition: 0.4s;
 }
 .rechargeAgain:hover{
-  border: 1px solid var(--third);
+  border: 1px solid var(--secondary);
   background: white;
-  color: var(--third);
+  color: var(--secondary);
 }
 .paymentModalClose {
   left: 97%;
-  background-color: var(--third);
+  background-color: var(--secondary);
   height: 25px;
   width: 25px;
   text-align: center;
@@ -62,8 +62,8 @@
 }
 .paymentModalClose:hover{
   background-color: white;
-  outline: 1px solid var(--third);
-  color: var(--third);
+  outline: 1px solid var(--secondary);
+  color: var(--secondary);
   transition: 0.4s;
 }
 .successBtn1{
@@ -79,26 +79,26 @@
   transition: 0.4s;
 }
 .successBtn2{
-  background-color: var(--third);
+  background-color: var(--secondary);
   color: white;
-  outline: 1px solid var(--third);
+  outline: 1px solid var(--secondary);
   transition: 0.4s;
 }
 .successBtn2:hover{
   background-color: transparent;
-  color: var(--third);
-  outline: 1px solid var(--third);
+  color: var(--secondary);
+  outline: 1px solid var(--secondary);
   transition: 0.4s;
 }
 .successBtn3{
-  background-color: var(--third);
+  background-color: var(--secondary);
   color: white;
-  outline: 1px solid var(--third);
+  outline: 1px solid var(--secondary);
   transition: 0.4s;
 }
 .successBtn3:hover{
   background-color: transparent;
-  color: var(--third);
-  outline: 1px solid var(--third);
+  color: var(--secondary);
+  outline: 1px solid var(--secondary);
   transition: 0.4s;
 }

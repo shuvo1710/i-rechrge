@@ -1,7 +1,7 @@
 .oneLine {
     height: 2px;
     width: 100%;
-    background-color: var(--third);
+    background-color: var(--secondary);
     border: 1px;
     margin: 0 auto;
     top: 75%;

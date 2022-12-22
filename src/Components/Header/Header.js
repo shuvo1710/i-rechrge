@@ -5,8 +5,9 @@ import logo2 from "../../utilities/logoImages/logo1.png";
 import { AiOutlineBars, AiOutlineArrowUp, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { GiTireIronCross } from "react-icons/gi";
-import { FaFacebook, FaInstagram, FaUserAlt  } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaUserAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-hot-toast";
 
 
 
@@ -54,6 +55,93 @@ const Header = () => {
       }
     );
   }
+  // sign in user
+  const handleLogIn = event => {
+    event.preventDefault()
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const userInfo = { email, password }
+    console.log(userInfo)
+
+    fetch('http://192.168.68.116/paycharge/api/v1/login', {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(userInfo)
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        if (data.data.access_token) {
+          localStorage.setItem("token", data.data.access_token)
+          toast.success(data.message)
+          console.log(data.data.access_token)
+        }
+        else{
+          toast.error(data.message)
+          console.log("error sign in")
+        }
+      })
+  }
+
+
+  //  sign up user
+  const handleSignUpUser = event => {
+    event.preventDefault()
+    const form = event.target;
+    const name = form.userName.value;
+    const email = form.email.value;
+    const number = form.number.value;
+    const password = form.password.value;
+    const password_confirmation = form.confirmPass.value;
+    const signUpUser = { name, email, number, password, password_confirmation }
+
+    console.log(signUpUser)
+    fetch('http://192.168.68.116/paycharge/api/v1/register', {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(signUpUser)
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        if (data.success) {
+          // localStorage.setItem("token", data.data.access_token) 
+          toast.success(data.message)
+        }
+        // console.log(localStorage.getItem("token"))
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        toast.error(error.message)
+      });
+  }
+
+  // const token = localStorage.getItem("token") ? localStorage.getItem("token") : false
+  
+  // const handleLogOut = event => {
+  //   fetch('http://192.168.68.116/paycharge/api/v1/logout', {
+  //     method: "POST",
+  //     mode: 'cors',
+  //     headers: {
+
+  //     },
+  //   }
+  //   )
+  //     .then((data) => {
+  //      if(data.data.message){
+  //       localStorage.clear("token")
+  //      }
+  //       console.log(data)
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error:', error);
+  //     });
+  // }
 
   return (
     <div className={`headerSection ${stickyNav ? "sticky" : ""}`}>
@@ -72,12 +160,13 @@ const Header = () => {
           <p>New To i-recharge? <Link to="" onClick={handleSignUpShow} className="signUp">Please Sign Up</Link></p>
         </div>
         <Modal.Body>
-          <Form >
+          <form onSubmit={handleLogIn}>
             <Form.Group className="mb-2 w-75 mx-auto " controlId="exampleForm.ControlInput1">
               <Form.Label className="signInLabel">Email address</Form.Label>
               <input
                 className="w-100 SignInInput"
                 type="email"
+                name="email"
                 placeholder="name@example.com"
                 autoFocus
               />
@@ -87,7 +176,8 @@ const Header = () => {
               <input
                 className="w-100 SignInInput"
                 type="password"
-                placeholder="Inter Your Password"
+                name="password"
+                placeholder="******"
                 autoFocus
               />
             </Form.Group>
@@ -99,7 +189,7 @@ const Header = () => {
               <FaInstagram className="me-2 socialIcon instagramColor"></FaInstagram>
               <FaFacebook className="me-2 text-primary socialIcon"></FaFacebook>
             </div>
-          </Form>
+          </form>
         </Modal.Body>
       </Modal>
       {/* signIn modal end */}
@@ -113,15 +203,16 @@ const Header = () => {
             <span onClick={handleSignUpClose} className="position-absolute  d-flex justify-content-center 
             align-items-center SignUPCloseBtn"><AiOutlineClose /></span>
           </div>
-          <p>Already have an account? <Link to="" onClick={handleShow} className="signUp">Please Sign Up</Link></p>
+          <p>Already have an account? <Link to="" onClick={handleShow} className="signUp">Please Sign in</Link></p>
         </div>
         <Modal.Body>
-          <Form >
+          <form onSubmit={handleSignUpUser}>
             <Form.Group className="mb-2 w-75 mx-auto " controlId="exampleForm.ControlInput1">
               <Form.Label className="signInLabel">User Name</Form.Label>
               <input
                 className="w-100 SignInInput"
                 type="text"
+                name="userName"
                 placeholder="Marzuk"
                 autoFocus
               />
@@ -131,6 +222,7 @@ const Header = () => {
               <input
                 className="w-100 SignInInput"
                 type="email"
+                name="email"
                 placeholder="example@gmail.com"
                 autoFocus
               />
@@ -140,6 +232,7 @@ const Header = () => {
               <input
                 className="w-100 SignInInput"
                 type="number"
+                name="number"
                 placeholder="017********"
                 autoFocus
               />
@@ -149,6 +242,17 @@ const Header = () => {
               <input
                 className="w-100 SignInInput"
                 type="password"
+                name="password"
+                placeholder="******"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-2 w-75 mx-auto inputShadow" controlId="exampleForm.ControlInput1">
+              <Form.Label>Confirm Password</Form.Label>
+              <input
+                className="w-100 SignInInput"
+                type="password"
+                name="confirmPass"
                 placeholder="******"
                 autoFocus
               />
@@ -161,7 +265,7 @@ const Header = () => {
               <FaInstagram className="me-2 socialIcon instraColor"></FaInstagram>
               <FaFacebook className="me-2 text-primary socialIcon"></FaFacebook>
             </div>
-          </Form>
+          </form>
         </Modal.Body>
       </Modal>
 
@@ -192,30 +296,32 @@ const Header = () => {
                     Feature
                   </Link>
                 </li>
-                <li>
-                  <button onClick={handleShow} className="lginAndSign">
-                    Login
-                  </button>
-                </li>
+                {
+                  localStorage.getItem("token") ? ""
+                    :
+                    <li>
+                      <button onClick={handleShow} className="lginAndSign">
+                        Login
+                      </button>
+                    </li>
+                }
                 <li className="text-black">
-                    <div className="position-relative d-flex justify-content-center align-items-center">
-                    <span className="userLogo"><FaUserAlt onClick={()=>setShowUser(!showUser)}/></span>
+                  <div onClick={() => setShowUser(!showUser)} className="position-relative d-flex justify-content-center align-items-center">
+                    <span className="userLogo"><FaUserAlt  /></span>
                     <div className={`User ${showUser ? "d-block" : ""}`}>
-                      <div onClick={()=>setShowUser(!showUser)} className="userItem">
+                      <div onClick={() => setShowUser(!showUser)} className="userItem">
                         <span className="userUpdate">
-                        <Link to="/transaction" >Latest Transaction</Link>
+                          <Link to="/transaction" >Latest Transaction</Link>
                         </span>
                         <span className="userUpdate">
-                        <Link to="/updateProfile">Update Profile</Link>
+                          <Link to="/updateProfile">Update Profile</Link>
                         </span>
                         <span className="userUpdate">
-                        <Link >log Out</Link>
+                          <Link >log Out</Link>
                         </span>
                       </div>
                     </div>
-                    </div>
-                
-
+                  </div>
                 </li>
               </ul>
             </div>

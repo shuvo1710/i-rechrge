@@ -29,11 +29,10 @@
 }
 .bgOverlay{
     background: rgb(47 47 47 / 73%);
-    
 }
-.bannerText h1{
+.bannerHeading{
     font-size: 30px;
-    color: var(--secondary);
+    color: var(--third);
     font-weight: 600 !important;
     margin-bottom: 10px;
 }
@@ -43,4 +42,7 @@
 .bannerText p {
     width: 700px;
     margin: 0 auto;
+}
+.homeIcon{
+        margin-right: 10px;
 }

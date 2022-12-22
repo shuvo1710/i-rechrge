@@ -12,6 +12,7 @@ import offerImage from "../../utilities/operatorImageModal/operatorModal.png";
 
 
 import OfferCard from "./OfferCard/OfferCard";
+import { useQuery } from "@tanstack/react-query";
 const Offer = () => {
   const [all, setAll] = useState(true);
   const [internet, setInternet] = useState(false);
@@ -60,9 +61,23 @@ const Offer = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
-  // const packages = [du,du,du, du, du,du, du]
   const packages = [du, airtel, startHub, mOne, voda, gp]
+
+const {data: packageList = [], isLoading} = useQuery({
+  queryKey:['packageList'],
+  queryFn: async () =>{
+    const res = await fetch('http://192.168.68.116/paycharge/api/v1/package/index')
+    const data = await res.json()
+    return data
+  }
+})
+
+
+  if(isLoading){
+    return <div><h1>load....</h1></div>
+  }
+  // console.log(packageList.data)
+  // const {} = offers;
   return (
 
     <>
@@ -116,10 +131,19 @@ const Offer = () => {
                 <div className="tabsHeader">
                   <button
                     onClick={showAll}
-                    className={`mx-3 ${all ? "activeBorder" : ""} `}
+                    className={`mx-3 ${all ? "activeBorder" : " "}`}
                   >
                     All
                   </button>
+
+                  {/* {
+                    packageList.map(singlePack => <button
+                      onClick={showAll}
+                      className={`mx-3 ${singlePack.name? "activeBorder" : " "}`}
+                    >
+                    {singlePack.name}
+                    </button>)
+                  } */}
 
                   <button
                     onClick={showInternet}
@@ -144,7 +168,7 @@ const Offer = () => {
                     className={`mx-3 ${sms ? "activeBorder" : " "}`}
                   >
                     Sms
-                  </button>
+                  </button> 
                 </div>
                 <div className="tabsContent">
                   {all && (               
@@ -164,6 +188,7 @@ const Offer = () => {
                       <div className="row g-3">
                         {
                           packages.map((_, i) => <div key={i} className="col-12 col-md-6 col-lg-4"><OfferCard data={{ img: _ }} handleShow={handleShow} /></div>)
+                          
                         }
                       </div>
                       <div className="text-center pt-5">

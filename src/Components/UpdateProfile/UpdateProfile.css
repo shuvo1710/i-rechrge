@@ -77,14 +77,18 @@
     font-weight: 500 !important;
     border: 0;
     border-radius: 5px;
-    background-color: var(--third);
+    background-color: var(--secondary);
     color: white;
-    outline: 1px solid var(--third);
+    outline: 1px solid var(--secondary);
     transition: 0.4s;
 }
 .ProfileSubmit:hover{
     background-color: white;
-    color: var(--third);
-    outline: 1px solid var(--third);
+    color: var(--secondary);
+    outline: 1px solid var(--secondary);
     transition: 0.4s;
+}
+.profileField:focus{
+    border: none;
+    outline: 2px solid var(--secondary);
 }

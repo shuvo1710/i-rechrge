@@ -1,17 +1,74 @@
-import React from "react";
-import { Container, FormControl, InputGroup } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Form, Modal } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../../utilities/logoImages/logo1.png";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaFacebookSquare, FaLinkedin,  FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
-
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 const Footer = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  // 
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
+
+const handleReview = event =>{
+  event.preventDefault()
+  const from = event.target;
+  const start  = rating;
+  const reviewText = from.reviewText.value;
+  console.log(start, reviewText)
+}
+
+
   return (
+
     <div className="footer">
-      <Container>
+      <Modal centered show={show} className="signInModal" onHide={handleClose}>
+        <div className="LogInHead  text-center">
+          <h1 className="mt-4 signInHead">Add Review</h1>
+          <div className="position-relative">
+            <span onClick={handleClose} className="position-absolute d-flex justify-content-center align-items-center  reviewCloseBtn"><AiOutlineClose /></span>
+          </div>
+        </div>
+        <Modal.Body>
+          <form onSubmit={handleReview}>
+            <div className="star-rating center mb-4 fs-2">
+              {[...Array(5)].map((star, index) => {
+                
+                index += 1;
+                return (
+                  <button
+                    
+                    key={index}
+                    className={index <= (hover || rating) ? "on" : "off"}
+                    name="index"
+                    onClick={() => setRating(index)}
+                    onMouseEnter={() => setHover(index)}
+                    onMouseLeave={() => setHover(rating)}
+                  >
+                    <span className="star">&#9733;</span>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="center w-75 mx-auto">
+              <textarea className="w-100 SignInInput" placeholder="write here your valuable review" name="reviewText" id="" cols="30" rows="3"></textarea>
+            </div>
+            <div className="w-50 mx-auto">
+              <button className="SubmitButton w-100 mx-auto mt-3" type="submit">Submit</button>
+            </div>
+          </form>
+        </Modal.Body>
+      </Modal>
+      <Container className="px-0">
         <div className="row">
           <div className="col-6 col-md-6 col-lg-3">
             <ul>
@@ -69,6 +126,7 @@ const Footer = () => {
                 <Link to="/home">Privacy and policy</Link>
               </li>
             </ul>
+            <button onClick={handleShow} className="ReviewButton mt-3">Add Review</button>
           </div>
           <div className="col-6 col-md-6 col-lg-3">
             <h4 className=" FooterHead">Subscribe for more..</h4>
@@ -77,18 +135,12 @@ const Footer = () => {
                 <img className="w-100 h-100" src={logo} alt="" />
               </div>
             </Link>
-            <div className="">
-            <InputGroup className="mt-3">
-              <InputGroup.Text id="basic-addon1 pointer">
-                <FaEnvelope className="pointer" />
-              </InputGroup.Text>
-              <FormControl
-                className="footerSubs text-black"
-                placeholder="Enter your email"
-                aria-label="Email"
-                aria-describedby="basic-addon1"
-              />
-            </InputGroup>
+            <div className="subsField ">
+              <span className="">
+                <HiOutlineMail className="border-0 subsIcon" />
+              </span>
+              <input type="email" className="border-0" placeholder="example@gmail.com" />
+
             </div>
             <div className="mt-4">
               <ul>
@@ -122,7 +174,6 @@ const Footer = () => {
               <Link to="#">
                 <FaYoutubeSquare className="fs-4" />
               </Link>
-
             </div>
           </div>
         </div>
