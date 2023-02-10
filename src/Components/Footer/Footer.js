@@ -126,7 +126,6 @@ const handleReview = event =>{
                 <Link to="/home">Privacy and policy</Link>
               </li>
             </ul>
-            <button onClick={handleShow} className="ReviewButton mt-3">Add Review</button>
           </div>
           <div className="col-6 col-md-6 col-lg-3">
             <h4 className=" FooterHead">Subscribe for more..</h4>

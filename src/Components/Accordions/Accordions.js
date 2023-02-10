@@ -6,18 +6,8 @@ import img from "../../utilities/accordionImages/accordion.png";
 import "./Accordions.css";
 
 const Accordions = () => {
-  const { data: accordions =[] , isLoading} = useQuery({
-    queryKey:['singleAccordions'],
-    queryFn: async ()=>{
-      const res = fetch('http://192.168.68.116/paycharge/api/v1/faq/index')
-      const data = (await res).json()
-      return data;
-    }
-  })
-  if(isLoading){
-    return <div><h1>load...</h1></div>
-  }
-console.log(accordions.data)
+
+
   return (
     <section className="accordions">
       <Container className="p-0">
@@ -31,23 +21,21 @@ console.log(accordions.data)
             </div>
           </Fade>
           <Fade right>
-          <div
-            className="col-12 col-md-12 col-lg-6 col-xl-6"
-          >
-            {
-              accordions?.data?.map(singleAccording=>
+            <div
+              className="col-12 col-md-12 col-lg-6 col-xl-6"
+            >
+
               <Accordion>
-              <Accordion.Item eventKey={singleAccording.id}>
-             <Accordion.Header>
-               {singleAccording.qsn.us}
-             </Accordion.Header>
-             <Accordion.Body>
-             {singleAccording.ans.us}
-             </Accordion.Body>
-           </Accordion.Item>
-           </Accordion>)
-            }
-          </div>
+                <Accordion.Item >
+                  <Accordion.Header>
+                    Lorem ipsum dolor sit amet.
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </div>
           </Fade>
         </div>
       </Container>

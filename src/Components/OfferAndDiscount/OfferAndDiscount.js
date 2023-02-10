@@ -61,7 +61,6 @@ const OfferAndDiscount = () => {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </SwiperSlide>)
           }

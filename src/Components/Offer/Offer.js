@@ -63,19 +63,6 @@ const Offer = () => {
 
   const packages = [du, airtel, startHub, mOne, voda, gp]
 
-const {data: packageList = [], isLoading} = useQuery({
-  queryKey:['packageList'],
-  queryFn: async () =>{
-    const res = await fetch('http://192.168.68.116/paycharge/api/v1/package/index')
-    const data = await res.json()
-    return data
-  }
-})
-
-
-  if(isLoading){
-    return <div><h1>load....</h1></div>
-  }
   // console.log(packageList.data)
   // const {} = offers;
   return (

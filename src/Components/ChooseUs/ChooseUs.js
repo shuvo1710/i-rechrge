@@ -11,18 +11,7 @@ import Fade from 'react-reveal/Fade';
 import "./ChooseUs.css"
 const ChooseUs = () => {
 
-    const { data: chooses = [], isLoading } = useQuery({
-        queryKey: ['harleyBike'],
-        queryFn: async () => {
-            const res = await fetch('http://192.168.68.116/paycharge/api/v1/choose/index')
-            const data = await res.json()
-            return data
-        }
-    })
-    if (isLoading) {
-        return <div><h1>load..</h1></div>
-    }
-
+    
 
     return (
         <section>
@@ -34,12 +23,6 @@ const ChooseUs = () => {
                     </div>
                     <div className='py-4'>
                         <div className='ChooseContent'>
-                           {/* {
-                            chooses?.data?.map(singleChoose=> <SingleChoose 
-                                key={singleChoose.id} 
-                                singleChoose={singleChoose}
-                                ></SingleChoose>)
-                           } */}
                             <Fade left>
                         <div className='ChooseItem'>
                             <div>
